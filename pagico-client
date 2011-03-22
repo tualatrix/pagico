@@ -1,9 +1,11 @@
 #!/usr/bin/python
 
+import os
 import sys
 import gettext
 
 import gtk
+import glib
 import dbus
 import webkit
 import gobject
@@ -72,6 +74,9 @@ class WebView(webkit.WebView):
 
 
 class Pagico(gtk.Window):
+    CONFIG_PATH = os.path.join(glib.get_user_config_dir(), 'pagico')
+    if not os.path.exists(CONFIG_PATH):
+        os.makedirs(CONFIG_PATH)
 
     def __init__(self):
         gtk.Window.__init__(self)
@@ -106,6 +111,7 @@ class Pagico(gtk.Window):
         vbox.pack_start(self.webview, True, True, 0)
 
         self.webview.connect('notify::load-status', self.on_load_status_changed)
+        self.webview.connect('notify::title', self.on_title_changed)
         self.connect('destroy', lambda f: gtk.main_quit())
 
         self.webview.load_uri('http://127.0.0.1:1200/?nopopup')
@@ -123,6 +129,56 @@ class Pagico(gtk.Window):
 
     def on_load_status_changed(self, widget, status):
         print widget, widget.get_load_status().value_nick
+
+    def on_title_changed(self, widget, param):
+        title = widget.get_property('title')
+        if title:
+            self.set_title(title)
+
+    def create_new_database(self):
+        dialog = gtk.FileChooserDialog(title=_('Create new database'),
+                                       parent=self,
+                                       action=gtk.FILE_CHOOSER_ACTION_CREATE_FOLDER,
+                                       buttons=(gtk.STOCK_CANCEL, gtk.RESPONSE_REJECT,
+                                                gtk.STOCK_SAVE, gtk.RESPONSE_ACCEPT))
+        dialog.run()
+        filename = dialog.get_filename()
+        dialog.destroy()
+
+        if not filename.endswith('.pgco'):
+            pgco_filename = filename + '.pgco'
+            if not os.path.exists(filename):
+                os.unlink(filename)
+                os.mkdir(pgco_filename)
+            else:
+                pass
+        else:
+            if not os.path.exists(filename):
+                os.mkdir(filename)
+            else:
+                pass
+
+        f = open(os.path.join(self.CONFIG_PATH, 'DB_to_create'), 'w')
+        f.write(filename)
+        f.close()
+
+        self.webview.load_uri('http://127.0.0.1:1200/start/loader.php')
+
+    def open_database(self):
+        dialog = gtk.FileChooserDialog(title=_('Open database'),
+                                       parent=self,
+                                       action=gtk.FILE_CHOOSER_ACTION_SELECT_FOLDER,
+                                       buttons=(gtk.STOCK_CANCEL, gtk.RESPONSE_REJECT,
+                                                gtk.STOCK_OPEN, gtk.RESPONSE_ACCEPT))
+        dialog.run()
+        filename = dialog.get_filename()
+        dialog.destroy()
+
+        f = open(os.path.join(self.CONFIG_PATH, 'DB_to_load'), 'w')
+        f.write(filename)
+        f.close()
+
+        self.webview.load_uri('http://127.0.0.1:1200/start/loader.php')
 
     def _create_action_group(self):
         entries = (
@@ -187,10 +243,12 @@ class PagicoClient(dbus.service.Object):
     @dbus.service.method(dbus_interface='com.pagico.clienty')
     def opendb(self):
         print 'try to open db'
+        self.window.open_database()
 
     @dbus.service.method(dbus_interface='com.pagico.clienty')
     def createdb(self):
         print 'try to create db'
+        self.window.create_new_database()
 
     @dbus.service.method(dbus_interface='com.pagico.clienty')
     def launch(self, path):
