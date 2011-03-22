@@ -1,9 +1,20 @@
 #!/usr/bin/python
 
+import sys
 import gettext
 
 import gtk
+import dbus
 import webkit
+import gobject
+
+import dbus
+import dbus.service
+import dbus.mainloop.glib
+
+gobject.threads_init()
+dbus.mainloop.glib.DBusGMainLoop(set_as_default=True)
+dbus.mainloop.glib.threads_init()
 
 gettext.install('pagico', unicode=True)
 
@@ -55,6 +66,11 @@ ui_info = '''
 </ui>
 '''
 
+class WebView(webkit.WebView):
+    def __init__(self):
+        webkit.WebView.__init__(self)
+
+
 class Pagico(gtk.Window):
 
     def __init__(self):
@@ -64,6 +80,13 @@ class Pagico(gtk.Window):
         self.set_size_request(1024, 600)
         vbox = gtk.VBox(False, 0)
         self.add(vbox)
+
+        bus = dbus.SessionBus()
+        try:
+            object = bus.get_object("com.pagico.clienty", "/com/pagico/clienty", 'com.pagico.clienty')
+            bus.add_signal_receiver(self.on_db_signal_received, interface_keyword='dbus_interface', member_keyword='db')
+        except Exception, e:
+            print e
 
         merge = gtk.UIManager()
         self.set_data("ui-manager", merge)
@@ -79,15 +102,29 @@ class Pagico(gtk.Window):
         bar.show() 
         vbox.pack_start(bar, False, False, 0)
 
+        self.webview = WebView()
+        vbox.pack_start(self.webview, True, True, 0)
+
+        self.webview.connect('notify::load-status', self.on_load_status_changed)
         self.connect('destroy', lambda f: gtk.main_quit())
 
+        self.webview.load_uri('http://127.0.0.1:1200/?nopopup')
+
         self.show_all()
+
+    def catchall_signal_handler(self, *args, **kwargs):
+        print ("Caught signal (in catchall handler) "
+                           + kwargs['dbus_interface'] + "." + kwargs['member'])
+        for arg in args:
+            print "        " + str(arg)
 
     def activate_action(self):
         pass
 
+    def on_load_status_changed(self, widget, status):
+        print widget, widget.get_load_status().value_nick
+
     def _create_action_group(self):
-        # GtkActionEntry
         entries = (
             ("FileMenu", None, _("_File")),
             ("NewMenu", None, _("_New")),
@@ -132,9 +169,33 @@ class Pagico(gtk.Window):
 
         return action_group
 
+
+class PagicoClient(dbus.service.Object):
+    def __init__(self, session_bus, window):
+        bus_name = dbus.service.BusName('com.pagico.clienty', bus=session_bus)
+        dbus.service.Object.__init__(self, bus_name, '/com/pagico/clienty')
+
+        self.window = window
+
     def run(self):
         gtk.main()
 
+    @dbus.service.method(dbus_interface='com.pagico.clienty')
+    def show_window(self):
+        self.window.present()
+
 
 if __name__ == '__main__':
-    Pagico().run()
+    session_bus = dbus.SessionBus()
+
+    if session_bus.request_name('com.pagico.clienty') != \
+            dbus.bus.REQUEST_NAME_REPLY_PRIMARY_OWNER:
+        method = session_bus.get_object('com.pagico.clienty',
+                                        '/com/pagico/clienty')\
+                                                .get_dbus_method("show_window")
+        method()
+        sys.exit(1)
+    else:
+        window = Pagico()
+        client = PagicoClient(session_bus, window)
+        client.run()
