@@ -1,0 +1,140 @@
+#!/usr/bin/python
+
+import gettext
+
+import gtk
+import webkit
+
+gettext.install('pagico', unicode=True)
+
+ui_info = '''
+<ui>
+  <menubar name='MenuBar'>
+      <menu action='FileMenu'>
+          <menu action='NewMenu'>
+              <menuitem action='NewTaskItem'/>
+              <separator/>
+              <menuitem action='NewProjectItem'/>
+              <menuitem action='ContactItem'/>
+          </menu>
+          <separator/>
+          <menuitem action='DashboardItem'/>
+          <separator/>
+          <menuitem action='InboxItem'/>
+          <menuitem action='ProjectsItem'/>
+          <menuitem action='ContactsItem'/>
+          <menuitem action='WorkspaceItem'/>
+          <separator/>
+          <menuitem action='LockDatabaseItem'/>
+          <menuitem action='CreateNewDatabaseItem'/>
+          <separator/>
+          <menuitem action='QuitPagicoItem'/>
+          <menuitem action='CloseDatabaseItem'/>
+      </menu>
+      <menu action='EditMenu'>
+          <menuitem action='CutItem'/>
+          <menuitem action='CopyItem'/>
+          <menuitem action='PasteItem'/>
+          <separator/>
+          <menuitem action='SnapbackItem'/>
+          <menuitem action='PrintItem'/>
+      </menu>
+      <menu action='ToolsMenu'>
+          <menuitem action='ProgramPreferencesItem'/>
+          <menuitem action='DatabasePreferencesItem'/>
+      </menu>
+      <menu action='HelpMenu'>
+          <menuitem action='UserManualItem'/>
+          <menuitem action='OnlineHelpItem'/>
+          <separator/>
+          <menuitem action='WebsiteItem'/>
+          <menuitem action='CheckupdateItem'/>
+          <menuitem action='AboutItem'/>
+      </menu>
+  </menubar>
+</ui>
+'''
+
+class Pagico(gtk.Window):
+
+    def __init__(self):
+        gtk.Window.__init__(self)
+
+        self.set_title('Pagico')
+        self.set_size_request(1024, 600)
+        vbox = gtk.VBox(False, 0)
+        self.add(vbox)
+
+        merge = gtk.UIManager()
+        self.set_data("ui-manager", merge)
+        merge.insert_action_group(self._create_action_group(), 0)
+        self.add_accel_group(merge.get_accel_group())
+
+        try:
+            mergeid = merge.add_ui_from_string(ui_info)
+        except gobject.GError, msg:
+            print "building menus failed: %s" % msg
+
+        bar = merge.get_widget("/MenuBar")
+        bar.show() 
+        vbox.pack_start(bar, False, False, 0)
+
+        self.connect('destroy', lambda f: gtk.main_quit())
+
+        self.show_all()
+
+    def activate_action(self):
+        pass
+
+    def _create_action_group(self):
+        # GtkActionEntry
+        entries = (
+            ("FileMenu", None, _("_File")),
+            ("NewMenu", None, _("_New")),
+            ("NewTaskItem", None, _("Task"), "<control>T",
+             None, self.activate_action),
+            ("NewProjectItem", None, _("Project"), "<control>N",
+             None, self.activate_action),
+            ('NewContactProfileItem', None, _('Contact Profile'),
+             '<control>M', None, self.activate_action),
+            ('DashboardItem', None, _('Dashboard'),
+             '<control>1', None, self.activate_action),
+            ('InboxItem', None, _('Inbox'),
+             '<control>2', None, self.activate_action),
+            ('ProjectsItem', None, _('Projects'),
+             '<control>3', None, self.activate_action),
+            ('ContactsItem', None, _('Contacts'),
+             '<control>4', None, self.activate_action),
+            ('WorkspaceItem', None, _('Workspace'),
+             '<control>5', None, self.activate_action),
+            ('LockDatabaseItem', None, _('Lock Database'),
+             '<control>L', None, self.activate_action),
+            ('CloseDatabaseItem', None, _('Close Database'),
+             '<shift><control>W', None, self.activate_action),
+            ('CreateNewDatabaseItem', None, _('Create New Database'),
+             '<shift><control>N', None, self.activate_action),
+            ('EditMenu', None, _('_Edit')),
+            ('CutItem', None, _('Cu_t'),
+             '<control>X', None, self.activate_action),
+            ('CopyItem', None, _('_Copy'),
+             '<control>C', None, self.activate_action),
+            ('PasteItem', None, _('_Paste'),
+             '<control>V', None, self.activate_action),
+            ('SnapbackItem', None, _('_Snapback'),
+             '<control>left', None, self.activate_action),
+            ('PrintItem', None, _('Print'),
+             None, None, self.activate_action),
+          )
+
+        # Create the menubar and toolbar
+        action_group = gtk.ActionGroup("AppWindowActions")
+        action_group.add_actions(entries)
+
+        return action_group
+
+    def run(self):
+        gtk.main()
+
+
+if __name__ == '__main__':
+    Pagico().run()
