@@ -184,6 +184,18 @@ class PagicoClient(dbus.service.Object):
     def show_window(self):
         self.window.present()
 
+    @dbus.service.method(dbus_interface='com.pagico.clienty')
+    def opendb(self):
+        print 'try to open db'
+
+    @dbus.service.method(dbus_interface='com.pagico.clienty')
+    def createdb(self):
+        print 'try to create db'
+
+    @dbus.service.method(dbus_interface='com.pagico.clienty')
+    def launch(self, path):
+        print 'try to launch path', path
+
 
 if __name__ == '__main__':
     session_bus = dbus.SessionBus()
