@@ -74,9 +74,15 @@ class WebView(webkit.WebView):
 
 
 class Pagico(gtk.Window):
+    TARGET = [
+        ('STRING', 0, 0),
+        ('text/plain', 0, 0),
+    ]
+
     CONFIG_PATH = os.path.join(glib.get_user_config_dir(), 'pagico')
     if not os.path.exists(CONFIG_PATH):
         os.makedirs(CONFIG_PATH)
+
 
     def __init__(self):
         gtk.Window.__init__(self)
@@ -108,6 +114,10 @@ class Pagico(gtk.Window):
         vbox.pack_start(bar, False, False, 0)
 
         self.webview = WebView()
+        self.webview.drag_dest_set(gtk.DEST_DEFAULT_ALL, self.TARGET[:-1],
+                                   gtk.gdk.ACTION_COPY | gtk.gdk.ACTION_MOVE | gtk.gdk.ACTION_LINK)
+        self.webview.connect('drag-data-received', self.on_drag_data_received)
+
         vbox.pack_start(self.webview, True, True, 0)
 
         self.webview.connect('notify::load-status', self.on_load_status_changed)
@@ -117,6 +127,9 @@ class Pagico(gtk.Window):
         self.webview.load_uri('http://127.0.0.1:1200/?nopopup')
 
         self.show_all()
+
+    def on_drag_data_received(self, widget, drag_context, x, y, selection_data, info, timestamp):
+        print drag_context, selection_data, info, timestamp
 
     def catchall_signal_handler(self, *args, **kwargs):
         print ("Caught signal (in catchall handler) "
