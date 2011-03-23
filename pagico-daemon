@@ -21,7 +21,7 @@ class Pagico(dbus.service.Object):
 
     @dbus.service.method(INTERFACE,
                          in_signature='', out_signature='')
-    def unlink_config(self):
+    def unload_config(self):
         pagico_dir = '/opt/pagico/httpd'
         config_file = os.path.join(pagico_dir, 'abyss.conf')
         log_dir = os.path.join(pagico_dir, 'log')
@@ -31,7 +31,7 @@ class Pagico(dbus.service.Object):
 
     @dbus.service.method(INTERFACE,
                          in_signature='', out_signature='')
-    def Exit(self):
+    def exit(self):
         mainloop.quit()
 
 if __name__ == '__main__':
@@ -39,7 +39,7 @@ if __name__ == '__main__':
 
     system_bus = dbus.SystemBus()
     name = dbus.service.BusName(Pagico.INTERFACE, system_bus)
-    object = Pagico(system_bus, '/Pagico')
+    object = Pagico(system_bus, '/com/pagico/daemon')
 
     mainloop = gobject.MainLoop()
     mainloop.run()

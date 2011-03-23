@@ -2,6 +2,7 @@
 
 import os
 import sys
+import shutil
 import gettext
 
 import gtk
@@ -87,6 +88,9 @@ class Pagico(gtk.Window):
     def __init__(self):
         gtk.Window.__init__(self)
 
+        self.init_daemon()
+        self.load_config()
+
         self.set_title('Pagico')
         self.set_size_request(1024, 600)
         vbox = gtk.VBox(False, 0)
@@ -122,11 +126,43 @@ class Pagico(gtk.Window):
 
         self.webview.connect('notify::load-status', self.on_load_status_changed)
         self.webview.connect('notify::title', self.on_title_changed)
-        self.connect('destroy', lambda f: gtk.main_quit())
+        self.connect('destroy', self.on_destroy)
 
         self.webview.load_uri('http://127.0.0.1:1200/?nopopup')
 
         self.show_all()
+
+    def on_destroy(self, widget):
+        self.unload_config()
+        self.quit_daemon()
+        gtk.main_quit()
+
+    def init_daemon(self):
+        try:
+            systembus = dbus.SystemBus()
+            self.daemon = systembus.get_object('com.pagico.daemon', '/com/pagico/daemon')
+        except Exception, e:
+            self.daemon = None
+
+    def load_config(self):
+        abyss_config_path = os.path.join(self.CONFIG_PATH, 'abyss.conf')
+        abyss_log_path = os.path.join(self.CONFIG_PATH, 'log')
+
+        if not os.path.exists(abyss_config_path):
+            shutil.copy('/opt/pagico/CodeX/extras/httpd_linux.txt', abyss_config_path)
+        if not os.path.exists(abyss_log_path):
+            os.makedirs(abyss_log_path)
+
+        method = self.daemon.get_dbus_method('load_config', dbus_interface='com.pagico.daemon')
+        method(self.CONFIG_PATH)
+
+    def unload_config(self):
+        method = self.daemon.get_dbus_method('unload_config', dbus_interface='com.pagico.daemon')
+        method()
+
+    def quit_daemon(self):
+        method = self.daemon.get_dbus_method('exit', dbus_interface='com.pagico.daemon')
+        method()
 
     def on_drag_data_received(self, widget, drag_context, x, y, selection_data, info, timestamp):
         print drag_context, selection_data, info, timestamp
@@ -268,7 +304,28 @@ class PagicoClient(dbus.service.Object):
         print 'try to launch path', path
 
 
+def show_splash():
+    win = gtk.Window(gtk.WINDOW_POPUP)
+    win.set_position(gtk.WIN_POS_CENTER)
+
+    vbox = gtk.VBox(False, 0)
+    image = gtk.Image()
+    image.set_from_file('/opt/pagico/splash.png')
+
+    vbox.pack_start(image)
+    win.add(vbox)
+
+    win.show_all()
+
+    while gtk.events_pending():
+        gtk.main_iteration()
+
+    win.destroy()
+
+
 if __name__ == '__main__':
+    show_splash()
+
     session_bus = dbus.SessionBus()
 
     if session_bus.request_name('com.pagico.clienty') != \
