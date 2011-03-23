@@ -280,6 +280,15 @@ class Pagico(gtk.Window):
              '<control>left', None, self.activate_action),
             ('PrintItem', None, _('Print'),
              None, None, self.activate_action),
+            ('ToolsMenu', None, _('_Tools')),
+            ('ProgramPreferencesItem', None, _('Program Preferences')),
+            ('DatabasePreferencesItem', None, _('Database Preferences')),
+            ('HelpMenu', None, _('_Help')),
+            ('UserManualItem', None, _('_User Manual')),
+            ('OnlineHelpItem', None, _('_Online Interactive Help')),
+            ('WebsiteItem', None, _('Pagico _Website')),
+            ('CheckupdateItem', None, _('Check for U_pdate')),
+            ('AboutItem', None, _('_About ...')),
           )
 
         # Create the menubar and toolbar
