@@ -202,28 +202,29 @@ class Pagico(gtk.Window):
                                        action=gtk.FILE_CHOOSER_ACTION_CREATE_FOLDER,
                                        buttons=(gtk.STOCK_CANCEL, gtk.RESPONSE_REJECT,
                                                 gtk.STOCK_SAVE, gtk.RESPONSE_ACCEPT))
-        dialog.run()
+        response = dialog.run()
         filename = dialog.get_filename()
         dialog.destroy()
 
-        if not filename.endswith('.pgco'):
-            pgco_filename = filename + '.pgco'
-            if not os.path.exists(filename):
-                os.unlink(filename)
-                os.mkdir(pgco_filename)
+        if response =  gtk.RESPONSE_ACCEPT:
+            if not filename.endswith('.pgco'):
+                pgco_filename = filename + '.pgco'
+                if not os.path.exists(filename):
+                    os.unlink(filename)
+                    os.mkdir(pgco_filename)
+                else:
+                    pass
             else:
-                pass
-        else:
-            if not os.path.exists(filename):
-                os.mkdir(filename)
-            else:
-                pass
+                if not os.path.exists(filename):
+                    os.mkdir(filename)
+                else:
+                    pass
 
-        f = open(os.path.join(self.CONFIG_PATH, 'DB_to_create'), 'w')
-        f.write(filename)
-        f.close()
+            f = open(os.path.join(self.CONFIG_PATH, 'DB_to_create'), 'w')
+            f.write(filename)
+            f.close()
 
-        self.webview.load_uri('http://127.0.0.1:1200/start/loader.php')
+            self.webview.load_uri('http://127.0.0.1:1200/start/loader.php')
 
     def open_database(self):
         dialog = gtk.FileChooserDialog(title=_('Open database'),
@@ -231,15 +232,16 @@ class Pagico(gtk.Window):
                                        action=gtk.FILE_CHOOSER_ACTION_SELECT_FOLDER,
                                        buttons=(gtk.STOCK_CANCEL, gtk.RESPONSE_REJECT,
                                                 gtk.STOCK_OPEN, gtk.RESPONSE_ACCEPT))
-        dialog.run()
+        response = dialog.run()
         filename = dialog.get_filename()
         dialog.destroy()
 
-        f = open(os.path.join(self.CONFIG_PATH, 'DB_to_load'), 'w')
-        f.write(filename)
-        f.close()
+        if response = gtk.RESPONSE_ACCEPT:
+            f = open(os.path.join(self.CONFIG_PATH, 'DB_to_load'), 'w')
+            f.write(filename)
+            f.close()
 
-        self.webview.load_uri('http://127.0.0.1:1200/start/loader.php')
+            self.webview.load_uri('http://127.0.0.1:1200/start/loader.php')
 
     def _create_action_group(self):
         entries = (
