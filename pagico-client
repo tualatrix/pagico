@@ -206,7 +206,7 @@ class Pagico(gtk.Window):
         filename = dialog.get_filename()
         dialog.destroy()
 
-        if response =  gtk.RESPONSE_ACCEPT:
+        if response ==  gtk.RESPONSE_ACCEPT:
             if not filename.endswith('.pgco'):
                 pgco_filename = filename + '.pgco'
                 if not os.path.exists(filename):
@@ -236,7 +236,7 @@ class Pagico(gtk.Window):
         filename = dialog.get_filename()
         dialog.destroy()
 
-        if response = gtk.RESPONSE_ACCEPT:
+        if response == gtk.RESPONSE_ACCEPT:
             f = open(os.path.join(self.CONFIG_PATH, 'DB_to_load'), 'w')
             f.write(filename)
             f.close()
