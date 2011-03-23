@@ -2,8 +2,10 @@
 
 import os
 import sys
+import time
 import shutil
 import gettext
+import subprocess
 
 import gtk
 import glib
@@ -90,6 +92,7 @@ class Pagico(gtk.Window):
 
         self.init_daemon()
         self.load_config()
+        self.start_abyssws()
 
         self.set_title('Pagico')
         self.set_size_request(1024, 600)
@@ -133,6 +136,7 @@ class Pagico(gtk.Window):
         self.show_all()
 
     def on_destroy(self, widget):
+        self.end_abyssws()
         self.unload_config()
         self.quit_daemon()
         gtk.main_quit()
@@ -155,6 +159,14 @@ class Pagico(gtk.Window):
 
         method = self.daemon.get_dbus_method('load_config', dbus_interface='com.pagico.daemon')
         method(self.CONFIG_PATH)
+
+    def start_abyssws(self):
+        subprocess.Popen('/opt/pagico/httpd/abyssws')
+        time.sleep(2)
+
+    def end_abyssws(self):
+        os.system('killall -KILL abyssws')
+        os.system('killall -KILL php-cgi')
 
     def unload_config(self):
         method = self.daemon.get_dbus_method('unload_config', dbus_interface='com.pagico.daemon')
