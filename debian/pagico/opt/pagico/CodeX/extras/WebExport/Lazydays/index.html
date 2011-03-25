@@ -1,0 +1,716 @@
+<!--
+ ____________________________________________________________
+|                                                            |
+|    DESIGN + Pat Heard { http://fullahead.org }             |
+|      DATE + 2006.03.19                                     |
+| COPYRIGHT + Free use if this notice is left in place       |
+|____________________________________________________________|
+
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-AU">
+
+<head>
+
+  <title><!--%TITLE%--></title>
+
+  <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+  <meta name="author" content="fullahead.org" />
+  <meta name="keywords" content="Open Web Design, OWD, Free Web Template, Lazy Days, Fullahead" />
+  <meta name="description" content="A free web template designed by Fullahead.org and hosted on OpenWebDesign.org" />
+  <meta name="robots" content="index, follow, noarchive" />
+  <meta name="googlebot" content="noarchive" />
+
+<style>
+/**************************************************************
+   AUTHOR:  Pat Heard (fullahead.org)
+   DATE:    2006.03.19
+   PURPOSE: Styles the html elements
+ **************************************************************/
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  font: 400 0.8em verdana, arial, sans-serif;
+  line-height: 170%;
+
+  background: #666 url(.system/images/bg/header.jpg) repeat-x top left;
+  color: #EEE;
+}
+
+h1 {   
+  clear: both;
+  font: 700 1.6em "Lucida Grande", "trebuchet ms", serif;
+  color: #FFF;
+}
+
+h2 {
+  font: 400 1.3em "trebuchet ms", serif;
+  color: #9FF3FF;
+}
+
+
+.DueDate
+{
+	margin-left:15px;
+	font-weight:bold;
+}
+
+h2 a {
+  color: #29E3FF;
+}
+
+h2 a:hover {
+  color: #FFF;
+}
+
+h3 {
+  font: 400 1.3em "trebuchet ms", serif;
+  color: #F8D766;
+}
+
+h4 {
+  font: 700 1.2em "trebuchet ms", serif;
+  color: #F39F01;
+}
+
+h5 {
+  font: 700 1.1em "trebuchet ms", serif;
+  color: #F17400;
+}
+
+h6 {
+  font: 700 1em "trebuchet ms", serif;
+  color: #FF4B33;
+}
+
+
+h1, h2, h3, h4, h5, h6, p, dl {
+  margin: 0;
+  padding: 10px 15px;
+}
+
+/* Done so the leftmost column aligns properly with the header.
+   If the leftmost column has class gradient applied to it, 
+   this class isn't required. */
+.leftColumn h1,
+.leftColumn h2, 
+.leftColumn h3,
+.leftColumn h4,
+.leftColumn h5,
+.leftColumn h6,
+.leftColumn p,
+.leftColumn dl {
+  padding-left: 0;
+}
+
+a {
+  color: #8BE6FA;
+}
+
+/* Uncomment this if you would like a visited link style 
+a:visited {
+  text-decoration: line-through;
+} */
+
+a:hover {
+  color: #FFF;
+}
+
+b {
+  color: #FFF;
+}
+
+ol, ul {
+  margin: 10px 30px;
+  padding: 0 30px;
+}
+
+ol {
+  color: #FC0;
+}
+
+ol span {
+  color: #EEE;
+}
+
+ul {
+  list-style-image: url(.system/images/bg/bullet.gif);
+}
+
+del {
+  color: #AAA;
+}
+
+code {
+  margin: 10px 15px;
+  padding: 10px;
+  display: block;
+  overflow: auto;
+  
+  font: 400 1em courier, monospace;
+  line-height: 120%;
+  white-space: pre;
+  
+  background: #444;
+}
+
+.leftColumn code {
+  margin-left: 0;
+}
+
+acronym {
+  cursor: help;
+  border-bottom: 1px solid #777;
+}
+
+dt {
+  font-weight: bold;
+  color: #FFB323;
+}
+
+dd {
+  margin-left: 0;
+  padding-left: 45px; 
+}
+
+
+
+
+/**************************************************************
+   Form Elements
+ **************************************************************/
+
+label {
+  display: block;
+}
+
+input,
+textarea,
+select {
+  padding: 2px;
+  font: 400 1em verdana, sans-serif;
+  color: #444;
+  background: #EEE;
+  border: 1px solid #444;
+}
+
+input:focus,
+input:hover,
+textarea:focus,
+textarea:hover,
+select:focus,
+select:hover {
+  color: #000;
+  background: #E4F7FA;
+  border: 1px solid #00DFFF;
+}
+
+input.button {
+  padding: 2px 5px;
+
+  font: 400 1.1em "trebuchet ms", serif;
+
+  color: #555;
+  background: #9FF3FF;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #FFF #00DFFF #00DFFF #FFF;
+}
+
+
+
+
+
+/**************************************************************
+   Blockquote and included icons
+ **************************************************************/
+
+blockquote {
+  margin: 10px 15px;
+  padding-left: 27px;
+  
+  background-color: #444;  
+  background-image: url(.system/images/icons/quote.gif);
+  background-repeat: no-repeat;
+  background-position: 5px 50%;  
+}
+
+blockquote.exclamation {
+  background-image: url(.system/images/icons/exclamation.gif);
+}
+
+blockquote.stop {
+  background-image: url(.system/images/icons/stop.gif);
+}
+
+blockquote.go {
+  background-image: url(.system/images/icons/go.gif);
+}
+
+
+
+
+
+/**************************************************************
+   Images
+ **************************************************************/
+
+img.floatRight {
+  margin: 5px 0px 10px 15px;  
+}
+
+img.floatLeft {
+  margin: 5px 15px 10px 0px;
+}
+
+a img {  
+  border: 2px solid #8BE6FA;
+}
+
+a:hover img {  
+  /* Fixes IE bug - IE doesn't correctly apply the style on a:hover so need to mask it */
+  border: 2px solid #FFF !important;
+  border: 2px solid #8BE6FA;
+}
+
+
+/**************************************************************
+   AUTHOR:  Pat Heard (fullahead.org)
+   DATE:    2006.03.19
+   PURPOSE: Controls the layout of the site and styles
+            the menus
+ **************************************************************/
+
+
+
+/**************************************************************
+   #content: Sets the width of the site.  Make changes here
+             to convert to a fixed width site.
+ **************************************************************/
+
+#content {  
+  height: 100%;
+  min-height: 100%;
+
+  text-align: left;
+}
+
+#content,
+#width {
+  /* max-width hack for IE since it doesn't understand the valid css property */
+  width: expression(document.body.clientWidth > 1000 ? "1000px" : "94%");  
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#content[id],
+#width[id] {
+  width: 94%;
+  height: auto;
+}
+
+
+
+
+/**************************************************************
+   #header: Holds the site title and header images
+ **************************************************************/
+
+#header {
+  position: relative;
+  height: 193px;
+}
+
+/* Holds the site title and subtitle */
+#header #title {
+  position: absolute;
+  z-index: 3;
+  top: 10px;
+  left: 130px;
+
+  padding: 5px;
+  text-align: right;
+}
+
+#header h1 {
+  margin: 0;
+  padding: 0;
+
+  font: 700 4em "trebuchet ms", serif;
+  letter-spacing: -3px;
+  text-transform: lowercase;
+  color: #FFF;
+}
+
+#header h2 {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+
+  margin: 0;
+  padding: 0;
+
+  font: 700 1em "trebuchet ms", serif;
+  text-transform: lowercase;
+  color: #00F0EC;
+}
+
+
+/* Sets where the header images will go */
+#header img.left {
+  position: absolute;
+  z-index: 1;
+
+  top: 0;
+  left: 0;
+}
+
+#header img.right {
+  position: absolute;
+  z-index: 0;
+
+  top: 0;
+  right: 0;
+}
+
+#header img.balloons {
+  position: absolute;
+  z-index: 2;
+
+  top: 70px;
+  right: 400px;
+}
+
+
+
+/**************************************************************
+   #mainMenu: The top level site menu
+ **************************************************************/
+
+#mainMenu { 
+  float: left;
+  width: 100%;
+  clear: both;  
+}
+
+#mainMenu ul {
+  margin: 0;
+  padding: 0;
+}
+
+#mainMenu li {
+  display: inline;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#mainMenu li a {
+  float: left;
+  margin: 0 2px;
+  padding: 5px 0.5em;
+
+  font: 400 1.6em "trebuchet ms", serif;
+  text-decoration: none;
+  text-transform: lowercase;
+  color: #FFF;
+}
+
+#mainMenu li a:hover,
+#mainMenu li a.here {
+  color: #65EBFF;
+  border-top: 5px solid #000;
+}
+
+#mainMenu li a.last {
+  margin-right: 0;
+}
+
+
+
+
+/**************************************************************
+   .sideMenu: The side bar menu
+ **************************************************************/
+
+ul.sideMenu {
+  margin: 0;
+  padding: 0;
+}
+
+.sideMenu li {
+  display: inline;
+  
+  /* Needed since IE fails when you give it list-style: none; */  
+  list-style-image: url(.system/foo.gif);
+  font: 400 1.3em "trebuchet ms", serif;
+}
+
+.sideMenu li a {
+  display: block;
+  margin: 0.2em 0;
+  padding: 3px 5px;    
+  
+  text-decoration: none;
+  color: #FFF;
+} 
+
+.sideMenu li a:hover {
+  color: #65EBFF;
+  background: #5F5F5F;
+}
+
+/* Active menu item */
+.sideMenu li.here {
+  display: block;  
+  padding: 5px;
+  color: #65EBFF;
+  background: #555;
+}
+
+/* Submenu of active menu item */
+.sideMenu li.here ul {
+  margin: 0;
+  padding: 0;
+}
+
+.sideMenu li.here ul li a {
+  padding-left: 35px;
+  font: 400 0.55em verdana, arial, sans-serif; 
+  color: #FFF;  
+  background: url(.system/images/bg/bullet.gif) no-repeat 10px 0px;
+}
+
+.sideMenu li.here ul li a:hover {
+  color: #9FF3FF;
+  background: #5F5F5F url(.system/images/bg/bullet.gif) no-repeat 10px 0px;
+}
+
+
+
+/**************************************************************
+   #page: Holds the main page content.
+ **************************************************************/
+
+#page {
+  float: left;
+  width: 100%;
+  clear: both;
+  
+  padding-bottom: 4em;
+}
+
+
+
+
+/**************************************************************
+   #footer: The page footer - will stick to the bottom if not
+            enough content.
+ **************************************************************/
+
+#footer {
+  float: left;
+  width: 100%;
+  clear: both;
+  
+  margin-top: -3.8em;
+  background: #000 url(.system/images/bg/footer.jpg) repeat-x top left;
+}
+
+/* Sets the width of the footer content */
+#footer #width {
+  position: relative;
+  z-index: 3;
+  font-size: 0.85em;
+  padding-top: 27px;
+}
+
+
+
+/**************************************************************
+   Width classes used by the site columns
+ **************************************************************/
+
+.fullcolumn {
+  float: left;
+  width: 100%;
+}
+
+.halfcolumn {
+  float: left;
+  width: 49.7%;
+}
+
+
+
+.halfcolumn h2 {
+	padding:0;
+	margin:0;
+}
+
+.halfcolumn p {
+	padding:0;
+	margin:0;
+	line-height:15px;
+}
+
+/**************************************************************
+   Alignment classes
+ **************************************************************/
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/**************************************************************
+   Generic display classes
+ **************************************************************/
+
+.clear {
+  clear: both;
+}
+
+.block {
+  display: block;
+}
+
+.small {
+  font-size: 0.8em;
+}
+
+.green {
+  color: #A1FF45;
+}
+
+.red {
+  color: #EA1B00;
+}
+
+.grey {
+  color: #666;
+}
+
+.grey a {
+  color: #999;
+}
+
+.grey a:hover {
+  color: #EEE;
+}
+
+.gradient {
+  margin-bottom: 2em;
+  background: #555 url(.system/images/bg/gradient.jpg) repeat-x bottom left; 
+}
+
+.listTable {
+	float:left;
+	width:100%;
+	margin:5px 0 10px 0;
+}
+
+.listItem {
+	color:#fff;
+	padding:5px 0 5px 0;
+}
+
+.listItem_DueDate {
+	padding:5px 0 5px 0;
+	color:#ccc;
+	text-align:center;
+}
+
+.listItem_StartDate {
+	padding:5px 0 5px 0;
+	color:#ccc;
+	background:url(.system/img/shades/grey.png);
+	text-align:center;
+}
+
+.listItem_Desc {
+	line-height:20px;
+	color:#ccc;
+	border-bottom:1px solid #777;
+}
+
+.listItem_Status {
+	padding:5px 0 5px 0;
+	text-align:center;
+}
+</style>
+
+</head>
+
+
+<body>
+
+<!-- CONTENT: Holds all site content except for the footer.  This is what causes the footer to stick to the bottom -->
+<div id="content">
+
+
+
+  <!-- HEADER: Holds title, subtitle and header images -->
+  <div id="header">
+
+    <div id="title">
+      <h1><!--%TITLE%--></h1>
+      <h2></h2>
+    </div>
+
+    <img src=".system/images/bg/balloons.gif" alt="balloons" class="balloons" />
+    <img src=".system/images/bg/header_left.jpg" alt="left slice" class="left" />
+    <img src=".system/images/bg/header_right.jpg" alt="right slice" class="right" />
+
+  </div>
+
+  <!-- PAGE CONTENT BEGINS: This is where you would define the columns (number, width and alignment) -->
+  <div id="page">
+
+    <div class="width100 floatLeft">
+
+      <div class="gradient">
+		<!--%MAINCONTENT%-->
+      </div>
+
+    </div>
+
+  </div>
+
+
+</div>
+
+
+<!-- FOOTER: Site footer for links, copyright, etc. -->
+<div id="footer">
+
+  <div id="width">
+    <span class="floatLeft">
+		<!--%AUTHOR%-->
+    </span>
+
+    <span class="floatRight">
+		<!--%PAGEDATE%-->
+    </span>
+  </div>
+
+</div>
+
+</body>
+
+</html>

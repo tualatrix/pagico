@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<server>
+		<stats>
+			<total>
+				26
+			</total>
+			<error>
+				5
+			</error>
+			<html>
+				13
+			</html>
+			<image>
+				10
+			</image>
+			<notmodified>
+				1
+			</notmodified>
+			<bytes>
+				377087
+			</bytes>
+			<uptime>
+				2818
+			</uptime>
+			<since>
+				Tue, 04 Nov 2008 03:55:14 GMT
+			</since>
+		</stats>
+		<host>
+			<id>
+				1
+			</id>
+			<stats>
+				<total>
+					26
+				</total>
+				<error>
+					5
+				</error>
+				<html>
+					13
+				</html>
+				<image>
+					10
+				</image>
+				<notmodified>
+					1
+				</notmodified>
+				<bytes>
+					377087
+				</bytes>
+				<uptime>
+					2818
+				</uptime>
+				<since>
+					Tue, 04 Nov 2008 03:55:14 GMT
+				</since>
+			</stats>
+		</host>
+	</server>
+</root>

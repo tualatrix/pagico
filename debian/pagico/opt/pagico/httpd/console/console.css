@@ -1,0 +1,152 @@
+BODY { margin: 5px; padding: 0; font-family: "trebuchet ms", Verdana, Arial, Helvetica, sans-serif; COLOR: #000; background-color: #999; font-size: small; min-width: 600px;}
+
+PRE {
+ white-space: pre-wrap;
+ white-space: -moz-pre-wrap !important;
+ white-space: -pre-wrap;
+ white-space: -o-pre-wrap;
+ word-wrap: break-word;
+ border: 1px dotted gray;
+ width: 95%;
+ padding: 1ex;
+}
+
+H2 { background: #FFF;
+			margin: 0;
+			border-bottom: 1px solid gray;
+			font-size: large;
+			vertical-align: middle;
+			padding: 5px;  }
+
+INPUT, SELECT, TEXTAREA { vertical-align: middle; font-family: "trebuchet ms", Verdana, Arial, Helvetica, sans-serif; font-size: small; COLOR: #000; padding: 0;}
+
+LABEL { cursor: pointer;  cursor: hand;  }
+
+A:link { COLOR: #005aad; TEXT-DECORATION: none }
+
+A:active { COLOR: #005aad; TEXT-DECORATION: none }
+	
+A:visited { COLOR: #005aad; TEXT-DECORATION: none }
+
+A:hover { COLOR: #dd6900; TEXT-DECORATION: underline; }
+
+#main { margin: 0; padding: 0; border: 1px solid #000; }
+
+#copyright { font-size: smaller; text-align: center; color: white; margin: 2px;}
+
+#copyright A { color: white; }
+
+.wicon dd { text-align: center; margin: 0; padding: 0; }
+
+.wicon_panel { }
+
+dl.wicon
+         {
+         width: 9em;
+	height: 6em;
+         text-align: center;
+         padding: 0;
+         float: %left%;
+         margin: 0.5em;
+         }
+
+.wicon dt img { border: 0; }      
+
+.wbutton { cursor: pointer;  cursor: hand; vertical-align: middle; font-weight: bold; font-size: small; color: black; padding: 0ex; padding-left: 1ex; padding-right: 1ex; border: 1px solid black; BACKGROUND-COLOR: #efefef; }
+
+.wbutton:hover { BACKGROUND-COLOR: #ddd; border: 1px dotted black; }
+
+.wtext {  vertical-align: middle; text-align: %left%; direction: ltr;}
+
+.wcheckbox { vertical-align: middle; }
+
+.wdropdown { vertical-align: middle; }
+
+.wform_location { width: 100%; padding: 5px; vertical-align: middle; margin: 0; border-bottom: 1px solid #808080; background: #eee; }
+
+.wform_showhide_help { width: 96%; text-align: right; margin-left: 2%; margin-right: 2%;  padding: 0px; padding-top: 5px; vertical-align: middle;  }
+
+.wform_help { padding: 5px;  FLOAT: right; WIDTH: 20%; margin-right: 2%; COLOR: #000; text-align: justify;  }
+.wform_help h3 { margin: 0; padding: 3px; color: #888 }
+
+.wform_form { margin: 0; padding: 1em; background-color: #999; clear: both; background: url(/rsrc/halflogo.gif) #FFF; background-repeat: no-repeat; background-position: bottom %right%; }
+
+.wform_form_w_help { width: 70%; padding: 5px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px; MARGIN-LEFT: 2%; COLOR: #000000; PADDING-TOP: 0px;
+}
+
+.wform_form_wo_help {  padding: 5px;  PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN-LEFT: 0; MARGIN-RIGHT: 0; WIDTH: 100%; COLOR: #000000; PADDING-TOP: 0px; }
+
+.wform_help_bar { padding-%left%: 0em; text-align: %right%; vertical-align: bottom; }
+
+.wform_frame {  width: 100%; }
+
+.wform_frame TD { padding: 5px; }
+
+.wform_frame TR { }
+
+.wform_error { background: #EEE; margin: 1em; color: red; border: 1px solid red; padding: 1em; text-align: center; vertical-align: middle; }
+
+.wform_error IMG { vertical-align: middle; padding: 0 1em; }
+
+.wform_info { background: #EEE; margin: 1em; color: black; border: 1px solid black; padding: 1em; text-align: center; vertical-align: middle; }
+
+.wform_info IMG { vertical-align: middle; padding: 0 1em; }
+
+.wform_item_name_error { width: 20%; color: red; text-align: %right%;  vertical-align: middle; font-size: small; }
+
+.wform_item_name { width: 20%; text-align: %right%;  vertical-align: middle; font-size: small; }
+
+.wform_item_content_error { width: 80%;   vertical-align: middle; font-size: small; }
+
+.wform_item_content { width: 80%; vertical-align: middle;  font-size: small; }
+
+.wform_item_single_error { margin: auto; color: red; font-size: small; }
+
+.wform_item_single { margin: auto; font-size: small; }
+
+.wform_buttons { clear: %left%; padding: 1ex; padding-%right%: 5%; text-align: %right%; }
+
+.wpath_item { float: %left%;  vertical-align: middle; width: 45%; height: 2em; white-space: nowrap; }
+.wpath_item IMG { vertical-align: middle; }
+.wpath_current_path { clear: %left%; border-bottom: 1px solid #888; margin-bottom: 1em;}
+.wpath_current_path_content { direction: ltr; }
+.wpath_other_paths { clear: %left%; border-bottom: 1px solid #888; margin-bottom: 1em; margin-top: 1em;}
+
+.wusergroup_frame { font-size: small; vertical-align: middle; border: 1px solid #eaedf4; overflow: auto; width: 100%; }
+.wusergroup_frame IMG { vertical-align: middle; margin: 0 0.5ex }
+.wusergroup_item_user { float: %left%; font-size: small; vertical-align: middle; height: 1.7em; width: 32%; white-space: nowrap; margin: 0.1ex 0.5ex;}
+.wusergroup_item_group { float: %left%; font-size: small; vertical-align: middle; font-weight: bold; height: 1.7em; width: 32%; white-space: nowrap; margin: 0.1ex 0.5ex; }
+.wusergroup_item_empty { font-size: small; vertical-align: middle; color: gray; margin-%left%: 1em; margin-top: 0.5ex; margin-bottom: 0.5ex;  }
+
+.wlist_frame { border: 1px solid #eaedf4; }
+.wlist_frame TD { padding: 1px; border: none;  }
+.wlist_secondary_frame { background-color: #1166C9; padding: 0px }
+.wlist_name { background-color: #1166C9; COLOR: #deeef3; margin: 0px 5px; padding: 3px }
+.wlist { font-size: small; }
+.wlist TD { border: 1px solid #eaedf4; padding: 3px;  }
+.wlist_item_odd { background-color: #eaedf4; COLOR: #000; text-align: %left%; direction: ltr; }
+.wlist_item_even { background-color: #d9e2ec;  COLOR: #000; text-align: %left%; direction: ltr;}
+.wlist_item_content_head { background-color: #1166C9; COLOR: #deeef3;  }
+.wlist_item_action_head { background-color: #1166C9; COLOR: #deeef3;  }
+.wlist_item_content { }
+.wlist_item_action { text-align: center; }
+.wlist_footer { background-color: #1166C9; COLOR: #deeef3;  text-align: %right%; padding: 2px 10px;  }
+.wlist_none {background-color: #eaedf4; COLOR: #000; text-align: center; height: 3em; width: 20em;  }
+
+.wquestion { text-align: center; }
+
+.wstatic { text-align: center; }
+
+.whtml { text-align: justify; font-size: smaller; }
+
+.wversion { font-weight: bold; margin-top: 1em; margin-bottom: 1em; text-align: justify; }
+
+.wform_multipane { border: 1px solid #eaedf4; margin: 5px; }
+
+.wform_pane_header { margin-left: 15%; font-style: oblique; font-weight: bold; }
+
+.wsslcert_none { color: red; }
+
+dl.wurllist { float: left; display: block; width: 45%; padding: 0em 1em 1em 1em;}
+.wurllist dd { margin: 0 0 2ex 2ex; }
+.wurllist dt { font-weight: bold; }

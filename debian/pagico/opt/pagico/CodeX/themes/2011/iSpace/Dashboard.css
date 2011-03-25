@@ -1,0 +1,465 @@
+#Dashboard_Tasks {
+	float:left;
+	
+	width:100%;
+	position:relative;
+	padding-top:20px;
+}
+
+#Dashboard_Tasks cite {
+	position:absolute;
+	left:5px;
+	top:5px;
+	z-index:0;
+	
+	margin:0;
+	padding:0;
+	text-transform:uppercase;
+	letter-spacing:-10px;
+	line-height:60px;
+	font-size:90px;
+	color:#d6dde5;
+	
+	cursor:default;
+
+}
+
+
+.Dashboard_TodayTag {
+	position:absolute;
+	left:5px;
+	top:0px;
+	float:left;
+	text-shadow:0 -1px 0 rgba(0,0,0,0.2);
+
+	/* color:rgba(214, 221, 229, 0.8); */
+}
+
+	.Dashboard_TodayTag div:first-child {
+		float:left;
+		text-transform:uppercase;
+		font-size:90px;
+		line-height:60px;
+		letter-spacing:0px;
+
+		cursor:default;
+		font-weight:normal;
+
+		color:rgba(255, 255, 255, 0.2);
+		
+	}
+	
+	.Dashboard_TodayTag div:last-child {
+		float:left;
+		clear:left;
+		font-size:25px;
+
+		cursor:default;
+		text-indent:6px;
+
+		
+
+		color:rgba(255, 255, 255, 0.3);
+	}
+
+
+
+.Today_TaskFrame_Indent {
+	float:left;
+	width:15%;
+	height:100px;
+}
+
+a.OSXButton:link, a.OSXButton:visited, a.OSXButton:hover {
+	
+	padding:0 9px 0 9px;
+	height:20px;
+	
+	line-height:17px;
+	text-align:center;
+	
+	font-weight:bold;
+	font-size:15px;
+	
+	border-top:1px solid #ccc;
+	border-left:1px solid #999;
+	border-right:1px solid #333;
+	border-bottom:1px solid #333;
+	
+	-webkit-border-radius:3px;
+	
+	background:#999;
+	
+	background: -webkit-gradient(
+	    linear,
+	    left top,
+	    left bottom,
+	    color-stop(0, rgb(167, 167, 167)),
+	    color-stop(1, rgb(134, 134, 134))
+	);
+	
+	color:#333;
+	text-decoration:none;
+	
+	cursor:default;
+	
+	text-shadow:0 1px 0 #bbb;
+	
+}
+
+a.OSXButton:active {
+	
+	background:#909090;
+	
+	background: -webkit-gradient(
+	    linear,
+	    left top,
+	    left bottom,
+	    color-stop(0, rgb(157, 157, 157)),
+	    color-stop(1, rgb(124, 124, 124))
+	);
+	
+
+}
+
+.Today_NewTaskBtn {
+	float:left;
+	clear:left;
+	
+	margin:5px 0 0 17px;
+	
+}
+
+
+
+.Today_TaskFrame {
+	float:left;
+	position:relative;
+	width:40%;
+	padding-left:5px;
+	margin:10px 0 5px 10px;
+	
+	border-left:1px solid #777;
+	
+	/* background:url(/img/2009/shades/white.png); */
+	background:rgba(85, 85, 85, 0.6);
+	
+	z-index:100;
+}
+
+	.Today_TaskFrame_EmptyIndicator {
+		float:left;
+		width:100%;
+		margin:0;
+		margin-top:50px;
+		text-align:center;
+		color:#aaa;
+		text-shadow:0 -1px 0 #111;
+	}
+
+
+.Today_TaskFrame h1 {
+	float:left;
+	width:100%;
+	margin:5px 0 10px 0;
+	padding:0;
+	color:#aaa;
+
+	text-shadow:0 -1px 0 #111;
+	
+	font-size:18px;
+	text-align:left;
+	
+	font-weight:normal;
+	
+	letter-spacing:-1px;
+	text-transform:uppercase;
+	
+}
+
+.Today_TaskFrame b {color:#a6adb5 !important;}
+
+.Today_TaskFrame_TaskList {
+	float:left;
+	width:100%;
+	margin:0;
+	min-height:150px;
+}
+
+.Today_TaskFrame_TaskList_hover {
+	/* background:url(/img/2009/shades/black.png); */
+	background:rbga(0,0,0, 0.05);
+}
+
+.Today_TaskFrame_ListItem {
+	float:left;
+	position:relative;
+	width:100%;
+	padding:0 0 9px 0;
+	margin:0;
+	/* background:url(/img/2009/shades/white.png); */
+	background:rgba(85, 85, 85, 0.6);
+	cursor:default;
+
+}
+
+	.Today_TaskFrame_ListItem .Today_TaskFrame_Controls, .Today_TaskFrame_ListItem .objectLink {
+		-webkit-transition: all 0.2s ease-in-out;
+		opacity:0;
+	}
+	.Today_TaskFrame_ListItem:hover .Today_TaskFrame_Controls, .Today_TaskFrame_ListItem:hover .objectLink {
+		opacity:1;
+	}
+
+	.Today_TaskFrame_ListItem_Caption {
+		float:left;
+		width:70%;
+		text-decoration:none;
+		font-size:13px;
+		color:#ccc;
+		margin:4px 0 0 0;
+	}
+	
+	.Today_TaskFrame_ListItem_Description {
+		float:left;
+		width:100%;
+		color:#aaa;
+		font-size:11px;
+		
+	}
+	
+	.Today_TaskFrame_ListItem_DragHandle {
+		position:absolute;
+		left:0px;
+		top:2px;
+		background:url(/img/2011/arrow_icons.png) -60px -180px no-repeat;
+		width:20px;
+		height:20px;
+		cursor:move;
+	}
+	
+	.Today_TaskFrame_ListItem_HideBtn {
+		position:absolute;
+		right:0px;
+		top:2px;
+		background:#666;
+		padding:0 8px 0 8px;
+		height:20px;
+		line-height:20px;
+		z-index:200;
+		-webkit-border-radius:4px;
+		color:#ccc;
+		font-size:11px;
+	}
+	.Today_TaskFrame_ListItem_HideBtn:hover {
+		background-color:#6f6f6f;
+	}
+	.Today_TaskFrame_ListItem_HideBtn:active {
+		background-color:#606060;
+	}
+	
+	
+	.Today_TaskFrame_ListItem_Hint {
+		position:absolute;
+		right:0px;
+		top:23px;
+		color:#ccc;
+		font-size:11px;
+		-webkit-border-radius:4px;
+		padding:0 8px 0 8px;
+		height:20px;
+		line-height:20px;
+		background:#666;
+	}
+	.Today_TaskFrame_ListItem_Hint:hover {
+		background-color:#6f6f6f;
+	}
+	.Today_TaskFrame_ListItem_Hint:active {
+		background-color:#606060;
+	}
+	
+	.Today_TaskFrame_ListItem_Date {
+		position:absolute;
+		right:0px;
+		top:5px;
+		color:#59f;
+		/* background:url(/img/2009/shades/white.png); */
+		background:rgba(85, 85, 85, 0.6);
+		padding-left:5px;
+		
+		text-shadow:0 -1px 0 #333;
+	}
+	
+
+
+.dashboard_AllTasks_GroupTitle {
+	float:left;
+	width:100%;
+	height:16px;
+	line-height:16px;
+	
+	padding:0;
+	margin:0;
+	
+	text-indent:10px;
+	
+	color:#ccc;
+	font-weight:bold;
+	font-size:11px;
+	text-shadow:0 -1px 0 #222;
+	
+	border-top:1px solid #333;
+	border-bottom:1px solid #333;
+	
+	text-transform:uppercase;
+	
+	background:#595959;
+	
+}
+
+.dashboard_TaskItem {
+	float:left;
+	width:100%;
+	position:relative;
+	padding:5px 0 5px 0;
+	
+	background:#404040;
+
+
+	border-bottom:1px solid rgba(0, 0, 0, 0.1);
+}
+
+	.dashboard_TaskItem_ThisWeek {
+		background:#464646;
+		border-bottom:1px solid rgba(0, 0, 0, 0.1);
+	}
+
+
+.dashboard_TaskItem_Title {
+	float:left;
+	width:70%;
+	height:25px;
+	line-height:25px;
+	text-decoration:none;
+	color:#ccc;
+	text-shadow:0 -1px 0 #222;
+	cursor:default;
+}
+
+.dashboard_TaskItem_Indent {
+	float:left;
+	width:20px;
+	height:24px;
+	display:block;
+	clear:left;
+}
+
+.dashboard_TaskItem_Desc {
+	position:absolute;
+	right:270px;
+	height:24px;
+	line-height:24px;
+	color:#555;
+}
+
+.dashboard_TaskItem_Date {
+	position:absolute;
+	float:left;
+	
+	right:5px;
+	height:24px;
+	line-height:24px;
+	width:260px;
+	
+	color:#aaa;
+	overflow:hidden;
+}
+
+.dashboard_TaskItem_StartDateSlot, .dashboard_TaskItem_DueDateSlot {
+	float:left;
+	display:block;
+	width:120px;
+	height:24px;
+	text-align:right;
+	color:#aaa;
+}
+
+.dashboard_TaskItem_DueDateSlot {text-align:left;}
+
+.dashboard_TaskItem_DateSep {
+	float:left;
+	display:block;
+	width:20px;
+	height:24px;
+	text-align:center;
+}
+
+a.objectLink:link, a.objectLink:visited {
+	display:block;
+	float:left;
+	position:relative;
+	height:14px;
+	margin-top:4px;
+	line-height:14px;
+	padding:0 20px 0 10px;
+	border:1px solid #333;
+	
+	font-size:11px;
+	-webkit-border-radius:7px;
+	text-decoration:none;
+	
+	color:#ccc;
+	
+	background: -webkit-gradient(
+	    linear,
+	    left top,
+	    left bottom,
+	    color-stop(0, rgb(80, 80, 80)),
+	    color-stop(1, rgb(70, 70, 70))
+	);
+	
+	overflow:hidden;
+	
+}
+
+a.objectLink:hover {
+	
+	background: -webkit-gradient(
+	    linear,
+	    left top,
+	    left bottom,
+	    color-stop(0, rgb(90, 90, 90)),
+	    color-stop(1, rgb(80, 80, 80))
+	);
+}
+
+a.objectLink:active {
+	background: -webkit-gradient(
+	    linear,
+	    left top,
+	    left bottom,
+	    color-stop(0, rgb(60, 60, 60)),
+	    color-stop(1, rgb(50, 50, 50))
+	);
+}
+
+.objectLink_Arrow {
+	right:4px;
+	top:0px;
+	width:14px;
+	height:14px;
+	position:absolute;
+	
+	background:url(/img/2008/controls/arrow_icons.png?1011) 0 -141px no-repeat;
+}
+
+.objectLink_Active {
+	font-weight:bold !important;
+	background: -webkit-gradient(
+	    linear,
+	    left top,
+	    left bottom,
+	    color-stop(0, rgb(255, 255, 255)),
+	    color-stop(1, rgb(250, 250, 250))
+	) !important;
+}

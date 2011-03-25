@@ -1,0 +1,986 @@
+/* Calendar Layouts */
+body
+{
+	font-size:12px;
+	font-family:"Lucida Grande", Tahoma, SimSun, Arial, sans-serif;
+}
+
+
+#CalendarLayout
+{
+	float:left;
+	clear:left;
+	width:700px;
+
+	margin:0 0 10px 25px !important;
+	margin:0 0 10px 15px;
+	
+	position:relative;
+}
+
+#CalendarLayout h1
+{
+	float:left;
+	position:relative;
+	
+	width:700px;
+
+	font-size:16px;
+
+	text-align:right;
+	margin:5px 0 5px 0 !important;
+	padding:0;
+
+	
+	color:#555;
+}
+
+#CalendarTitle
+{
+	float:right;
+	width:120px;
+
+	line-height:25px;
+	font-size:20px;
+	font-weight:bold;
+	text-align:center;
+	color:#333;
+	
+	background:#fff;
+	border:1px solid #eee;
+	
+	cursor:hand;
+	cursor:pointer;
+}
+
+a.CalendarArrow:link, a.CalendarArrow:visited
+{
+	float:right;
+	display:inline-block;
+	width:20px;
+	height:20px;
+	font-size:20px;
+	color:#ccc;
+	text-decoration:none;
+	font-family:Arial Black;
+	text-align:center;
+}
+
+a.CalendarArrow:hover
+{
+	color:#000;
+	background:#eee;
+}
+
+a.CalendarArrow:active
+{
+	color:#fff;
+	background:#666;
+}
+
+#CalendarIndicator
+{
+	position:absolute;
+	right:5px;
+	top:0px;
+	width:16px;
+	height:16px;
+	
+}
+
+.DayCaptions
+{
+	float:left;
+	display:block;
+	width:100px;
+	height:25px;
+	line-height:25px;
+	text-align:center;
+	border-bottom:1px solid #ccc;
+	margin-bottom:5px;
+	font-weight:bold;
+	font-size:11px;
+
+
+}
+
+.BlankDay
+{
+	float:left;
+	display:block;
+	width:100px;
+	height:90px;
+}
+
+.DayItem
+{
+	float:left;
+	display:block;
+	width:100px;
+	height:90px;
+
+	font-size:14px;
+	color:#888;
+	font-weight:bold;
+	
+	background:url(/img/iSpace/day.jpg) no-repeat left top;
+
+	overflow:hidden;
+	
+	cursor:pointer;
+	cursor:hand;
+}
+
+.HoverDay
+{
+	background:url(/img/iSpace/day_hover.jpg) no-repeat left top !important;
+	color:#111;
+}
+/*
+a.DayItem:active
+{
+	background:#eee;
+	color:#000;
+}
+*/
+.DayControl
+{
+	font-size:12px;
+	color:#888;
+	
+}
+
+.Day_Occupied
+{
+	color:#111 !important;
+	background:url(/img/iSpace/day_occupied.jpg) no-repeat left top !important;
+}
+
+.CiteItem
+{
+	float:left;
+	display:block;
+	width:100px;
+	height:60px;
+}
+
+.Today
+{
+	background:url(/img/iSpace/day_today.jpg) no-repeat left top !important;
+	color:#000 !important;
+}
+
+.Day_Event
+{	
+	float:left;
+	clear:left;
+	
+	display:inline-block;
+	
+	width:97px;
+	height:13px;
+	overflow:hidden;
+	font-size:11px;
+
+	font-weight:normal;
+	
+	list-style:none;
+
+	margin:0 0 0 1px;
+	padding:0 0 0 0;
+	
+}
+
+
+.DayNumber
+{
+	cursor:hand;
+	cursor:pointer;
+}
+sup
+{
+	font-size:10px;
+	color:#444;
+}
+
+
+.EventTime
+{
+	float:left;
+	display:inline-block;
+	
+	width:149px;
+	height:30px;
+	border-right:1px solid #aaa;
+	line-height:30px;
+
+	font-size:12px;
+	font-weight:bold;
+	
+	background:url(/img/iSpace/event_time_bg.jpg) repeat-x #eee;
+	
+	text-align:center;
+}
+
+.EventControl
+{
+	float:left;
+	display:block;
+	
+	width:695px !important;
+	width:700px;
+	height:20px;
+	
+	line-height:20px;
+	
+	padding-right:5px;
+	
+	text-align:right;
+	
+	background:#eee;
+	border-top:1px solid #ddd;
+}
+	
+#x_ErrorCode
+{
+	position:absolute;
+	left:10px;
+	top:30px;
+	font-size:14px;
+	font-weight:bold;
+	color:#c00;
+	width:200px;
+}
+
+#AdvancedForm
+{
+	float:right;
+	clear:both;
+	width:70%;
+	height:160px;
+	margin-top:0px;
+	margin-right:10px;
+}
+
+#AdvancedForm .Label
+{
+	float:left;
+	clear:left;
+	display:block;
+	width:100%;
+
+	line-height:14px;
+	font-size:14px;
+	color:#555;
+}
+
+#AdvancedForm .Input_Text
+{
+	float:left;
+	clear:left;
+	width:100%;
+	font-size:16px;
+	font-weight:bold;
+	color:#333;
+	margin-top:2px !important;
+	margin-top:0px;
+}
+
+a.EditableDueDate:link, a.EditableDueDate:visited
+{
+	text-decoration:none;
+	
+	border-bottom:1px dotted #acf;
+	line-height:20px;
+	color:#27c;
+}
+
+a.EditableDueDate:hover
+{
+	border-bottom:1px solid #acf;
+}
+
+.CalMoney
+{
+	position:absolute;
+	top:20px;
+	right:5px;
+	font-size:13px;
+	font-family:"Lucida Grande", "Tahoma", sans-serif;
+	font-weight:bold;
+}
+
+.Income
+{
+	color:#26a;
+}
+
+.Outcome
+{
+	color:#c00;
+}
+
+#MonthBudget
+{
+	font-family:"Lucida Grande", "Tahoma", sans-serif;
+	position:absolute;
+	right:0px;
+	bottom:0px;
+	line-height:20px;
+	font-size:12px;
+	font-weight:bold;
+	text-align:right;
+}
+
+.AddNewEvent
+{
+	position:absolute;
+	left:0px;
+	top:5px;
+	width:150px;
+	height:25px;
+	line-height:20px;
+	font-weight:bold;
+	font-size:11px;
+}
+
+#NewEvent_Window, .NewEvent_Dialog
+{
+	position:absolute;
+	float:left;
+	left:0px;
+	top:0px;
+	width:690px !important;
+	width:700px;
+	padding:5px;
+	background:#def;
+	z-index:3;
+}
+
+.NewEvent_Dialog
+{
+	z-index:5 !important;
+}
+
+.Dialog_Captions
+{
+	float:left;
+	font-size:14px;
+	color:#222;
+	font-weight:bold;
+	margin:20px 0 10px 20px;
+}
+
+.DialogButton
+{
+	float:right;
+	margin:20px 30px 0 0px;
+}
+
+
+
+.DialogButton_Cancel
+{
+	float:left;
+	margin:20px 0 0 20px;
+}
+
+.DialogButton_Default
+{
+	font-weight:bold;
+}
+
+.NewEvent_Dialog_Inner
+{
+	float:left;
+	position:relative;
+	width:688px;
+	height:145px !important;
+	height:150px;
+	border:1px solid #27c;
+	background:#f0f9ff url(/img/ProjectCenter/NewProject_bg.jpg) right bottom no-repeat;
+}
+
+#NewEvent_Window_Inner
+{
+	float:left;
+	position:relative;
+	width:688px;
+	height:225px !important;
+	height:230px;
+	border:1px solid #27c;
+	background:#f0f9ff url(/img/ProjectCenter/NewProject_bg.jpg) right bottom no-repeat;
+}
+
+	.WindowTitle
+	{
+		float:left;
+		clear:left;
+		margin:5px 0 0 5px;
+		font-size:14px;
+		line-height:20px;
+		padding:0 50px 0 10px;
+		border-bottom:2px solid #aaa;
+		color:#333;
+		text-align:left;
+	}
+	
+	.NewEvent_TitleInput
+	{
+		float:left;
+		clear:left;
+		font-size:14px;
+		font-weight:bold;
+		color:#444;
+		
+		width:400px;
+		
+		margin:5px 0 0 5px;
+	}
+	
+	.NewEvent_TextArea
+	{
+		float:left;
+		clear:left;
+		font-size:12px;
+		font-weight:normal;
+		color:#777;
+		
+		width:400px;
+		height:48px;
+		margin:5px 0 0 5px;
+	}
+	
+	.NewEvent_Hint
+	{
+		float:left;
+		clear:left;
+		display:block;
+		font-size:12px;
+		color:#777;
+		margin:3px 0 10px 5px;
+		font-weight:normal;
+	}
+	
+	.NewEvent_Button
+	{
+		float:left;
+		clear:left;
+		margin:10px 10px 0 5px;
+		width:120px;
+		height:25px;
+		line-height:22px;
+		font-weight:bold;
+		color:#333;
+	}
+	
+	.NewEvent_Controls
+	{
+		float:left;
+		clear:left;
+		line-height:37px !important;
+		line-height:45px;
+		font-size:12px;
+		font-weight:normal;
+	}
+	
+	.MainFrame
+	{
+		position:absolute;
+		width:420px;
+		float:left;
+		left:0px;
+		top:0px;
+	}
+	
+	.SideFrames
+	{
+		float:right;
+		clear:right;
+		position:relative;
+		margin:10px 10px 0 0;
+		width:230px !important;
+		width:240px;
+		padding:5px;
+		background:#f0f9ff;
+		border:1px solid #c2c7cc;
+		color:#888;
+		font-size:11px;
+		font-weight:bold;
+		text-align:left;
+	}
+	
+	a.ColorLabel:link, a.ColorLabel:visited
+	{
+		float:left;
+		display:block;
+		width:15px;
+		height:15px;
+		
+		line-height:1px;
+		
+		border:1px solid #eee;
+		margin:5px 10px 0 0;
+		text-decoration:none;
+		color:#fff;
+		text-align:center;
+		font-weight:bold;
+	}
+	
+	a.ColorLabel:hover
+	{
+		border:1px solid #000;
+	}
+	
+	a.ColorLabel_Text:link, a.ColorLabel_Text:visited
+	{
+		float:left;
+		display:block;
+		font-size:10px;
+		border:1px solid #fff;
+		width:15px;
+		height:15px;
+		line-height:15px;
+		text-decoration:none;
+		margin:5px 10px 0 0;
+
+		color:#555;
+		text-align:center;
+		font-weight:bold;
+	}
+	a.ColorLabel_Text:hover
+	{
+		background:#999;
+		color:#fff;
+	}
+	
+	.Label_1{background:#ff3441; color:#fff;}
+	
+	.Label_2{background:#f3cf29}
+	
+	.Label_3{background:#666; color:#fff;}
+	
+	.Label_4{background:#27c; color:#fff;}
+	
+	.Label_5{background:#89d127}
+	
+	.Label_6{background:#FF942A}
+	
+	.Label_7{background:#CC00FF; color:#fff;}
+	
+	.SelectedColor{border:1px solid #000 !important;}
+	
+	.EventColor
+	{
+
+		display:inline-block;
+		width:8px;
+		height:8px;
+		margin:0px 2px 0 0;
+		border:1px solid #555;
+	}
+	
+	#LabelName, #LabelName_webcal
+	{
+		margin-left:5px;
+		color:#666;
+		font-weight:bold;
+		font-size:11px;
+	}
+	
+	.SideSelection
+	{
+		position:absolute;
+		right:5px;
+		bottom:5px;
+	}
+	
+	.SideSelection_w
+	{
+		position:absolute;
+		right:5px;
+		bottom:5px;
+		
+		width:210px;
+	}
+	
+	
+#Day_Detail
+{
+	position:absolute;
+	float:left;
+	left:0px;
+	top:0px;
+	width:698px;
+
+	background:#fff;
+	border:1px solid #27c;
+	z-index:2;
+}
+
+	#DayCaption
+	{
+		float:left;
+		position:relative;
+		padding-right:20px;
+		width:676px !important;
+		width:694px;
+		height:80px;
+		background:#222 url(/img/iSpace/calendar_day_item.jpg) left top repeat-x;
+		color:#fff;
+		text-align:right;
+		font-size:30px;
+		line-height:80px;
+		font-weight:bold;
+		margin:1px 0 5px 1px;
+	}
+	
+	#wday
+	{
+		position:absolute;
+		top:25px;
+		right:20px;
+		font-size:12px;
+		font-weight:bold;
+		color:#ccc;
+	}
+	
+	.ReturnButton
+	{
+		position:absolute;
+		top:25px;
+		left:15px;
+		width:120px;
+		height:25px;
+		line-height:22px;
+		font-weight:bold;
+
+		font-size:11px;
+		color:#333;
+	}
+	
+	#Day_Detail h4
+	{
+		float:left;
+		margin:0 0 10px 10px !important;
+		margin:0 0 10px 5px;
+		padding:0 0 0 10px;
+		color:#444;
+		font-size:12px;
+		font-weight:bold;
+		border-bottom:1px solid #aaa;
+		
+		width:670px !important;
+		width:680px;
+	}
+	
+	.EventItem
+	{
+		float:left;
+		padding:5px 0 5px 0;
+
+		width:100%;
+		
+		border-bottom:1px dotted #ccc;
+		background:#fff;
+		position:relative;
+	}
+	
+	.EventItem_Index
+	{
+		float:left;
+		padding:5px 0 5px 0;
+
+		width:720px !important;
+		width:680px;
+		margin:0 0 0 0;
+		
+		border-bottom:1px dotted #ccc;
+
+		position:relative;
+		cursor:pointer;
+		cursor:hand;
+	}
+	
+	.EventItem_Alternative
+	{
+		background:#f5f5f5;
+	}
+	
+	#EventLoading
+	{
+		float:left;
+		width:670px;
+		height:430px;
+		background:#fff url(/img/App_GUI/Misc/indicator_lg.gif) center no-repeat;
+	}
+	
+	.DateTime
+	{
+		float:left;
+		width:80px;
+		font-size:11px;
+		color:#888;
+		font-weight:bold;
+		text-align:right;
+		margin:0 0 0 0;
+		line-height:20px;
+	}
+	
+	.EventTitle
+	{
+		float:right;
+		position:relative;
+		width:560px;
+		font-size:14px;
+		font-weight:bold;
+		color:#333;
+		cursor:text;
+	}
+
+		.EventTitle_Index
+		{
+			float:right;
+			position:relative;
+			width:560px;
+			font-size:14px;
+			font-weight:bold;
+			color:#333;
+		}
+	
+	.EventDesc
+	{
+		float:right;
+		width:560px;
+		font-size:12px;
+		color:#888;
+		cursor:text;
+	}
+		.EventDesc_Index
+		{
+			margin-left:15px;
+			font-size:11px;
+			color:#888;
+			font-weight:normal;
+		}
+	
+	.EventProperties
+	{
+		position:absolute;
+		right:0px;
+		top:0px;
+		float:right;
+	}
+	
+	.EventColorLabel
+	{
+		float:right;
+		display:block;
+		width:30px;
+		height:15px;
+		margin-right:5px;
+	}
+	.EventTextLabel
+	{
+		float:right;
+		line-height:15px;
+		color:#888;
+		font-weight:bold;
+		font-size:11px;
+		margin-right:5px;
+	}
+	#Events
+	{
+		float:left;
+		margin:0 0 0 0;
+		width:100%;
+		height:415px;
+
+		overflow:auto;
+		
+		background:#fff url(/img/iSpace/dayview_itemsbg.jpg) left bottom;
+	}
+		#Events_Index
+		{
+			float:left;
+			margin:0 0 0 20px;
+			width:670px;
+			
+			background:#fff;
+		}
+		
+		#Events_Index cite
+		{
+			font-size:11px !important;
+			font-style:normal;
+			font-weight:normal;
+			display:inline-block;
+			line-height:20px;
+			width:300px;
+			height:20px;
+			overflow:hidden;
+			cursor:hand;
+			cursor:pointer;
+		}
+	/*
+	a.AddNewEventLink:link, a.AddNewEventLink:visited
+	{
+		float:left;
+		margin:0 0 0 0;
+
+		padding:0 10px 0 10px;
+		background:#e5e5e5;
+		line-height:25px;
+		height:25px;
+		font-weight:bold;
+		color:#37c;
+		text-decoration:none;
+		z-index:3;
+		border:3px solid #fff;
+	}
+	a.AddNewEventLink:hover
+	{
+		background:#59f;
+		color:#fff;
+	}
+	
+	a.AddNewEventLink:active
+	{
+		background:#27c;
+	}
+	*/
+	a.EventTrashIcon:link, a.EventTrashIcon:visited
+	{
+		position:absolute;
+		top:2px;
+		left:82px;
+		width:20px;
+		height:20px;
+		background:url(/img/App_GUI/Misc/trash.gif) center no-repeat;
+		border:0px;
+	}
+	
+	a.EventTrashIcon:hover
+	{
+		border:1px solid #aaa;
+		background-color:#fff;
+	}
+	
+	a.EventEditLink:link, a.EventEditLink:visited
+	{
+		position:absolute;
+		top:2px;
+		left:107px;
+		
+		color:#444;
+		text-decoration:none;
+	}
+	
+	a.EventEditLink:hover
+	{
+		text-decoration:underline;
+	}
+	
+	a.EventPageLink:link, a.EventPageLink:visited
+	{
+		float:right;
+		width:540px !important;
+		width:560px;
+		padding-left:15px;
+		background:url(/img/iSpace/arrow.jpg) left center no-repeat;
+		color:#888;
+		margin:0 0 0 0;
+	}
+	a.EventPageLink:hover
+	{
+		background:url(/img/iSpace/arrow_hover.jpg) left center no-repeat;
+		color:#000;
+	}
+	
+	a.ColorLegend_Item:link, a.ColorLegend_Item:visited
+	{
+		float:left;
+		display:block;
+		padding:5px 20px 5px 10px;
+		margin:10px 0 0 10px;
+		
+		border:1px solid #ccc;
+		background:#fff;
+		
+		text-decoration:none;
+		
+		color:#aaa;
+	}
+	
+	a.ColorLegend_Item:hover
+	{
+		background:#f0f9ff;
+		border:1px solid #27c;
+		
+		color:#333;
+	}
+	
+	a.SelectedLegend:link, a.SelectedLegend:visited
+	{
+		float:left;
+		display:block;
+		padding:5px 20px 5px 10px;
+		margin:10px 0 0 10px;
+		
+		border:1px solid #000;
+		background:#888;
+		
+		color:#fff;
+		
+		text-decoration:none;
+	}
+	
+	a.SelectedLegend:hover
+	{
+		background:#666;
+	}
+	
+	.ColorLegend_Icon
+	{
+		float:left;
+		width:10px;
+		height:10px;
+		margin-top:1px;
+		display:block;
+		border:1px solid #fff;
+	}
+	
+	.ColorLegend_Title
+	{
+		float:left;
+		margin-left:10px;
+	}
+	
+	.h3_cite
+	{
+		color:#777;
+		width:700px;
+		font-size:11px;
+		float:left;
+		clear:left;
+		margin:10px 0 0 10px;
+	}
+	
+
+	.webcal
+	{
+		font-size:14px;
+		color:#444;
+		width:400px;
+	}
+	
+	a.HintLink:link, a.HintLink:visited
+	{
+		font-size:10px;
+		color:#777;
+		margin-left:25px;
+	}
+	a.HintLink:hover
+	{
+		color:#222;
+	}

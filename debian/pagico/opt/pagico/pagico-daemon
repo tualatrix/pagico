@@ -1,0 +1,45 @@
+#!/usr/bin/python
+
+import os
+import dbus
+import dbus.service
+import dbus.mainloop.glib
+import gobject
+
+class Pagico(dbus.service.Object):
+    INTERFACE = "com.pagico.daemon"
+
+    @dbus.service.method(INTERFACE,
+                         in_signature='s', out_signature='')
+    def load_config(self, path):
+        pagico_dir = '/opt/pagico/httpd'
+        config_file = os.path.join(path, 'abyss.conf')
+        log_dir = os.path.join(path, 'log')
+
+        os.system('ln -sf %s %s' % (config_file, pagico_dir))
+        os.system('ln -sf %s %s' % (log_dir, pagico_dir))
+
+    @dbus.service.method(INTERFACE,
+                         in_signature='', out_signature='')
+    def unload_config(self):
+        pagico_dir = '/opt/pagico/httpd'
+        config_file = os.path.join(pagico_dir, 'abyss.conf')
+        log_dir = os.path.join(pagico_dir, 'log')
+
+        os.unlink(config_file)
+        os.unlink(log_dir)
+
+    @dbus.service.method(INTERFACE,
+                         in_signature='', out_signature='')
+    def exit(self):
+        mainloop.quit()
+
+if __name__ == '__main__':
+    dbus.mainloop.glib.DBusGMainLoop(set_as_default=True)
+
+    system_bus = dbus.SystemBus()
+    name = dbus.service.BusName(Pagico.INTERFACE, system_bus)
+    object = Pagico(system_bus, '/com/pagico/daemon')
+
+    mainloop = gobject.MainLoop()
+    mainloop.run()

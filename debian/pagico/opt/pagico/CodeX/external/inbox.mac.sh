@@ -1,0 +1,1 @@
+/Applications/Pagico/Pagico.app/Contents/Resources/PHP5/bin/php -f /Applications/Pagico/Pagico.app/Contents/Resources/Pagico/external/inbox.plugin -- -- $*

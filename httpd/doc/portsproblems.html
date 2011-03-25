@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META name="generator" content="HTML Tidy for Linux/x86 (vers 12 April 2005), see www.w3.org">
+<TITLE>Solving Ports Listening Problems</TITLE>
+<META name="GENERATOR" content="Modular DocBook HTML Stylesheet Version 1.79">
+<LINK rel="HOME" title="Abyss Web Server For Linux User's Guide" href="index.html">
+<LINK rel="PREVIOUS" title="Regular Expressions" href="regex.html">
+<LINK rel="NEXT" title="Troubleshooting Guide" href="troubleshooting.html">
+<LINK rel="STYLESHEET" type="text/css" href="stylesheet.css">
+<META name="AppleIcon" content="icon.png">
+<META name="AppleTitle" content="Abyss Web Server Help">
+</HEAD>
+<BODY class="APPENDIX" bgcolor="#FFFFFF" text="#000000">
+<DIV class="NAVHEADER">
+<TABLE summary="Header navigation table" width="100%" border="0" cellpadding="0" cellspacing="0">
+<TR>
+<TH colspan="3" align="center">Abyss Web Server For Linux User's Guide</TH>
+</TR>
+<TR>
+<TD width="10%" align="left" valign="bottom"><A href="regex.html" accesskey="P">Prev</A></TD>
+<TD width="80%" align="center" valign="bottom"></TD>
+<TD width="10%" align="right" valign="bottom"><A href="troubleshooting.html" accesskey="N">Next</A></TD>
+</TR>
+</TABLE>
+<HR align="left" width="100%"></DIV>
+<DIV class="APPENDIX">
+<H1><A name="PORTSPROBLEMS" id="PORTSPROBLEMS"></A>Appendix G. Solving Ports Listening Problems</H1>
+<P>TCP/IP ports range from 1 to 65535. Abyss Web Server reports a listening problem on a port when one of the following situations is happening:</P>
+<UL>
+<LI>
+<P>Another instance of Abyss Web Server is already running on your computer.</P>
+</LI>
+<LI>
+<P>The user has not the privilege to use the port: Due to the operating system policy, only the applications launched by the super-user <KBD class="USERINPUT">root</KBD> can use ports ranging from 1 to 1023. If you run Abyss Web Server as a normal user, you cannot use any port below 1024.</P>
+</LI>
+<LI>
+<P>The port is already used by another application: Try stopping the other applications running on your computer to know which one is already using this port. More specifically, port 80 is usually used by other web servers. So if Abyss Web Server cannot listen to this port, there are chances that another web server is already running.</P>
+</LI>
+</UL>
+<P>An alternative solution would be to configure Abyss Web Server to use another web host or console port. For more information about changing the host port, refer to "<A href="hosts.html">Hosts Management</A>".</P>
+<P>If you have to change the console port, choose a temporary console port number and invoke Abyss Web Server using <KBD class="USERINPUT">./abyssws -p &lt;temporary console port&gt;</KBD>. Open the console and go to <B class="GUILABEL">Console Port</B> in <B class="GUILABEL">Console Configuration</B>, change the console port and restart the server. See "<A href="consoleconfig.html#CONSOLE-PARAMETERS">Changing the console port and protocol</A>" for more help.</P>
+</DIV>
+<DIV class="NAVFOOTER">
+<HR align="left" width="100%">
+<TABLE summary="Footer navigation table" width="100%" border="0" cellpadding="0" cellspacing="0">
+<TR>
+<TD width="33%" align="left" valign="top"><A href="regex.html" accesskey="P">Prev</A></TD>
+<TD width="34%" align="center" valign="top"><A href="index.html" accesskey="H">Home</A></TD>
+<TD width="33%" align="right" valign="top"><A href="troubleshooting.html" accesskey="N">Next</A></TD>
+</TR>
+<TR>
+<TD width="33%" align="left" valign="top">Regular Expressions</TD>
+<TD width="34%" align="center" valign="top">&nbsp;</TD>
+<TD width="33%" align="right" valign="top">Troubleshooting Guide</TD>
+</TR>
+</TABLE>
+</DIV>
+<DIV class="COPYRIGHT">Copyright &copy; 2001-2007 Aprelium Technologies</DIV>
+</BODY>
+</HTML>

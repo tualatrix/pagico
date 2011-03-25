@@ -1,0 +1,7 @@
+body {background:#fff !important;}
+
+input, .subCategoryTabBar, .Topic_AddContent_Button, .containerToolbar, .dataView_Controls, #PageControls, .AddNewEventLink, .PageSet_Edit_Prompt, .Channels_Edit_Prompt {
+	display:none !important;
+}
+
+cite {font-style:normal !important;}

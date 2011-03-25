@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head>
+<title><!--%TITLE%--></title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="Pagico" />
+<meta name="Copyright" content="Web page template designed by davereederdesign.com" />
+
+<style>
+
+/* A fluid template for business or fun */
+/* By Dave Reeder, www.davereederdesign.com */
+
+body { margin: 0; padding: 0; background: #262626; }
+
+* {margin: 0; padding: 0; border: 0; font-family: "Lucida Grande", "Trebuchet MS", Tahoma, Arial, simsun, sans-serif; }
+
+
+/*------------Basic styles------------*/
+
+p, h1, h2, h3, span#copyright, span#design { margin: 0 10px; color: #fff; font-weight: normal; text-decoration: none; background: transparent }
+
+p { font-size: 0.8em; line-height: 1.4em; text-align: justify }
+h1 { font-size: 1.8em; line-height: 1.4em; letter-spacing: 0.2em; margin:40px 0 0 60px; }	/* site heading */
+h2 { font-size: 1.0em; line-height: 1.4em; color: #FFA000 }	/* site heading */
+h3 { font-size: 0.8em; line-height: 1.4em; color: #FFA000  }				/* sub headings */
+span#copyright { font-size: 13px; line-height: 35px }  /* sets the copyright styles */
+span#design {  float: right; font-size: 13px; line-height: 35px }  /* floats the design link into position */
+span.validation {  float: right; margin-right: 10px; } /* floats the validation buttons */
+.validation img {  margin: 0; } /* floats the validation buttons */
+
+div { padding: 10px 0;}
+
+#hdrimg a {color: #06FF00; text-decoration: none; font-weight: normal;}
+#hdrimg a strong {color: #fff; text-decoration: none; font-weight: normal;}
+#hdrimg a:hover {color: #fff; text-decoration: none; font-weight: normal;}
+#hdrimg a:hover strong {color: #06FF00; text-decoration: none; font-weight: normal;}
+
+a {color: #06FF00; text-decoration: none}
+a:hover {color: #fff; text-decoration: underline}
+
+cite {color:#ccc;font-style:normal;}
+/*-------------Layout----------------*/
+
+#hdrimg {			/* Large image */
+	float: left; 			
+	width: 100%;
+	margin-bottom: 5px;
+	background: url('.system/images/hdr.gif') repeat-x;
+	height: 170px;  	/* ie5x hack begins here */     
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	height: 150px;
+}
+
+.DueDate
+{
+	margin-left:15px;
+	font-weight:bold;
+}
+
+html>body #hdrimg {
+	height: 150px;        /* ie5x hack ends here */
+}
+
+.rowcontainer {						/* Used to keep the divs in a row.  you can use this for any size of divs */
+	float: left;
+	margin-bottom: 5px;
+	width: 100%;
+	overflow: hidden;
+	background: #333;
+}
+
+#bttmbar { float: left; width: 100%; height: 35px; background: url('.system/images/hdr.gif') bottom repeat-x }    /* Bottom copyright bar */
+
+
+/*------Columns: Note they dont add up to 100%, this is intentional to avoid problems!----------*/ 
+
+.fullcolumn { float: left; width: 99%;}		/* Full width column for a one column site */
+			
+.halfcolumn { float: left; width: 49%;}		/* Half width column for a two column site. */
+
+.onethirdcolumn { float: left; width: 33%; }		/* One third width column for a three column site */
+
+.quartercolumn { float: left; width: 24.5% }		/* One quarter width column for a four column site */
+
+
+/*------------------------------Main Navigation------------------------------------------*/
+
+#nav { position: absolute; top: 145px; left: 0px; height: 25px; width: 100% }
+
+ul#nav  { margin: 0 }
+
+#nav li  /* Main nav list items */
+{
+	font-size: 13px;
+	float: left;
+	list-style: none;
+	text-align: center
+}
+
+#nav li a {   /* Main nav styles for all links */
+	display: block; /* Although display:block suggests a vertical list the float:left property under #nav li causes the menu to float inline */
+	margin-left: 5px; /* adds a gap between the tabs */
+	width: 90px; 	/* width of the tab */
+	line-height: 25px; /* height of the tab */
+	text-decoration: none;
+}
+	 
+#nav a:link, #nav a:visited  { background: url('.system/images/tab.gif') no-repeat 0 -25px }
+
+#nav a:hover, #nav a:active { background: url('.system/images/tab.gif') no-repeat 0 0 }
+
+#nav a#current { background: url('.system/images/tab.gif') no-repeat 0 0 }
+
+
+/*-----------------------------------Other tags-----------------------------------------*/
+
+acronym { border-bottom: 1px dashed #999; cursor: help }
+
+/* lists */
+ul { margin: 5px 0 5px 35px; list-style: url('.system/images/bullet.gif') }
+ol { margin: 5px 0 5px 35px; list-style: decimal }
+ol li, ul li { color: #fff; font-size: 0.8em; line-height: 1.4em; font-weight:bold; }
+
+cite
+{
+	font-weight:normal;
+}
+
+hr { margin: 10px 0px; height: 1px; background: #444; color: #444 }  /* rule styling */
+
+img {margin: 0 10px} /* all images styling */
+img.right {float: right}  /* right floating images */
+img.left {float: left}   /* left floating images */
+
+.listTable {
+	float:left;
+	width:100%;
+	margin:5px 0 10px 0;
+	color:#888;
+}
+
+.listItem {
+	padding:5px 0 5px 0;
+	color:#ccc;
+	font-size:0.8em;
+}
+
+.listItem_DueDate {
+	line-height:20px;
+	color:#999;
+	text-align:center;
+	font-size:0.7em;
+}
+
+.listItem_StartDate {
+	line-height:20px;
+	color:#999;
+	background:url(.system/img/shades/black.png);
+	text-align:center;
+	font-size:0.7em;
+}
+
+.listItem_Desc {
+	line-height:20px;
+	color:#999;
+	border-bottom:1px solid #444;
+	font-size:0.8em;
+}
+
+.listItem_Status {
+	line-height:20px;
+	text-align:center;
+}
+</style>
+
+</head>
+<body>
+
+<div id="hdrimg">
+
+	<h1><strong><!--%TITLE%--></strong></h1>
+</div>	<!-- end of hdr img -->
+
+<!--%MAINCONTENT%-->
+
+<div id="bttmbar"> <span id="design"><!--%AUTHOR%--></span><span id="copyright"><!--%PAGEDATE%--></span>
+</div><!-- end of bttmbar -->
+
+</body>
+</html>

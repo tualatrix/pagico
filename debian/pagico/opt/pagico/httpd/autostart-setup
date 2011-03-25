@@ -1,0 +1,186 @@
+#!/bin/sh
+
+# This script is part of Abyss Web Server package
+# Copyright (C) 2007 Aprelium Technologies SARL. All rights reserved.
+# http://www.aprelium.com
+
+PRG="$0"
+while [ -h "$PRG" ]; do
+        LNK=`ls -ld "$PRG"`
+        LNK=`expr "$LNK" : '.*-> \(.*\)'`
+        if [ "`expr "$link" : '/.*'`" = 0 ]; then
+                DIR=`dirname "$PRG"`
+                PRG="$DIR/$LNK"
+        else
+                PRG="$LNK"
+        fi
+done
+ABYSSWS_HOME=`dirname $PRG`
+ABYSSWS_HOME=`cd $ABYSSWS_HOME && pwd`
+
+INITD_ABYSSWS="/etc/init.d/abyssws"
+ABYSSWS="$ABYSSWS_HOME/abyssws"
+RCD_DIR="/etc"
+
+yes_no() {
+	echo -n "$1? [y/N]: "
+	read ANSWER
+	expr "$ANSWER" : ' *[yY].*' > /dev/null
+}
+
+install_rc_d() {
+	if [ -x "/sbin/update-rc.d" ] ; then
+		/sbin/update-rc.d abyssws start 99 2 3 4 5 . stop 99 0 1 6 .
+	elif [ -x "/usr/sbin/update-rc.d" ] ; then
+		/usr/sbin/update-rc.d abyssws start 99 2 3 4 5 . stop 99 0 1 6 .
+	elif [ -x "/sbin/chkconfig" ] ; then
+		/sbin/chkconfig --add abyssws
+		#/sbin/chkconfig abyssws on
+	else
+		set 0 1 6
+		for i in "$@"; do
+			ln -s "$INITD_ABYSSWS" "$RCD_DIR/rc$i.d/K01abyssws" 
+		done
+		set 2 3 4 5
+		for i in "$@"; do
+			ln -s "$INITD_ABYSSWS" "$RCD_DIR/rc$i.d/S99abyssws" 
+		done
+	fi
+}
+
+remove_rc_d() {
+	if [ -x "/sbin/update-rc.d" ] ; then
+		/sbin/update-rc.d -f abyssws remove
+	elif [ -x "/usr/sbin/update-rc.d" ] ; then
+		/usr/sbin/update-rc.d -f abyssws remove
+	elif [ -x "/sbin/chkconfig" ] ; then
+		/sbin/chkconfig --del abyssws
+	else
+		set 0 1 6
+		for i in "$@"; do
+			rm -f "$RCD_DIR/rc$i.d/K01abyssws"
+		done
+		set 2 3 4 5
+		for i in "$@"; do
+			rm -f "$RCD_DIR/rc$i.d/S99abyssws"
+		done
+	fi
+}
+
+install_init_d() {
+	if [ -f "$INITD_ABYSSWS" ] ; then
+		yes_no "The file $INITD_ABYSSWS exists already. Do you want to overwrite it?"
+		if [ "$?" -ne "0" ]
+		then
+			echo "Operation cancelled."
+			exit
+		fi
+	fi
+	
+	cat > "$INITD_ABYSSWS" <<-EOF
+#!/bin/sh
+#
+# Startup script for Abyss Web Server
+#
+# chkconfig: 2345 99 01
+# description: Abyss Web Server is a HTTP server
+# processname: abyssws
+#
+
+#SET THE FOLLOWING LINE TO YOUR CORRECT Abyss Web Server INSTALLATION DIRECTORY
+ABYSSWS_HOME="$ABYSSWS_HOME"
+RETVAL=0
+
+# See how we were called.
+case "\$1" in
+   start)
+         echo -n "Starting Abyss Web Server daemon..."
+         "\$ABYSSWS_HOME/abyssws" -d
+         RETVAL=\$?
+         echo
+         [ \$RETVAL -eq 0 ]
+         ;;
+   stop)
+         echo -n "Stopping Abyss Web Server daemon..."
+         "\$ABYSSWS_HOME/abyssws" --stop
+         RETVAL=\$?
+         echo
+         [ \$RETVAL -eq 0 ]
+         ;;
+   restart)
+         echo -n "Restarting Abyss Web Server daemon..." 
+         "\$ABYSSWS_HOME/abyssws" --restart
+         RETVAL=\$?
+         echo
+         ;;
+esac
+
+exit \$RETVAL
+
+EOF
+
+	chmod +x "$INITD_ABYSSWS"
+}
+
+remove_init_d() {
+	rm -f "$INITD_ABYSSWS"
+}
+
+print_usage_and_exit() {
+	cat <<-END
+Usage:
+  $0 install
+        => makes Abyss Web Server start automatically when your system boots up.
+
+  $0 remove
+        => removes Abyss Web Server from the list of programs which start automatically.
+END
+	exit
+}
+
+OPERATION=0
+
+case "$1" in
+   install)
+         OPERATION=1
+         ;;
+   remove)
+         OPERATION=2
+         ;;
+esac
+
+if [ $# -lt 1 ] ; then
+	OPERATION=0
+fi
+
+if [ "$OPERATION" -eq "0" ] ; then
+	print_usage_and_exit
+fi
+
+# Not root?
+
+if [ "$UID" -ne "0" ]  ; then
+  echo "The script is switching to run under root privileges. You may be asked to enter your root password."
+  sudo "$ABYSSWS_HOME/`basename $0`" "$@"
+  echo "The script is now going back to non-root privileges."
+  exit
+fi
+
+if [ "$OPERATION" -eq "1" ] ; then
+	if [ -x "$ABYSSWS_HOME/abyssws" ] ; then
+	# abyss.conf not present? suggest a first run 
+		if [ -f "$ABYSSWS_HOME/abyss.conf" ] ; then
+			install_init_d
+			install_rc_d
+		else
+			echo "No configuration file abyss.conf was found. Run Abyss Web Server for the first time as a normal use (not as root) to have it create that file. Next run that script again."
+			exit
+		fi
+	else
+		echo "No Abyss Web Server executable in $ABYSSWS_HOME. Reinstall the server."
+		exit
+	fi
+else
+	remove_rc_d
+	remove_init_d
+fi

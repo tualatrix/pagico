@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META name="generator" content="HTML Tidy for Linux/x86 (vers 12 April 2005), see www.w3.org">
+<TITLE>Encoding</TITLE>
+<META name="GENERATOR" content="Modular DocBook HTML Stylesheet Version 1.79">
+<LINK rel="HOME" title="Abyss Web Server For Linux User's Guide" href="index.html">
+<LINK rel="UP" title="Server Side Includes" href="ssi.html">
+<LINK rel="PREVIOUS" title="Directives" href="directives.html">
+<LINK rel="NEXT" title="Custom Directory Listings" href="dirlist.html">
+<LINK rel="STYLESHEET" type="text/css" href="stylesheet.css">
+<META name="AppleIcon" content="icon.png">
+<META name="AppleTitle" content="Encoding">
+<META name="Description" content="Encoding">
+<META name="AppleOrder" content="">
+</HEAD>
+<BODY class="SECT1" bgcolor="#FFFFFF" text="#000000">
+<DIV class="NAVHEADER">
+<TABLE summary="Header navigation table" width="100%" border="0" cellpadding="0" cellspacing="0">
+<TR>
+<TH colspan="3" align="center">Abyss Web Server For Linux User's Guide</TH>
+</TR>
+<TR>
+<TD width="10%" align="left" valign="bottom"><A href="directives.html" accesskey="P">Prev</A></TD>
+<TD width="80%" align="center" valign="bottom">Chapter 7. Server Side Includes</TD>
+<TD width="10%" align="right" valign="bottom"><A href="dirlist.html" accesskey="N">Next</A></TD>
+</TR>
+</TABLE>
+<HR align="left" width="100%"></DIV>
+<DIV class="SECT1">
+<H1 class="SECT1"><A name="SSIENCODING" id="SSIENCODING">Encoding</A></H1>
+<P>In Abyss Web Server, the directives <KBD class="USERINPUT">#echo</KBD>, <KBD class="USERINPUT">#exec</KBD>, <KBD class="USERINPUT">#fsize</KBD>, <KBD class="USERINPUT">#flastmod</KBD>, and <KBD class="USERINPUT">#include</KBD> accept an optional argument <KBD class="USERINPUT">encoding</KBD>.</P>
+<P>The value of this argument determines which conversion method is to be applied to the output of an SSI directive. It can be:</P>
+<UL>
+<LI>
+<P><KBD class="USERINPUT">none</KBD>: No conversion is performed and the output is transmitted without any modification.</P>
+</LI>
+<LI>
+<P><KBD class="USERINPUT">entity</KBD>: The output is converted using the XML/HTML escaping: <KBD class="USERINPUT">&lt;</KBD> is converted to <KBD class="USERINPUT">&amp;lt;</KBD>, <KBD class="USERINPUT">&gt;</KBD> to <KBD class="USERINPUT">&amp;gt;</KBD>, <KBD class="USERINPUT">&amp;</KBD> to <KBD class="USERINPUT">&amp;amp;</KBD>, <KBD class="USERINPUT">"</KBD> to <KBD class="USERINPUT">&amp;quot;</KBD>, and <KBD class="USERINPUT">'</KBD> to <KBD class="USERINPUT">&amp;#39;</KBD>.</P>
+</LI>
+<LI>
+<P><KBD class="USERINPUT">url</KBD>: All non-alphanumerical characters in the output except <KBD class="USERINPUT">-_.!~*'()/</KBD> are replaced with a percent sign <KBD class="USERINPUT">%</KBD> followed by two hexadecimal digits. This conversion conforms to the URL encoding scheme as described in <A href="http://www.ietf.org/rfc/rfc1738.txt" target="_top">RFC1738</A> and is useful to output well formed URLs.</P>
+</LI>
+<LI>
+<P><KBD class="USERINPUT">reverse-url</KBD>: Sequences made of a percent sign <KBD class="USERINPUT">%</KBD> followed by two hexadecimal digits are decoded according to the URL encoding scheme.</P>
+</LI>
+</UL>
+<P>If no <KBD class="USERINPUT">encoding</KBD> argument is present in <KBD class="USERINPUT">#echo</KBD>, <KBD class="USERINPUT">#fsize</KBD>, or <KBD class="USERINPUT">#flastmod</KBD> directives, the server will perform <KBD class="USERINPUT">entity</KBD> conversion.</P>
+<P>If the <KBD class="USERINPUT">encoding</KBD> argument is present in <KBD class="USERINPUT">#exec</KBD> or <KBD class="USERINPUT">#include</KBD> directives, the server will perform no conversion of the output.</P>
+<DIV class="EXAMPLE"><A name="AEN2233" id="AEN2233"></A>
+<P><B>Example 7-1. Using the encoding argument in #include</B></P>
+<PRE class="PROGRAMLISTING">
+   &lt;HTML&gt;
+       &lt;HEAD&gt;&lt;TITLE&gt;SSI Test&lt;/TITLE&gt;&lt;/HEAD&gt;
+       &lt;BODY&gt;
+            The HTML source code of page test.html is:
+            &lt;PRE&gt;&lt;!-- #include file="test.html" encoding="entity" --&gt;&lt;/PRE&gt;
+       &lt;/BODY&gt;
+   &lt;/HTML&gt;
+</PRE></DIV>
+</DIV>
+<DIV class="NAVFOOTER">
+<HR align="left" width="100%">
+<TABLE summary="Footer navigation table" width="100%" border="0" cellpadding="0" cellspacing="0">
+<TR>
+<TD width="33%" align="left" valign="top"><A href="directives.html" accesskey="P">Prev</A></TD>
+<TD width="34%" align="center" valign="top"><A href="index.html" accesskey="H">Home</A></TD>
+<TD width="33%" align="right" valign="top"><A href="dirlist.html" accesskey="N">Next</A></TD>
+</TR>
+<TR>
+<TD width="33%" align="left" valign="top">Directives</TD>
+<TD width="34%" align="center" valign="top"><A href="ssi.html" accesskey="U">Up</A></TD>
+<TD width="33%" align="right" valign="top">Custom Directory Listings</TD>
+</TR>
+</TABLE>
+</DIV>
+<DIV class="COPYRIGHT">Copyright &copy; 2001-2007 Aprelium Technologies</DIV>
+</BODY>
+</HTML>

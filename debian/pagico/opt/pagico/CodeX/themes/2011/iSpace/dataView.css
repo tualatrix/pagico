@@ -1,0 +1,1033 @@
+#SegmentsContainer
+{
+	float:left;
+	
+	width:100%;
+	margin:0;
+	
+	position:relative;
+}
+
+	
+	/* .topicContainer {background:#fffef9 url(/img/2008/topicbg.jpg) left top repeat-y;}
+	.contactContainer {width:75% !important;background:#f8fef5 url(/img/2009/contactbg.jpg) left top repeat-y;}
+	.trashContainer{background:#f5f5f5 url(/img/2009/trashbg.jpg) left top repeat-y;}
+	.inboxContainer {background:#fdfeff url(/img/2009/inboxbg.jpg) left top repeat-y;}
+	.topicContainer {
+		background:#555 url(/img/2011/noiseBackground.png);
+	}
+	*/
+	
+	
+	
+	.contactContainer {width:75% !important;}
+
+	.dataView_Segment {
+
+		float:left;
+		position:relative;
+		-webkit-border-radius:3px;
+
+		border:1px solid transparent;
+
+		z-index:0;
+
+		padding-left:28px;
+		margin:0px 0 7px 5px;
+		min-height:35px;
+		
+		text-shadow:0 -1px 0 #111;
+		color:#ccc;
+		
+	}
+	
+		.dataView_Segment_ColorBar {
+			position:absolute;
+			left:1px;
+			top:1px;
+			
+			width:5px;
+			height:99%;
+			
+			opacity:0.6;
+			-webkit-border-radius:1px;
+			-webkit-transition: opacity 0.1s ease-in-out;
+		}
+		
+		.dataView_Segment:hover .dataView_Segment_ColorBar {
+			left:1px;
+			opacity:1;
+		}
+	
+		.dataView_Segment input[type=text] {
+			background:rgba(0,0,0,0.2);
+			color:#ccc;
+			text-shadow:0 -1px 0 #111;
+			border:1px solid #888;
+			outline:none;
+		}
+	
+		.dataView_Segment p, .Segment_Text_Title, .dataView_Segment .GroupTitle, .dataView_Segment .ImageFileName, .dataView_Segment .ListItem_Caption, .dataView_Segment .EditIcon_Link, .dataView_Segment .Inbox_InsertTo {
+			color:#eee;
+		}
+		.dataView_Segment table, .dataView_Segment .Text_TimestampPanel, .dataView_Segment .ImageFileDescription, .dataView_Segment .Segment_EditIcon_Alternative, .dataView_Segment .TopicListTable_DateCol_Header, .dataView_Segment .TopicListTable_DateCol2_Header, .dataView_Segment .dataView_Item_AuthorTag {
+			color:#aaa;
+		}
+		
+		.dataView_Segment a.Clipping:link, .dataView_Segment a.Clipping:visited{color:#aaa;}
+		.dataView_Segment a.Clipping:hover{color:#ccc;}
+		
+	
+	.dataView_Segment:hover, .dataView_Segment_hover {
+		
+		border-color:rgba(255,255,255,0.2);
+		background-color:#5d5d5d;
+		-webkit-box-shadow: rgba(0, 0, 0, 0.20) 0px 0px 5px;
+		
+	}
+	
+	.Segment_Image {
+		
+		width:408px;
+		
+		height:110px;
+		
+		color:#666;
+		line-height:18px;
+		
+	}
+	
+	.dataView_Segment_Collapsed.Segment_Image {
+		width:95% !important;
+		height:40px !important;
+	}
+	
+	.Thumbnail
+	{
+		float:left;
+		width:160px;
+		height:100px;
+		border:1px solid #bbb;
+		margin:4px 3px 0 2px;
+		-webkit-box-shadow:rgba(0,0,0,0.3) 0px 0px 3px;
+	}
+	
+	.dataView_Segment:hover .Thumbnail {
+		-webkit-box-shadow:none;
+	}
+	
+	.dataView_Segment_Collapsed .Thumbnail {
+		width:40px !important;
+		height:25px !important;
+		margin:5px 5px 0 2px;
+	}
+	
+	a.ImageDescription:link, a.ImageDescription:visited, a.ImageDescription:hover
+	{
+		float:left;
+		display:block;
+		width:235px;
+		height:90px;
+		margin-top:4px;
+		font-size:11px;
+		line-height:12px;
+		text-decoration:none;
+		color:#666;
+		
+		cursor:default;
+		
+		word-wrap:break-word;
+		overflow:hidden;
+	}
+	
+	.dataView_Segment_Collapsed .ImageDescription {
+		
+		width:80% !important;
+		height:30px !important;
+		
+		margin:3px 0 0 5px !important;
+		line-height:15px !important;
+		
+	}
+	
+	.Segment_File .dataView_Item_AuthorTag, .Segment_Image .dataView_Item_AuthorTag, .dataView_Segment_Collapsed.Segment_Image .dataView_Item_AuthorTag {
+		position:absolute;
+		right:5px;
+		bottom:5px;
+	}
+	
+	.dataView_Segment_Collapsed.Segment_File .dataView_Item_AuthorTag {
+
+		right:310px !important;
+		bottom:5px !important;
+	}
+	
+	.ImageFileName
+	{
+		float:left;
+		width:99%;
+		display:block;
+		font-size:12px;
+		line-height:18px;
+		font-weight:bold;
+		color:#222;
+		padding-bottom:10px;
+		border:1px solid transparent;
+		
+		cursor:text;
+	}
+	
+	.ImageFileName:hover {
+		border:1px solid rgba(255,255,255,0.2);
+	}
+	
+	.Segment_Image .ImageFileDescription {
+		float:left;
+		width:100%;
+	}
+	
+	.dataView_Segment_Collapsed .ImageFileName {
+		padding:5px 0 5px 0 !important;
+	}
+	
+	.Segment_Image.dataView_Segment_Collapsed .ImageFileDescription {
+		position:absolute !important;
+		width:200px !important;
+		text-align:right;
+		right:10px;
+		top:2px;
+		color:#888 !important;
+	}
+	
+	.ImageDescription_Edit
+	{
+		float:left;
+		width:230px;
+		height:30px;
+		margin-top:5px;
+		color:#222;
+		font-size:13px;
+		line-height:11px;
+		resize:none;
+		outline:none;
+		/* background:url(/img/2009/shades/black.png); */
+		background:#fff;
+		border:1px solid #aaa;
+		-webkit-box-shadow:0 0 5px rgba(100, 100, 100, 0.8);
+		border:0px;
+
+	}
+	
+	.Segment_File
+	{
+
+		width:408px;
+
+		height:55px;
+
+		color:#666;
+		line-height:18px;
+	}
+
+
+	.dataView_StatusIcon {
+		float:left;
+		display:inline-block;
+		
+		width:20px;
+		height:20px;
+	}
+	
+		.dataView_ReadOnly {
+			background:url(/img/2008/topics/topicrelated_icons.png) -26px -265px no-repeat;
+		}
+		
+		.dataView_ReadWrite {
+			background:url(/img/2008/controls/arrow_icons.png) 0px -80px no-repeat;
+		}
+		
+		.dataView_StatusText {
+			float:left;
+			font-weight:bold;
+			/*
+			line-height:20px;
+			text-shadow:0 1px 0 #fff;
+			*/
+			cursor:default;
+		}
+		
+		#dataView_ReadOnly {
+			margin-right:2px;
+			font-size:11px;
+			line-height:16px;
+			padding:0 10px 0 10px;
+			background:#a44;
+			
+			background: -webkit-gradient(
+			    linear,
+			    left top,
+			    left bottom,
+			    color-stop(0, rgba(190, 60, 60, 0.7)),
+			    color-stop(1, rgba(190, 60, 60, 0.95))
+			);
+			
+			color:#fff;
+			-webkit-border-radius:7px;
+			text-shadow:0 -1px 0 #333;
+		}
+		
+	#dataView_Status {
+		position:absolute;
+		right:10px;
+		bottom:10px;
+		float:left;
+		font-size:11px;
+		color:#aaa;
+
+		z-index:100;
+		text-shadow:0 -1px 0 #111;
+	}
+	
+	.newDataIndicator {
+
+		position:absolute;
+		top:-1px;
+
+		font-size:11px;
+		color:#ccc;
+		
+		float:left;
+
+		height:20px;
+		line-height:20px;
+		padding:0 10px 0 0;
+
+		z-index:200;
+
+		right:40%;
+
+		-webkit-border-bottom-left-radius:4px; /* bottom left corner */ 
+		-webkit-border-bottom-right-radius:4px; /* bottom right corner */
+
+		text-shadow:0 -1px 0 #111;
+
+	}
+	
+		.newDataIndicator_Icon {
+			float:left;
+			
+			display:block;
+			width:20px;
+			height:20px;
+			margin:0 7px 0 0;
+			
+			background:url(/img/2008/controls/arrow_icons.png?1009) 5px -100px no-repeat;
+			
+		}
+	
+		.newDataIndicator_Topic {
+			
+			background:#444;
+			border-top:1px solid #404040;
+			border-bottom:1px solid #363636;
+			border-left:1px solid #363636;
+			border-right:1px solid #363636;
+			
+		}
+		
+		.newDataIndicator_Inbox {
+			
+			background:#4d4d4d;
+			border-top:1px solid #404040;
+			border-bottom:1px solid #363636;
+			border-left:1px solid #363636;
+			border-right:1px solid #363636;
+			
+		}
+		
+		.newDataIndicator_Profile {
+			
+			background:#444;
+			border-top:1px solid #404040;
+			border-bottom:1px solid #363636;
+			border-left:1px solid #363636;
+			border-right:1px solid #363636;
+			
+		}
+	
+.Segment_Task, .Segment_Text
+{
+	width:95%;
+
+	color:#666;
+	line-height:18px;
+	z-index:0;
+	padding-bottom:5px;
+}
+
+.Text_Display
+{
+	font-size:12px;
+	float:left;
+	width:100%;
+	/* background:url(/img/iSpace/lines.png) left top; */
+}
+
+.Segment_Text_Content {
+	float:left;
+	width:100%;
+}
+
+	.Text_Display p
+	{
+		margin:0 !important;
+		padding-top:0 !important;
+		padding-bottom:0 !important;
+	}
+	
+	
+.Segment_TimeStamp
+{
+	position:absolute;
+	right:2px;
+	bottom:2px;
+	color:#888;
+	font-size:11px;
+	z-index:20;
+	text-align:right;
+	line-height:12px;
+}
+
+.Segment_Text_Title
+{
+	font-weight:bold;
+	font-size:14px;
+	line-height:25px;
+	
+	text-shadow:0 -1px 0 #111;
+	
+}
+	
+
+.archivedItem {
+	opacity:0.5;
+}
+.archivedItem:hover {
+	opacity:1;
+}
+
+
+.Segment_List_Title
+{
+	font-weight:bold;
+	font-size:14px;
+	color:#333;
+	line-height:18px;
+}
+
+.Segment_Trash
+{
+	position:absolute;
+	left:10px;
+	top:25px;
+	width:10px;
+	height:10px;
+	background:url(/img/App_GUI/Misc/trash.gif) left top no-repeat;
+	cursor:hand;
+	cursor:pointer;
+}
+
+.Segment_Move
+{
+	position:absolute;
+	left:4px;
+	top:2px;
+	width:15px;
+	height:15px;
+	/* background:url(/img/App_GUI/Misc/move.gif) center top no-repeat; */
+	
+	background:url(/img/2009/arrows.png?1153) -1px -140px no-repeat;
+	
+	cursor:row-resize;
+	
+	z-index:99;
+	
+	opacity:0.5;
+}
+
+.Segment_CollapseHandle {
+	
+	position:absolute;
+	left:5px;
+	top:20px;
+	width:15px;
+	height:15px;
+	background:url(/img/2011/arrow_icons.png) -2px -203px no-repeat;
+	
+	opacity:0.5;
+	
+	/* -webkit-transition: all 0.2s ease-in-out; */
+	
+	-webkit-transform:rotate(90deg);
+}
+
+.Segment_CollapseHandle:active {
+	opacity:1;
+}
+
+.dataView_Segment_Collapsed .Segment_CollapseHandle {
+	
+	left:4px;
+	-webkit-transform:rotate(0deg);
+	
+}
+
+.dataView_Segment_Collapsed .listContentTable {
+	display:none;
+}
+
+.dataView_Segment_Collapsed .FileIcon {
+	width:30px;
+	height:30px;
+}
+
+.dataView_Segment_Collapsed.Segment_File {
+	width:95% !important;
+	height:35px !important;
+}
+
+.dataView_Segment_Collapsed .FileAttribute {
+	position:absolute;
+	right:10px;
+	top:2px;
+	overflow:hidden;
+	text-align:right;
+	font-size:11px;
+}
+
+.dataView_Segment_Collapsed .FileName {
+	padding:7px 0 7px 0;
+	width:auto !important;
+}
+
+
+.Segment_File
+{
+
+	width:380px !important;
+	width:408px;
+
+	height:55px;
+
+	color:#666;
+	line-height:18px;
+}
+
+.listContentPreview {
+	display:none;
+	
+	float:left;
+	width:100%;
+	line-height:20px;
+	
+	color:#aaa;
+	font-size:11px;
+	
+	cursor:pointer;
+	cursor:hand;
+}
+
+.dataView_Segment_Collapsed .listContentPreview {
+	display:block;
+}
+
+.dataView_Segment_Collapsed .Text_Display {
+	
+	height:20px;
+	overflow:hidden;
+	color:#888;
+	
+}
+
+.Segment_Insert
+{
+	position:absolute;
+	left:5px;
+	top:37px;
+	width:20px;
+	height:20px;
+	background:url(/img/App_GUI/Misc/insert.png) 4px 0 no-repeat;
+	cursor:hand;
+	cursor:pointer;
+}
+
+.dataView_Segment .Segment_EditIcon
+{
+	position:absolute;
+	left:26px;
+	bottom:-21px;
+	height:18px;
+	
+	background-color:rgba(93,93,93, 0.9);
+	
+	border-top:none;
+	border-bottom:1px solid rgba(255,255,255,0.2);
+	border-right:1px solid rgba(255,255,255,0.2);
+	border-left:1px solid rgba(255,255,255,0.2);
+	
+	-webkit-border-bottom-left-radius:3px;
+	-webkit-border-bottom-right-radius:3px;
+
+	padding:1px;
+	cursor:hand;
+	cursor:pointer;
+	
+	color:#aaa;
+
+	background-repeat:no-repeat;
+	background-position:center center;
+	opacity:0;
+	/*
+	z-index:5;
+	opacity:0.5;
+	-webkit-transition: all 0.1s ease-in-out;
+	*/
+	
+	-webkit-box-shadow: rgba(0, 0, 0, 0.20) 0px 2px 2px;
+}
+
+.dataView_Segment:hover .Segment_EditIcon {
+	opacity:1;
+}
+
+
+.dataView_Segment .Segment_EditIcon_Alternative
+{
+	position:absolute;
+
+	font-size:11px;
+	line-height:18px;
+
+	right:26px;
+	top:-19px;
+	height:18px;
+	
+	opacity:0;
+	
+	/* background:#f3f8ff; */
+	background-color:rgba(93,93,93, 0.9);
+	
+	border-right:1px solid rgba(255,255,255,0.2);
+	border-left:1px solid rgba(255,255,255,0.2);
+	border-top:1px solid rgba(255,255,255,0.2);
+	border-bottom:none;
+	
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-top-right-radius:3px;
+	
+	padding:0 5px 0 5px;
+	cursor:default;
+
+	background-repeat:no-repeat;
+	background-position:center center;
+	z-index:1000;
+	
+}
+
+.dataView_Segment:hover .Segment_EditIcon_Alternative {
+	opacity:1;
+}
+
+
+.Segment_Text_Title_Edit
+{
+	float:left;
+	width:70%;
+	height:25px;
+	line-height:25px;
+	
+	margin:0;
+
+	background: #5d5d5d;
+	border:0px;
+
+	font-size:14px;
+	
+	outline:none;
+	
+	text-shadow:0 -1px 0 #111 !important;
+}
+
+.Segment_Text_Timestamp_Input
+{
+	float:left;
+	width:26%;
+	height:25px;
+	line-height:25px;
+	margin:0;
+	/* background:url(/img/2009/shades/grey.png); */
+	/* background:rgba(200, 200, 200, 0.05); */
+	
+	background: #5d5d5d;
+	
+	border:0px;
+	border-left:1px solid #ccc;
+	text-align:center;
+	
+	text-shadow:0 -1px 0 #111 !important;
+	
+	outline:none;
+	
+	color:#666;
+}
+	/*
+	.Text_TimestampPanel {
+
+		width:19%;
+		
+		background:url(/img/App_GUI/Misc/calendar.jpg) 2px 2px no-repeat;
+		
+		text-align:left;
+		vertical-align:top;
+		border-left:1px solid #ccc;
+		text-indent:20px;
+		font-size:11px;
+	}
+	
+	.Text_MainPanel {
+
+		width:80%;
+	}
+	*/
+	
+	.Text_TimestampPanel {
+		float:right;
+		display:block;
+		margin:0 0 5px 5px;
+
+		width:140px;
+		text-align:center;
+		
+		line-height:50px;
+		height:50px;
+
+		
+		border-left:1px dashed #ccc;
+		
+		background:url(/img/App_GUI/Misc/calendar.jpg) 8px center no-repeat;
+		
+		font-size:16px;
+		
+		font-family:Myriad, "Myriad Pro", Garamond, Palatino;
+	}
+	
+	
+a.dataView_ColorButton:link, a.dataView_ColorButton:visited
+{
+	float:left;
+	display:block;
+	width:18px;
+	height:18px;
+
+	margin:0 5px 0 0;
+
+	line-height:18px;
+	font-size:14px;
+	font-weight:bold;
+	text-align:center;
+	cursor:hand;
+	cursor:pointer;
+	color:#fff;
+	text-shadow:black 0 0 2px;
+	text-decoration:none;
+
+	background-repeat:no-repeat;
+	background-image:url(/img/2009/Inbox_ColorIcons.png?123);
+
+}
+
+.Color_None{background-position:-73px 0;}
+.Color_Grey{background-position:-55px 0;}
+.Color_Green{background-position:-37px 0;}
+.Color_Graphite{background-position:-19px 0;}
+.Color_Blue{background-position:-1px 0;}
+
+.Color_Orange{background-position:-1px -18px;}
+.Color_Red{background-position:-37px -18px;}
+.Color_Purple{background-position:-19px -18px;}
+.Color_Pink{background-position:-55px -18px;}
+
+.Segment_Grey .dataView_Segment_ColorBar {
+	background:#999;
+	/* -webkit-box-shadow:0 0 2px #000; */
+	border:1px solid #404040;
+}
+
+.Segment_Graphite .dataView_Segment_ColorBar {
+	background-color:#9cb1d7;
+	/* -webkit-box-shadow:0 0 2px #000; */
+	border:1px solid #404040;
+}
+
+.Segment_Blue .dataView_Segment_ColorBar {
+	background-color:#5887FF;
+	/* -webkit-box-shadow:0 0 2px #000; */
+	border:1px solid #404040;
+}
+
+.Segment_Green .dataView_Segment_ColorBar {
+	background:#9BFF00;
+	/* -webkit-box-shadow:0 0 2px #000; */
+	border:1px solid #404040;
+}
+
+.Segment_Orange .dataView_Segment_ColorBar {
+	background-color:#FFCE00;
+	/* -webkit-box-shadow:0 0 2px #000; */
+	border:1px solid #404040;
+}
+
+.Segment_Purple .dataView_Segment_ColorBar {
+	background-color:#FC61FF;
+	/* -webkit-box-shadow:0 0 2px #000; */
+	border:1px solid #404040;
+}
+
+.Segment_Red .dataView_Segment_ColorBar {
+	background-color:#E54147;
+	/* -webkit-box-shadow:0 0 2px #000; */
+	border:1px solid #404040;
+}
+
+/*
+.Segment_Grey, .Segment_Grey .Segment_EditIcon, .Segment_Grey .Segment_EditIcon_Alternative {background:rgba(110,110,110,0.90) !important;}
+
+.Segment_Blue, .Segment_Blue .Segment_EditIcon, .Segment_Blue .Segment_EditIcon_Alternative{background:rgba(166, 206, 255, 0.90) !important;}
+.Segment_Blue .GroupTitle, .Segment_Blue input[type=text], .Segment_Blue .Segment_Text_Title, .Segment_Blue .Clipping, .Segment_Blue input, .Segment_Blue .ImageFileName, .Segment_Blue p, .Segment_Blue .ListItem_Caption, .Segment_Blue .EditIcon_Link{color:#333;text-shadow:0 1px 0 #fff;}
+.Segment_Blue a, .Segment_Blue .dataView_Item_AuthorTag, .Segment_Blue .text_CompletedTask, .Segment_Blue .listContentPreview, .Segment_Blue .Text_TimestampPanel, .Segment_Blue .Task_Desc_Edit, .Segment_Blue .List_Edit_Hint, .Segment_Blue .List_Dates_Hint, .Segment_Blue .ImageFileDescription, .Segment_Blue table, .Segment_Blue .Segment_EditIcon_Alternative, .Segment_Blue .Inbox_InsertTo, .Segment_Blue .TopicListTable_DateCol_Header, .Segment_Blue .TopicListTable_DateCol2_Header {color:#444;text-shadow:0 1px 0 #fff;}
+.Segment_Blue .recursiveTaskControl {background:url(/img/2008/controls/arrow_icons.png) 0 -180px no-repeat;}
+.Segment_Blue a.Clipping:link, .Segment_Blue a.Clipping:visited {color:#333;}
+.Segment_Blue a.Clipping:hover{color:#444;}
+.Segment_Blue .Segment_CollapseHandle {	background-position:-2px -23px; }
+.Segment_Blue .Segment_Move, .Segment_Blue .DragHandle { background-position: -1px -120px;}
+
+.Segment_Red, .Segment_Red .Segment_EditIcon, .Segment_Red .Segment_EditIcon_Alternative{background:rgba(255, 186, 186, 0.90) !important;}
+.Segment_Red .GroupTitle, .Segment_Red input[type=text], .Segment_Red .Segment_Text_Title, .Segment_Red input, .Segment_Red .ImageFileName, .Segment_Red p, .Segment_Red .ListItem_Caption, .Segment_Red .EditIcon_Link{color:#333;text-shadow:0 1px 0 #fff;}
+.Segment_Red a, .Segment_Red .dataView_Item_AuthorTag, .Segment_Red .text_CompletedTask, .Segment_Red .listContentPreview, .Segment_Red .Text_TimestampPanel, .Segment_Red .Task_Desc_Edit, .Segment_Red .List_Edit_Hint, .Segment_Red .List_Dates_Hint, .Segment_Red .ImageFileDescription, .Segment_Red table, .Segment_Red .Segment_EditIcon_Alternative, .Segment_Red .Inbox_InsertTo, .Segment_Red .TopicListTable_DateCol_Header, .Segment_Red .TopicListTable_DateCol2_Header {color:#444;text-shadow:0 1px 0 #fff;}
+.Segment_Red .recursiveTaskControl {background:url(/img/2008/controls/arrow_icons.png) 0 -180px no-repeat;}
+.Segment_Red a.Clipping:link, .Segment_Red a.Clipping:visited {color:#333;}
+.Segment_Red a.Clipping:hover{color:#444;}
+.Segment_Red .Segment_CollapseHandle {background-position:-2px -23px;}
+.Segment_Red .Segment_Move, .Segment_Red .DragHandle { background-position: -1px -120px;}
+
+.Segment_Orange, .Segment_Orange .Segment_EditIcon, .Segment_Orange .Segment_EditIcon_Alternative{background:rgba(255, 231, 159, 0.90) !important;}
+.Segment_Orange .GroupTitle, .Segment_Orange input[type=text], .Segment_Orange .Segment_Text_Title, .Segment_Orange input, .Segment_Orange .ImageFileName, .Segment_Orange p, .Segment_Orange .ListItem_Caption, .Segment_Orange .EditIcon_Link{color:#333;text-shadow:0 1px 0 #fff;}
+.Segment_Orange a, .Segment_Orange .dataView_Item_AuthorTag, .Segment_Orange .text_CompletedTask, .Segment_Orange .listContentPreview, .Segment_Orange .Text_TimestampPanel, .Segment_Orange .Task_Desc_Edit, .Segment_Orange .List_Edit_Hint, .Segment_Orange .List_Dates_Hint, .Segment_Orange .ImageFileDescription, .Segment_Orange table, .Segment_Orange .Segment_EditIcon_Alternative, .Segment_Orange .Inbox_InsertTo, .Segment_Orange .TopicListTable_DateCol_Header, .Segment_Orange .TopicListTable_DateCol2_Header {color:#444;text-shadow:0 1px 0 #fff;}
+.Segment_Orange .recursiveTaskControl {background:url(/img/2008/controls/arrow_icons.png) 0 -180px no-repeat;}
+.Segment_Orange a.Clipping:link, .Segment_Orange a.Clipping:visited {color:#333;}
+.Segment_Orange a.Clipping:hover{color:#444;}
+.Segment_Orange .Segment_CollapseHandle { background-position:-2px -23px; }
+.Segment_Orange .Segment_Move, .Segment_Orange .DragHandle { background-position: -1px -120px;}
+
+.Segment_Purple, .Segment_Purple .Segment_EditIcon, .Segment_Purple .Segment_EditIcon_Alternative{background:rgba(251, 231, 255, 0.90) !important;}
+.Segment_Purple .GroupTitle, .Segment_Purple input[type=text], .Segment_Purple .Segment_Text_Title, .Segment_Purple input, .Segment_Purple .ImageFileName, .Segment_Purple p, .Segment_Purple .ListItem_Caption, .Segment_Purple .EditIcon_Link{color:#333;text-shadow:0 1px 0 #fff;}
+.Segment_Purple a, .Segment_Purple .dataView_Item_AuthorTag, .Segment_Purple .text_CompletedTask, .Segment_Purple .listContentPreview, .Segment_Purple .Text_TimestampPanel, .Segment_Purple .Task_Desc_Edit, .Segment_Purple .List_Edit_Hint, .Segment_Purple .List_Dates_Hint, .Segment_Purple .ImageFileDescription, .Segment_Purple table, .Segment_Purple .Segment_EditIcon_Alternative, .Segment_Purple .Inbox_InsertTo, .Segment_Purple .TopicListTable_DateCol_Header, .Segment_Purple .TopicListTable_DateCol2_Header {color:#444;text-shadow:0 1px 0 #fff;}
+.Segment_Purple .recursiveTaskControl {background:url(/img/2008/controls/arrow_icons.png) 0 -180px no-repeat;}
+.Segment_Purple a.Clipping:link, .Segment_Purple a.Clipping:visited {color:#333;}
+.Segment_Purple a.Clipping:hover{color:#444;}
+.Segment_Purple .Segment_CollapseHandle {	background-position:-2px -23px; }
+.Segment_Purple .Segment_Move, .Segment_Purple .DragHandle { background-position: -1px -120px;}
+
+.Segment_Green, .Segment_Green .Segment_EditIcon, .Segment_Green .Segment_EditIcon_Alternative{color:#666;background:rgba(226, 250, 170, 0.90) !important;}
+.Segment_Green .GroupTitle, .Segment_Green input[type=text], .Segment_Green .Segment_Text_Title, .Segment_Green input, .Segment_Green .ImageFileName, .Segment_Green p, .Segment_Green .ListItem_Caption, .Segment_Green .EditIcon_Link{color:#333;text-shadow:0 1px 0 #fff;}
+.Segment_Green a, .Segment_Green .dataView_Item_AuthorTag, .Segment_Green .text_CompletedTask, .Segment_Green .listContentPreview, .Segment_Green .Text_TimestampPanel, .Segment_Green .Task_Desc_Edit, .Segment_Green .List_Edit_Hint, .Segment_Green .List_Dates_Hint, .Segment_Green .ImageFileDescription, .Segment_Green table, .Segment_Green .Segment_EditIcon_Alternative, .Segment_Green .Inbox_InsertTo, .Segment_Green .TopicListTable_DateCol_Header, .Segment_Green .TopicListTable_DateCol2_Header {color:#444;text-shadow:0 1px 0 #fff;}
+.Segment_Green .recursiveTaskControl {background:url(/img/2008/controls/arrow_icons.png) 0 -180px no-repeat;}
+.Segment_Green a.Clipping:link, .Segment_Green a.Clipping:visited {color:#333;}
+.Segment_Green a.Clipping:hover{color:#444;}
+.Segment_Green .Segment_CollapseHandle { background-position:-2px -23px; }
+.Segment_Green .Segment_Move, .Segment_Green .DragHandle { background-position: -1px -120px;}
+
+.Segment_Graphite, .Segment_Graphite .Segment_EditIcon, .Segment_Graphite .Segment_EditIcon_Alternative{background:rgba(179, 192, 208, 0.90) !important;}
+.Segment_Graphite .GroupTitle, .Segment_Graphite input[type=text], .Segment_Graphite .Segment_Text_Title, .Segment_Graphite input, .Segment_Graphite .ImageFileName, .Segment_Graphite p, .Segment_Graphite .ListItem_Caption, .Segment_Graphite .EditIcon_Link{color:#333;text-shadow:0 1px 0 #fff;}
+.Segment_Graphite a, .Segment_Graphite .dataView_Item_AuthorTag, .Segment_Graphite .text_CompletedTask, .Segment_Graphite .listContentPreview, .Segment_Graphite .Text_TimestampPanel, .Segment_Graphite .Task_Desc_Edit, .Segment_Graphite .List_Edit_Hint, .Segment_Graphite .List_Dates_Hint, .Segment_Graphite .ImageFileDescription, .Segment_Graphite table, .Segment_Graphite .Segment_EditIcon_Alternative, .Segment_Graphite .Inbox_InsertTo, .Segment_Graphite .TopicListTable_DateCol_Header, .Segment_Graphite .TopicListTable_DateCol2_Header {color:#444;text-shadow:0 1px 0 #fff;}
+.Segment_Graphite .recursiveTaskControl {background:url(/img/2008/controls/arrow_icons.png) 0 -180px no-repeat;}
+.Segment_Graphite a.Clipping:link, .Segment_Graphite a.Clipping:visited {color:#333;}
+.Segment_Graphite a.Clipping:hover{color:#444;}
+.Segment_Graphite .Segment_CollapseHandle {	background-position:-2px -23px; }
+.Segment_Graphite .Segment_Move, .Segment_Graphite .DragHandle { background-position: -1px -120px;}
+*/
+
+
+.dataView_Controls {
+	position:absolute;
+	right:10px;
+	top:5px;
+	font-size:11px;
+	color:#aaa;
+	z-index:1;
+	width:140px;
+	text-shadow:0 -1px 0 #111;
+}
+
+.Segment_Text h1, .Segment_Text h2, .Segment_Text h3 {
+	float:none !important;
+	padding:0 !important;
+	margin:20px 0 0 0 !important;
+	text-indent:0 !important;
+	width:100% !important;
+	color:#222 !important;
+	border:0px !important;
+	font-weight:normal !important;
+}
+
+.Segment_Text h1 {font-size:20px !important;}
+.Segment_Text h2 {font-size:15px !important;}
+.Segment_Text h3 {font-size:13px !important;}
+
+.dataView_Item_AuthorTag {
+	float:left;
+	font-size:10px;
+
+	color:#aaa;
+
+	line-height:12px;
+	margin:0;
+	padding:0;
+	opacity:0.2;
+	
+	-webkit-transition: opacity 0.1s ease-in-out;
+}
+
+.dataView_Segment:hover .dataView_Item_AuthorTag, .TopicList:hover .dataView_Item_AuthorTag {
+	opacity:1;
+}
+
+#dataView_SharedStatus_blocker, #dataView_Lock_blocker {
+	position:absolute;
+	width:30px;
+	height:25px;
+	top:3px;
+	left:1px;
+	
+	background:rgba(240, 240, 240, 0.7);
+	cursor:not-allowed;
+}
+
+.dataView_Segment_ReadOnly {
+	background:none !important;
+	border-top:1px solid transparent !important;
+	border-bottom:1px solid transparent !important;
+	-webkit-box-shadow:none !important;
+}
+
+.dataView_Segment:hover {
+	z-index:200 !important;
+}
+
+	.dataView_Segment .dataView_SegmentControl {
+		opacity:0;
+	}
+	
+	.dataView_Segment:hover .dataView_SegmentControl {
+		opacity:1;
+	}
+	
+a.EditIcon_Link:link, a.EditIcon_Link:visited
+{
+	float:left;
+	line-height:18px;
+	height:18px;
+	text-decoration:none;
+
+	padding:0 10px 0 10px;
+	opacity:0.8;
+}
+a.EditIcon_Link:hover
+{
+	opacity:1;
+}
+
+a.EditIcon_Link:active {
+	opacity:0.9;
+}
+
+a.EditIcon_Lock:link, a.EditIcon_Lock:visited {
+	float:left;
+	width:30px;
+	height:20px;
+	display:block;
+	background:url(/img/2009/toggleLockBtn.png?1128) no-repeat;
+}
+
+a.EditIcon_Lock:hover {
+	background-color:rgba(0,0,0,0.05);
+} 
+a.EditIcon_Lock:active {
+	background-color:rgba(0,0,0,0.08);
+}
+
+
+.dataView_Item_SyncStatus {
+	position:absolute;
+	
+	right:5px;
+	bottom:0px;
+	
+	height:20px;
+	line-height:20px;
+
+	font-size:11px;
+
+	opacity:0.2;
+	
+	cursor:default;
+	
+	text-shadow:0 -1px 0 #111;
+}
+
+.dataView_Segment:hover .dataView_Item_SyncStatus {
+	opacity:1;
+}
+
+.dataView_Segment_Collapsed .dataView_Item_SyncStatus {
+
+	/* right:275px !important; */
+	right:5px !important;
+	bottom:-22px !important;
+	
+}
+
+.dataView_Item_SyncStatus_LockedItem {
+
+	background:url(/img/2009/toggleLockBtn.png) 0 0 no-repeat;
+	padding-left:20px;
+	
+	color:rgb(51, 102, 166);
+	
+}
+
+.dataView_Item_SyncStatus_AuthorTag {
+	color:#aeff00;
+}
+
+.EditIcon_Locked {
+	background-position:5px -1px !important;
+}
+
+.EditIcon_Unlocked {
+	background-position:5px -21px !important;
+}
+
+a.EditIcon_Link_Disabled:link, a.EditIcon_Link_Disabled:visited {
+	float:left;
+	line-height:18px;
+	height:18px;
+	text-decoration:none;
+	color:#aaa;
+	padding:0 10px 0 10px;
+	cursor:default;
+}
+
+.text_OverdueTask {color:#c00;}
+.text_PendingTask {color:#27c;}
+.text_CompletedTask {color:#aaa;}

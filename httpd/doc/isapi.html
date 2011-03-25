@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META name="generator" content="HTML Tidy for Linux/x86 (vers 12 April 2005), see www.w3.org">
+<TITLE>ISAPI Extensions</TITLE>
+<META name="GENERATOR" content="Modular DocBook HTML Stylesheet Version 1.79">
+<LINK rel="HOME" title="Abyss Web Server For Linux User's Guide" href="index.html">
+<LINK rel="UP" title="CGI, FastCGI, and ISAPI" href="scripting.html">
+<LINK rel="PREVIOUS" title="FastCGI" href="fastcgi.html">
+<LINK rel="NEXT" title="Server Side Includes" href="ssi.html">
+<LINK rel="STYLESHEET" type="text/css" href="stylesheet.css">
+<META name="AppleIcon" content="icon.png">
+<META name="AppleTitle" content="ISAPI Extensions">
+<META name="Description" content="ISAPI Extensions">
+<META name="AppleOrder" content="">
+</HEAD>
+<BODY class="SECT1" bgcolor="#FFFFFF" text="#000000">
+<DIV class="NAVHEADER">
+<TABLE summary="Header navigation table" width="100%" border="0" cellpadding="0" cellspacing="0">
+<TR>
+<TH colspan="3" align="center">Abyss Web Server For Linux User's Guide</TH>
+</TR>
+<TR>
+<TD width="10%" align="left" valign="bottom"><A href="fastcgi.html" accesskey="P">Prev</A></TD>
+<TD width="80%" align="center" valign="bottom">Chapter 6. CGI, FastCGI, and ISAPI</TD>
+<TD width="10%" align="right" valign="bottom"><A href="ssi.html" accesskey="N">Next</A></TD>
+</TR>
+</TABLE>
+<HR align="left" width="100%"></DIV>
+<DIV class="SECT1">
+<H1 class="SECT1"><A name="ISAPI" id="ISAPI">ISAPI Extensions</A></H1>
+<P>Abyss Web Server supports a large subset of the ISAPI 5.0 specification suitable for running most of the ISAPI extensions available to date. ISAPI extensions are loaded in the server process space on demand. They remain there until the server is restarted or stopped. Since ISAPI extensions <SPAN class="emphasis"><I class="EMPHASIS">live</I></SPAN> in the server process space (contrarily to CGI application which are launched in their own process), any ISAPI error or crash affects the whole server. But thanks to the APX (Anti-crash Protection eXtension) architecture of Abyss Web Server such problems can be immediately detected and the server is restarted with almost no noticeable downtime.</P>
+<P>Abyss Web Server makes ISAPI development easier thanks to its advanced debugging capabilities: With the help of the <B class="GUILABEL">Debugging Level</B> parameter in <B class="GUILABEL">ISAPI Parameters</B>, you can configure the server to log unhandled callback to the ISAPI extension, all callbacks, or all callbacks with all the exchanged input/output between the extension and the server.</P>
+</DIV>
+<DIV class="NAVFOOTER">
+<HR align="left" width="100%">
+<TABLE summary="Footer navigation table" width="100%" border="0" cellpadding="0" cellspacing="0">
+<TR>
+<TD width="33%" align="left" valign="top"><A href="fastcgi.html" accesskey="P">Prev</A></TD>
+<TD width="34%" align="center" valign="top"><A href="index.html" accesskey="H">Home</A></TD>
+<TD width="33%" align="right" valign="top"><A href="ssi.html" accesskey="N">Next</A></TD>
+</TR>
+<TR>
+<TD width="33%" align="left" valign="top">FastCGI</TD>
+<TD width="34%" align="center" valign="top"><A href="scripting.html" accesskey="U">Up</A></TD>
+<TD width="33%" align="right" valign="top">Server Side Includes</TD>
+</TR>
+</TABLE>
+</DIV>
+<DIV class="COPYRIGHT">Copyright &copy; 2001-2007 Aprelium Technologies</DIV>
+</BODY>
+</HTML>

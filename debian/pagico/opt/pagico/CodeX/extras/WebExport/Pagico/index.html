@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+   <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="author" content="C. Meng, http://www.pagico.com/" />
+	<meta name="creator" content="CodeX" />
+	<title><!--%TITLE%--></title>
+
+	<style>
+	/* Created by Igor Penjivrag (www.colorlightstudio.com) - 12.11.2006 */
+
+
+	body {
+		margin: 0px;
+		background: url(.system/img/System_Header_BG.jpg) left top repeat-x;
+		background-repeat: repeat-x;
+		font-family: Verdana, Arial, sans-serif;
+	        font-size: .7em;
+	}
+
+	p {
+		line-height: 17px;
+		margin: 11px 0 10px 0;
+		padding: 0px;
+	}
+
+	h2 {
+		color: #73353A;
+		margin:0px;
+		padding:0px;
+		font-size: 15px;
+	}
+
+	ul {
+		font-size: 11px;
+		margin:0;
+		padding:0;
+		list-style-image: url(.system/img/bullet.gif);
+	}
+
+	a {
+		color: #8B0000;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	.DueDate
+	{
+		margin-left:15px;
+		font-weight:bold;
+	}
+
+	blockquote{
+		background: #F7FDE3;
+		color: #606060;
+		padding: 10px;
+	}
+
+
+	/**** Main Container ***/
+
+
+	#wrap {
+	       margin-left: auto;
+	       margin-right: auto;
+	       width: 730px;
+	}
+
+
+	/**** Top ***/
+
+
+	#top {
+		width: 100%;
+		height: 70px;
+		color: #fff;
+		background: #000 url(.system/img/System_Header.jpg) right top no-repeat;
+		overflow:hidden;
+	}
+
+	#top h2 {
+		color: White;
+		letter-spacing: 3px;
+		font-size: 2.4em;
+		font-weight: normal;
+		position: relative;
+		margin: 0px;
+		top:33px;
+		display:block;
+		float:left;
+
+		padding-left: 40px;
+	}
+
+	#top h2 a {
+		color: white;
+		text-decoration: none;
+	}
+
+	#top h2 a:hover {
+	        color: #FF5938;
+	}
+
+
+	/**** Main Menu ***/
+
+
+	#menu {
+		display: block;
+		float:right;
+	}
+
+	#menu ul {
+		margin: 0;
+		list-style: none;
+	}
+
+	#menu li {
+		display: block;
+		float: left;
+		white-space: nowrap;
+	}
+
+	#menu li a {
+		display: block;
+		padding: 55px 20px 12px 20px;
+		text-decoration: none;
+		color: #fff;
+	}
+
+	* html #menu a {width:1%;}
+
+	#menu li a:hover {
+		background: #FF5938;
+	}
+
+	#menu li a.current {
+		letter-spacing: 1px;
+		color: gray;
+	}
+
+	#menu li a.current:hover {
+		color: #fff;
+	}
+
+
+	/**** Content Container ***/
+
+
+	#content {
+		width: 100%;
+		margin-top:10px;
+	}
+
+	#content h2 {
+		margin: 0;
+		padding: 10px 0 10px 0;
+	}
+
+
+	/**** Content ***/
+
+
+	#leftcolumn ul {
+		padding: 15px 0 15px 35px;
+		margin:0;
+	}
+
+	#leftcolumn li {
+		margin-bottom:5px;
+	}
+
+	#leftcolumn {
+		width: 700px;
+		float:left;
+		display: block;
+	        margin-left: 20px;
+		display: inline;
+	}
+
+
+
+
+	/**** Clear Div ***/
+
+
+	#clear {
+		display: block;
+		clear: both;
+		width: 100%;
+		height:1px;
+		overflow:hidden;
+	}
+
+
+	/**** Footer ***/
+
+
+	#footer {
+	        margin: 40px auto 0 auto;
+		text-align: center;
+		border-top: dotted 1px gray;
+		padding: 20px 0 20px 0;
+		width: 70%;
+	}
+
+	#footer p {
+		margin: 0px;
+		padding: 0;
+	}
+
+	.halfcolumn
+	{
+		float:left;
+		width:49%;
+		margin:0 0 10px 0;
+	}
+
+	.rowcontainer
+	{
+	float:left;
+	width:100%;
+	}
+
+	.halfcolumn h2
+	{
+		margin:0 0 0 0 !important;
+		line-height:14px;
+	}
+
+	.halfcolumn p
+	{
+		margin:0 0 0 0 !important;
+		line-height:14px;
+	}
+
+	.left{float:left;margin-top:10px;}
+	.right{float:right;}
+	
+	.listTable {
+		float:left;
+		width:100%;
+		margin:5px 0 10px 0;
+	}
+
+	.listItem {
+		line-height:20px;
+		color:#444;
+	}
+
+	.listItem_DueDate {
+		line-height:20px;
+		color:#777;
+		text-align:center;
+	}
+
+	.listItem_StartDate {
+		line-height:20px;
+		color:#777;
+		background:url(.system/img/shades/grey.png);
+		text-align:center;
+	}
+
+	.listItem_Desc {
+		line-height:20px;
+		color:#666;
+		border-bottom:1px solid #ccc;
+	}
+
+	.listItem_Status {
+		line-height:20px;
+		text-align:center;
+	}
+	</style>
+
+
+</head>
+
+<body>
+<div id="wrap">
+<div id="top">
+<h2><!--%TITLE%--></h2>
+<div id="menu">
+
+</div>
+</div>
+<div id="content">
+<div id="leftcolumn">
+<!--%MAINCONTENT%-->
+</div>
+<div id="clear"></div></div>
+<div id="footer">
+<p><!--%AUTHOR%--> | <!--%PAGEDATE%--></p>
+</div>
+</div>
+
+</body>
+</html>

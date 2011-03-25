@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META name="generator" content="HTML Tidy for Linux/x86 (vers 12 April 2005), see www.w3.org">
+<TITLE>Startup Configuration</TITLE>
+<META name="GENERATOR" content="Modular DocBook HTML Stylesheet Version 1.79">
+<LINK rel="HOME" title="Abyss Web Server For Linux User's Guide" href="index.html">
+<LINK rel="PREVIOUS" title="Command Line Parameters" href="commandline.html">
+<LINK rel="NEXT" title="User Option" href="useroption.html">
+<LINK rel="STYLESHEET" type="text/css" href="stylesheet.css">
+<META name="AppleIcon" content="icon.png">
+<META name="AppleTitle" content="Abyss Web Server Help">
+</HEAD>
+<BODY class="APPENDIX" bgcolor="#FFFFFF" text="#000000">
+<DIV class="NAVHEADER">
+<TABLE summary="Header navigation table" width="100%" border="0" cellpadding="0" cellspacing="0">
+<TR>
+<TH colspan="3" align="center">Abyss Web Server For Linux User's Guide</TH>
+</TR>
+<TR>
+<TD width="10%" align="left" valign="bottom"><A href="commandline.html" accesskey="P">Prev</A></TD>
+<TD width="80%" align="center" valign="bottom"></TD>
+<TD width="10%" align="right" valign="bottom"><A href="useroption.html" accesskey="N">Next</A></TD>
+</TR>
+</TABLE>
+<HR align="left" width="100%"></DIV>
+<DIV class="APPENDIX">
+<H1><A name="STARTUP" id="STARTUP"></A>Appendix B. Startup Configuration</H1>
+<P>Abyss Web Server ships with a command line utility called <KBD class="USERINPUT">autostart-setup</KBD> which can configure your system to launch the server automatically at computer boot time and let it run in the background even if no user is logged on.</P>
+<P>First, log in using a non-priviliged user account (any account other than <KBD class="USERINPUT">root</KBD>), install Abyss Web Server and run it for the first time to have it create a default configuration file with the right settings.</P>
+<P>Next, go to the directory where you have installed Abyss Web Server and execute: <KBD class="USERINPUT">./autostart-setup install</KBD>.</P>
+<P><KBD class="USERINPUT">autostart-setup</KBD> may ask you to enter your <KBD class="USERINPUT">root</KBD> password if you are using a non-priviledged user account. If this operation fails, log in as <KBD class="USERINPUT">root</KBD> and run <KBD class="USERINPUT">autostart-setup install</KBD> again.</P>
+<P>Once Abyss Web Server is added to the list of programs which start automatically at boot time, you can manually stop it by executing the command: <KBD class="USERINPUT">/etc/init.d/abyssws stop</KBD>. To start it manually, use the command: <KBD class="USERINPUT">/etc/init.d/abyssws start</KBD>.</P>
+<P>If you ever want to remove Abyss Web Server from the list of programs which start automatically, go to the directory where you have installed it and execute: <KBD class="USERINPUT">./autostart-setup remove</KBD>.</P>
+</DIV>
+<DIV class="NAVFOOTER">
+<HR align="left" width="100%">
+<TABLE summary="Footer navigation table" width="100%" border="0" cellpadding="0" cellspacing="0">
+<TR>
+<TD width="33%" align="left" valign="top"><A href="commandline.html" accesskey="P">Prev</A></TD>
+<TD width="34%" align="center" valign="top"><A href="index.html" accesskey="H">Home</A></TD>
+<TD width="33%" align="right" valign="top"><A href="useroption.html" accesskey="N">Next</A></TD>
+</TR>
+<TR>
+<TD width="33%" align="left" valign="top">Command Line Parameters</TD>
+<TD width="34%" align="center" valign="top">&nbsp;</TD>
+<TD width="33%" align="right" valign="top">User Option</TD>
+</TR>
+</TABLE>
+</DIV>
+<DIV class="COPYRIGHT">Copyright &copy; 2001-2007 Aprelium Technologies</DIV>
+</BODY>
+</HTML>

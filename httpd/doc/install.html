@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META name="generator" content="HTML Tidy for Linux/x86 (vers 12 April 2005), see www.w3.org">
+<TITLE>Installing/Upgrading the software</TITLE>
+<META name="GENERATOR" content="Modular DocBook HTML Stylesheet Version 1.79">
+<LINK rel="HOME" title="Abyss Web Server For Linux User's Guide" href="index.html">
+<LINK rel="UP" title="Getting Started" href="start.html">
+<LINK rel="PREVIOUS" title="Getting Started" href="start.html">
+<LINK rel="NEXT" title="First contact" href="contact1.html">
+<LINK rel="STYLESHEET" type="text/css" href="stylesheet.css">
+<META name="AppleIcon" content="icon.png">
+<META name="AppleTitle" content="Installing/Upgrading the software">
+<META name="Description" content="Installing/Upgrading the software">
+<META name="AppleOrder" content="">
+</HEAD>
+<BODY class="SECT1" bgcolor="#FFFFFF" text="#000000">
+<DIV class="NAVHEADER">
+<TABLE summary="Header navigation table" width="100%" border="0" cellpadding="0" cellspacing="0">
+<TR>
+<TH colspan="3" align="center">Abyss Web Server For Linux User's Guide</TH>
+</TR>
+<TR>
+<TD width="10%" align="left" valign="bottom"><A href="start.html" accesskey="P">Prev</A></TD>
+<TD width="80%" align="center" valign="bottom">Chapter 2. Getting Started</TD>
+<TD width="10%" align="right" valign="bottom"><A href="contact1.html" accesskey="N">Next</A></TD>
+</TR>
+</TABLE>
+<HR align="left" width="100%"></DIV>
+<DIV class="SECT1">
+<H1 class="SECT1"><A name="INSTALL" id="INSTALL">Installing/Upgrading the software</A></H1>
+<UL>
+<LI>
+<P>For a first time installation, go to the directory where you want to install Abyss Web Server. From now on, <KBD class="USERINPUT">&lt;Abyss Web Server directory&gt;</KBD> will refer to this directory.</P>
+</LI>
+<LI>
+<P>Execute:</P>
+<P><KBD class="USERINPUT">tar xzfm &lt;Abyss Web Server installation package&gt;</KBD></P>
+</LI>
+<LI>
+<P>If you are upgrading, stop Abyss Web Server, go to the directory where the old version of Abyss Web Server is already installed and execute the following commands:</P>
+<P><KBD class="USERINPUT">mv htdocs/index.html htdocs/index.html.bak</KBD></P>
+<P><KBD class="USERINPUT">cd ..</KBD></P>
+<P><KBD class="USERINPUT">tar xzfm &lt;Abyss Web Server installation package&gt;</KBD></P>
+<P><KBD class="USERINPUT">cd abyssws</KBD></P>
+<P><KBD class="USERINPUT">mv htdocs/index.html.bak htdocs/index.html</KBD></P>
+<P>If errors are reported when executing the first and the last command, ignore them: they occurred because you have no <KBD class="USERINPUT">index.html</KBD> file in the <KBD class="USERINPUT">htdocs</KBD> directory.</P>
+</LI>
+</UL>
+</DIV>
+<DIV class="NAVFOOTER">
+<HR align="left" width="100%">
+<TABLE summary="Footer navigation table" width="100%" border="0" cellpadding="0" cellspacing="0">
+<TR>
+<TD width="33%" align="left" valign="top"><A href="start.html" accesskey="P">Prev</A></TD>
+<TD width="34%" align="center" valign="top"><A href="index.html" accesskey="H">Home</A></TD>
+<TD width="33%" align="right" valign="top"><A href="contact1.html" accesskey="N">Next</A></TD>
+</TR>
+<TR>
+<TD width="33%" align="left" valign="top">Getting Started</TD>
+<TD width="34%" align="center" valign="top"><A href="start.html" accesskey="U">Up</A></TD>
+<TD width="33%" align="right" valign="top">First contact</TD>
+</TR>
+</TABLE>
+</DIV>
+<DIV class="COPYRIGHT">Copyright &copy; 2001-2007 Aprelium Technologies</DIV>
+</BODY>
+</HTML>

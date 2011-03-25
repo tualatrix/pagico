@@ -1,0 +1,4 @@
+python:Versions=all
+python:Depends=python
+shlibs:Depends=ia32-libs (>= 20080808), lib32z1 (>= 1:1.1.4), libc6-i386 (>= 2.11), pagico
+misc:Depends=

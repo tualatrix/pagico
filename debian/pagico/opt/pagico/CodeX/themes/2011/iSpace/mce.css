@@ -1,0 +1,77 @@
+body.mceContentBody {
+	font-family: "Lucida Grande", Tahoma, Arial, sans-serif;
+	font-size:12px;
+	background:#5d5d5d;
+	color:#ccc;
+	line-height:18px;
+	
+	z-index:20;
+}
+
+body.mceContentBody p
+{
+	margin:0;
+	padding:0;
+}
+/*
+.mceLayout
+{
+	float:left !important;
+	position:absolute;
+	left:0px;
+	top:0px;
+	display:block;
+}
+*/
+.defaultSkin table {
+	background:none !important;
+}
+
+.defaultSkin table.mceLayout {
+	border-right:0px !important;
+	border-left:1px solid #999 !important;
+}
+
+.defaultSkin table.mceLayout tr.mceFirst td {
+	border-top:none !important;
+}
+
+.defaultSkin .mceIframeContainer {
+	border-top:1px solid #999 !important;
+	border-bottom:none !important;
+}
+
+.defaultSkin .mceButton {
+	border-color:#555 !important;
+}
+
+	.defaultSkin a.mceButtonEnabled:hover {
+		border-color:#999 !important;
+		background-color:#666 !important;
+	}
+
+.defaultSkin .mceSeparator {
+	background:none;
+	border-right:1px solid #777;
+}
+
+.defaultSkin table.mceListBoxEnabled:hover .mceText, .defaultSkin .mceListBoxHover .mceText, .defaultSkin .mceListBoxSelected .mceText, .defaultSkin table.mceSplitButtonEnabled:hover a.mceOpen, .defaultSkin .mceSplitButtonHover a.mceOpen, .defaultSkin .mceSplitButtonSelected a.mceOpen, .defaultSkin table.mceSplitButtonEnabled:hover a.mceAction, .defaultSkin .mceSplitButtonHover a.mceAction, .defaultSkin .mceSplitButtonSelected a.mceAction {
+	background-color:#444 !important;
+	border-color:#999 !important;
+}
+
+.defaultSkin .mceListBox .mceText {
+	background-color:#555 !important;
+}
+
+.defaultSkin a:hover, .defaultSkin a:link, .defaultSkin a:visited, .defaultSkin a:active {
+	color:#aaa !important;
+}
+
+.defaultSkin table.mceListBoxEnabled:hover .mceOpen, .defaultSkin .mceListBoxHover .mceOpen, .defaultSkin .mceListBoxSelected .mceOpen {
+	background-color:#444 !important;
+}
+
+.defaultSkin .mceListBox .mceText, .defaultSkin .mceListBox .mceOpen, .defaultSkin .mceSplitButton a.mceAction, .defaultSkin .mceSplitButton a.mceOpen {
+	border-color:#777 !important;
+}

@@ -1,0 +1,132 @@
+/* Lock */
+#LoginWindow
+{
+	float:left;
+	position:relative;
+	width:1000px;
+	height:400px;
+	margin:10px 0 0px 0px;
+	
+	border:1px solid #ccc;
+	
+	background:url(/img/iSpace/custom/yellow.jpg) left repeat-y;
+}
+
+#LeftPart
+{
+	float:left;
+	width:300px;
+	height:300px;
+	margin:50px 0 0 0;
+	border-right:1px solid #ccc;
+}
+#LeftPart h1
+{
+	float:right;
+	display:block;
+	width:150px;
+	height:28px;
+	font-size:18px;
+	font-family:ËÎÌו, Tahoma, Arial, sans-serif;
+	
+	margin:100px 10px 0 0;
+	border-bottom:1px solid #ddd;
+	
+	text-align:right;
+}
+#LeftPart h2
+{
+	float:right;
+	display:block;
+	width:150px;
+	height:20px;
+	font-size:16px;
+	font-family:Tahoma, Arial, sans-serif;
+	
+	margin:5px 10px 0 0;
+	color:#888;
+	text-align:right;
+}
+
+.PageTitle
+{
+	position:absolute;
+	top:120px;
+	left:310px;
+	
+	font-size:15px;
+	color:#159;
+}
+
+#LoginWindow form
+{
+	float:left;
+	display:block;
+	width:300px;
+	border:1px solid #c1c3c5;
+	background:#f3f6f9;
+	margin:140px 0 0 10px;
+	padding:10px 0 10px 10px;
+}
+
+.Login_Input
+{
+	width:220px;
+	height:20px;
+	
+	font-family:Tahoma, Arial, sans-serif;
+	font-weight:normal;
+	font-size:11px;
+	color:#666;
+	
+	text-align:center;
+	border:1px solid #ccc;
+}
+
+.Login_Button
+{
+	width:120px;
+	height:25px;
+	
+	margin-top:5px;
+	font-family:Tahoma, Arial, sans-serif;
+	font-weight:bold;
+	font-size:11px;
+	color:#666;
+	
+	margin-left:90px;
+}
+
+.SpecialArea
+{
+	float:left;
+	display:inline-block;
+	margin:10px 0 10px 10px;
+	
+	width:400px;
+	
+	background:#eee;
+	border:1px solid #ccc;
+}
+
+	.SpecialTitle
+	{
+		float:left;
+		margin:2px 0 0px 5px;
+		
+		color:#333;
+		font-weight:bold;
+		font-size:11px;
+	}
+	
+	.SpecialBody
+	{
+		float:left;
+		clear:left;
+		margin:5px 0 5px 5px;
+		
+		width:390px;
+		line-height:15px;
+		font-size:11px;
+		color:#333;
+	}

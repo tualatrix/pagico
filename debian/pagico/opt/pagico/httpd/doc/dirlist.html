@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META name="generator" content="HTML Tidy for Linux/x86 (vers 12 April 2005), see www.w3.org">
+<TITLE>Custom Directory Listings</TITLE>
+<META name="GENERATOR" content="Modular DocBook HTML Stylesheet Version 1.79">
+<LINK rel="HOME" title="Abyss Web Server For Linux User's Guide" href="index.html">
+<LINK rel="PREVIOUS" title="Encoding" href="ssiencoding.html">
+<LINK rel="NEXT" title="Scripts" href="dirscript.html">
+<LINK rel="STYLESHEET" type="text/css" href="stylesheet.css">
+<META name="AppleIcon" content="icon.png">
+<META name="AppleTitle" content="Abyss Web Server Help">
+</HEAD>
+<BODY class="CHAPTER" bgcolor="#FFFFFF" text="#000000">
+<DIV class="NAVHEADER">
+<TABLE summary="Header navigation table" width="100%" border="0" cellpadding="0" cellspacing="0">
+<TR>
+<TH colspan="3" align="center">Abyss Web Server For Linux User's Guide</TH>
+</TR>
+<TR>
+<TD width="10%" align="left" valign="bottom"><A href="ssiencoding.html" accesskey="P">Prev</A></TD>
+<TD width="80%" align="center" valign="bottom"></TD>
+<TD width="10%" align="right" valign="bottom"><A href="dirscript.html" accesskey="N">Next</A></TD>
+</TR>
+</TABLE>
+<HR align="left" width="100%"></DIV>
+<DIV class="CHAPTER">
+<H1><A name="DIRLIST" id="DIRLIST"></A>Chapter 8. Custom Directory Listings</H1>
+<DIV class="TOC">
+<DL>
+<DT><B>Table of Contents</B></DT>
+<DT><A href="dirlist.html#DIRLIST-TEMPLATE">Defining a template</A></DT>
+<DT><A href="dirscript.html">Scripts</A></DT>
+</DL>
+</DIV>
+<P>Directory listings are fully customizable in Abyss Web Server. If you do not like their standard look, you can provide the server with your listing template. Advanced users can do better by writing a script to generate custom listings.</P>
+<DIV class="SECT1">
+<H1 class="SECT1"><A name="DIRLIST-TEMPLATE" id="DIRLIST-TEMPLATE">Defining a template</A></H1>
+<P>A directory listing template is defined by its:</P>
+<UL>
+<LI>
+<P><A name="DIRLIST-TEMPLATE-MIMETYPE" id="DIRLIST-TEMPLATE-MIMETYPE"></A> <B class="GUILABEL">MIME Type</B>: It is by default <KBD class="USERINPUT">text/html; charset=utf-8</KBD>. Since file names are provided using the UTF-8 text encoding, the template MIME type should always contain this text encoding (charset) value.</P>
+</LI>
+<LI>
+<P><A name="DIRLIST-TEMPLATE-HEADER" id="DIRLIST-TEMPLATE-HEADER"></A> <B class="GUILABEL">Header</B>: It is the header of the listing page that will be rendered.</P>
+</LI>
+<LI>
+<P><A name="DIRLIST-TEMPLATE-LINE" id="DIRLIST-TEMPLATE-LINE"></A> <B class="GUILABEL">Body Line</B>: It is the template of each file or directory line in the listing.</P>
+</LI>
+<LI>
+<P><A name="DIRLIST-TEMPLATE-FOOTER" id="DIRLIST-TEMPLATE-FOOTER"></A> <B class="GUILABEL">Footer</B>: It is the footer of the listing page.</P>
+</LI>
+</UL>
+<P>When generating a directory listing using a template, the server creates a special SSI environment before processing the header, the line description for every file in the listing, and the footer. So you can (in fact, you should) use SSI directives to insert information about every file in the generated page.</P>
+<P>While processing the line description for a given file, the server sets the following environment variables in addition to the standard CGI environment variables:</P>
+<UL>
+<LI>
+<P><KBD class="USERINPUT">DIRLIST_FILE_NAME</KBD>: The name of the current file. This name is UTF-8 encoded.</P>
+</LI>
+<LI>
+<P><KBD class="USERINPUT">DIRLIST_FILE_URL</KBD>: The relative URL of the current file.</P>
+</LI>
+<LI>
+<P><KBD class="USERINPUT">DIRLIST_FILE_SIZE</KBD>: The size of the current file. It will be conforming to the current SSI size format. This parameter can be configured in the SSI section of the console or temporarily modified using the <KBD class="USERINPUT">&lt;!-- #config sizefmt="size_format" --&gt;</KBD> directive. If the current file is a directory, this variable is set to the <KBD class="USERINPUT">-</KBD> (hyphen) symbol.</P>
+</LI>
+<LI>
+<P><KBD class="USERINPUT">DIRLIST_FILE_DATE</KBD>: The last modification date of the current file expressed in UTC (coordinated universal time). It will be conforming to the current SSI time format. This parameter can be configured in the SSI section of the console or temporarily modified using the <KBD class="USERINPUT">&lt;!-- #config timefmt="time_format" --&gt;</KBD> directive.</P>
+</LI>
+<LI>
+<P><KBD class="USERINPUT">DIRLIST_FILE_LOCAL_DATE</KBD>: The last modification date of the current file expressed in local time. It will be conforming to the current SSI time format. This parameter can be configured in the SSI section of the console or temporarily modified using the <KBD class="USERINPUT">&lt;!-- #config timefmt="time_format" --&gt;</KBD> directive.</P>
+</LI>
+<LI>
+<P><KBD class="USERINPUT">DIRLIST_FILE_MIME_TYPE</KBD>: The MIME type of the current file. If the file is a directory, the value of this variable is set to <KBD class="USERINPUT">Directory</KBD>.</P>
+</LI>
+<LI>
+<P><KBD class="USERINPUT">DIRLIST_FILE_MIME_MAIN_TYPE</KBD>: The main MIME type of the current file. For example, if its MIME type is <KBD class="USERINPUT">text/html</KBD>, this variable will contain <KBD class="USERINPUT">text</KBD>. If the file is a directory, the value of this variable is set to <KBD class="USERINPUT">Directory</KBD></P>
+</LI>
+<LI>
+<P><KBD class="USERINPUT">DIRLIST_FILE_MIME_SUB_TYPE</KBD>: The MIME sub-type of the current file. For example, if its MIME type of is <KBD class="USERINPUT">text/html</KBD>, this variable will be set to <KBD class="USERINPUT">html</KBD>. If the file is a directory, the value of this variable will contain <KBD class="USERINPUT">Directory</KBD>.</P>
+</LI>
+<LI>
+<P><KBD class="USERINPUT">DIRLIST_FILE_TYPE</KBD>: The type of the current file. It is set to <KBD class="USERINPUT">file</KBD> if the current file is a regular file, to <KBD class="USERINPUT">dir</KBD> if it is a directory, or to <KBD class="USERINPUT">parentdir</KBD> for the special directory <KBD class="USERINPUT">..</KBD> which points to the parent directory</P>
+</LI>
+<LI>
+<P><KBD class="USERINPUT">DIRLIST_FILES_COUNT</KBD>: The total number of the files in the directory listing (including the regular files, the directories, and the special directory <KBD class="USERINPUT">..</KBD> if available.)</P>
+</LI>
+<LI>
+<P><KBD class="USERINPUT">DIRLIST_FILE_INDEX</KBD>: The index of the current file in the listing. The value of this variable is always between 1 and <KBD class="USERINPUT">DIRLIST_FILES_COUNT</KBD>.</P>
+</LI>
+</UL>
+<DIV class="EXAMPLE"><A name="AEN2314" id="AEN2314"></A>
+<P><B>Example 8-1. A simple directory listing template</B></P>
+<UL>
+<LI>
+<P><B class="GUILABEL">MIME Type</B>:</P>
+<PRE class="PROGRAMLISTING">
+   text/html; charset=utf-8
+</PRE></LI>
+<LI>
+<P><B class="GUILABEL">Header</B>:</P>
+<PRE class="PROGRAMLISTING">
+   &lt;HTML&gt;
+     &lt;HEAD&gt;
+       &lt;TITLE&gt;
+         Index of &lt;!-- #echo var="URL" encoding="reverse-url" --&gt;
+       &lt;/TITLE&gt;
+     &lt;/HEAD&gt;
+   
+     &lt;BODY&gt;
+       &lt;TABLE BORDER=0&gt;
+         &lt;TR&gt;
+           &lt;TD&gt;Name&lt;/TD&gt;
+           &lt;TD&gt;Size&lt;/TD&gt;
+           &lt;TD&gt;Date&lt;/TD&gt;
+        &lt;TD&gt;MIME Type&lt;/TD&gt;
+         &lt;/TR&gt;
+</PRE></LI>
+<LI>
+<P><B class="GUILABEL">Body Line</B>:</P>
+<PRE class="PROGRAMLISTING">
+         &lt;TR&gt;
+           &lt;TD&gt;
+             &lt;A HREF="&lt;!-- #echo var="DIRLIST_FILE_URL" --&gt;"&gt;
+               &lt;!-- #echo var="DIRLIST_FILE_NAME" --&gt;
+             &lt;/A&gt;
+           &lt;/TD&gt;
+           &lt;TD&gt; &lt;!-- #echo var="DIRLIST_FILE_SIZE" --&gt; &lt;/TD&gt;
+           &lt;TD&gt; &lt;!-- #echo var="DIRLIST_FILE_DATE" --&gt; &lt;/TD&gt;
+        &lt;TD&gt; &lt;!-- #echo var="DIRLIST_FILE_MIME_TYPE" --&gt; &lt;/TD&gt;
+        &lt;/TR&gt;
+</PRE></LI>
+<LI>
+<P><B class="GUILABEL">Footer</B>:</P>
+<PRE class="PROGRAMLISTING">
+        &lt;/TABLE&gt;
+      &lt;/BODY&gt;
+   &lt;/HTML&gt;
+</PRE></LI>
+</UL>
+</DIV>
+</DIV>
+</DIV>
+<DIV class="NAVFOOTER">
+<HR align="left" width="100%">
+<TABLE summary="Footer navigation table" width="100%" border="0" cellpadding="0" cellspacing="0">
+<TR>
+<TD width="33%" align="left" valign="top"><A href="ssiencoding.html" accesskey="P">Prev</A></TD>
+<TD width="34%" align="center" valign="top"><A href="index.html" accesskey="H">Home</A></TD>
+<TD width="33%" align="right" valign="top"><A href="dirscript.html" accesskey="N">Next</A></TD>
+</TR>
+<TR>
+<TD width="33%" align="left" valign="top">Encoding</TD>
+<TD width="34%" align="center" valign="top">&nbsp;</TD>
+<TD width="33%" align="right" valign="top">Scripts</TD>
+</TR>
+</TABLE>
+</DIV>
+<DIV class="COPYRIGHT">Copyright &copy; 2001-2007 Aprelium Technologies</DIV>
+</BODY>
+</HTML>

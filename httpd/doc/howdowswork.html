@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META name="generator" content="HTML Tidy for Linux/x86 (vers 12 April 2005), see www.w3.org">
+<TITLE>How do web servers work?</TITLE>
+<META name="GENERATOR" content="Modular DocBook HTML Stylesheet Version 1.79">
+<LINK rel="HOME" title="Abyss Web Server For Linux User's Guide" href="index.html">
+<LINK rel="UP" title="Introduction" href="intro.html">
+<LINK rel="PREVIOUS" title="Introduction" href="intro.html">
+<LINK rel="NEXT" title="Getting Started" href="start.html">
+<LINK rel="STYLESHEET" type="text/css" href="stylesheet.css">
+<META name="AppleIcon" content="icon.png">
+<META name="AppleTitle" content="How do web servers work?">
+<META name="Description" content="How do web servers work?">
+<META name="AppleOrder" content="">
+</HEAD>
+<BODY class="SECT1" bgcolor="#FFFFFF" text="#000000">
+<DIV class="NAVHEADER">
+<TABLE summary="Header navigation table" width="100%" border="0" cellpadding="0" cellspacing="0">
+<TR>
+<TH colspan="3" align="center">Abyss Web Server For Linux User's Guide</TH>
+</TR>
+<TR>
+<TD width="10%" align="left" valign="bottom"><A href="intro.html" accesskey="P">Prev</A></TD>
+<TD width="80%" align="center" valign="bottom">Chapter 1. Introduction</TD>
+<TD width="10%" align="right" valign="bottom"><A href="start.html" accesskey="N">Next</A></TD>
+</TR>
+</TABLE>
+<HR align="left" width="100%"></DIV>
+<DIV class="SECT1">
+<H1 class="SECT1"><A name="HOWDOWSWORK" id="HOWDOWSWORK">How do web servers work?</A></H1>
+<P>What happens when you enter in the address field of your browser the <A href="glossary.html#XURL">URL</A> <KBD class="USERINPUT">http://www.aprelium.com/doc/sample.html</KBD>?</P>
+<P>First, the browser slices the URL in 3 parts:</P>
+<UL>
+<LI>
+<P><KBD class="USERINPUT">http://</KBD>: This part indicates that the document you want to access can be retrieved from web server, which understands the <A href="glossary.html#XHTTP">HTTP</A> protocol. The HTTP protocol is a standardized language of communication between browsers and web servers.</P>
+</LI>
+<LI>
+<P><KBD class="USERINPUT">www.aprelium.com</KBD>: This is the host name of the computer from which the document can be downloaded.</P>
+</LI>
+<LI>
+<P><KBD class="USERINPUT">/doc/sample.html</KBD>: This is the virtual path of the document in the <KBD class="USERINPUT">www.aprelium.com</KBD>'s web server.</P>
+</LI>
+</UL>
+<P>Then, the browser contacts a DNS (Domain Name Server) to know the IP address of the computer which full qualified domain name is <KBD class="USERINPUT">www.aprelium.com</KBD>. The domain name server is usually run by your ISP or by your company.</P>
+<P>The browser establishes a connection channel with the web server on the computer which IP address was given by the DNS server and requests the document on the host which name is <KBD class="USERINPUT">www.aprelium.com</KBD> and which virtual path is <KBD class="USERINPUT">doc/sample.html</KBD>. The browser has to specify in the request the host name because many modern web servers (including Abyss Web Server) have the ability to serve more than a one host from a single computer with a single IP address only. This is called <SPAN class="emphasis"><I class="EMPHASIS">virtual hosting</I></SPAN>. In such a case, the IP address of this computer is associated with more than one domain name.</P>
+<P>The server decodes the request and maps the virtual path to a real one, which should match an existing file. The server sends the file to the browser with some useful information such as its last modification time and its MIME type. The MIME type helps the browser decide how to display the received document. In our example, it is a HTML file. So the server sets its MIME type to <KBD class="USERINPUT">text/html</KBD> and the browser understands that it must render it as text.</P>
+<P>Sometimes you enter a URL without an explicit filename such as <KBD class="USERINPUT">http://www.aprelium.com/doc</KBD>. The browser sends the request to the web server as in the previous example. The server detects that the virtual path maps to a directory and not to a file. It searches then in this directory an index file. Index files are usually named <KBD class="USERINPUT">index.html</KBD> or <KBD class="USERINPUT">index.htm</KBD>. If it finds for example <KBD class="USERINPUT">index.html</KBD>, it acts as if the requested URL was <KBD class="USERINPUT">http://www.aprelium.com/doc/index.html</KBD>. If no index file is found, the web server generates a listing of the directory contents and sends it to the browser or reports an error.</P>
+</DIV>
+<DIV class="NAVFOOTER">
+<HR align="left" width="100%">
+<TABLE summary="Footer navigation table" width="100%" border="0" cellpadding="0" cellspacing="0">
+<TR>
+<TD width="33%" align="left" valign="top"><A href="intro.html" accesskey="P">Prev</A></TD>
+<TD width="34%" align="center" valign="top"><A href="index.html" accesskey="H">Home</A></TD>
+<TD width="33%" align="right" valign="top"><A href="start.html" accesskey="N">Next</A></TD>
+</TR>
+<TR>
+<TD width="33%" align="left" valign="top">Introduction</TD>
+<TD width="34%" align="center" valign="top"><A href="intro.html" accesskey="U">Up</A></TD>
+<TD width="33%" align="right" valign="top">Getting Started</TD>
+</TR>
+</TABLE>
+</DIV>
+<DIV class="COPYRIGHT">Copyright &copy; 2001-2007 Aprelium Technologies</DIV>
+</BODY>
+</HTML>

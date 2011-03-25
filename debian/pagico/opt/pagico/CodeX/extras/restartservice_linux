@@ -1,0 +1,10 @@
+#!/bin/bash
+
+##
+# Restart the Pagico service on Linux
+##
+
+killall -KILL abyssws
+killall -KILL php-cgi
+sleep 1
+"/opt/pagico/httpd/abyssws" --root-path "/opt/pagico/httpd/" -d

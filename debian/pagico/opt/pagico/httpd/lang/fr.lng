@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<dico langid='fr' rtl='no'>
+
+	<lang>Français</lang>
+
+	<expr id='abyss_console'>Console de Abyss Web Server</expr>
+
+	<expr id='the_configuration_has_changed'>La configuration a été changée.</expr>
+	<expr id='restart_message'>Prière d'attendre un moment s'il vous plait...</expr>
+	<expr id='press_restart_to_apply_modifications_1'>Appuyez sur&#160;</expr>
+	<expr id='restart'>Redémarrer</expr>
+	<expr id='press_restart_to_apply_modifications_2'>&#160;pour appliquer les modifications.</expr>
+	<expr id='validate_and_restart_to_apply_modifications'>Validez et redémarrez pour appliquer modifications.</expr>
+
+	<expr id='ok'>&#160;&#160;OK&#160;&#160;</expr>
+	<expr id='cancel'>Annuler</expr>
+
+	<expr id='server_root'>Racine du serveur</expr>
+
+	<expr id='status'>Status</expr>
+	<expr id='hosts'>Hôtes</expr>
+	<expr id='host'>Hôte</expr>
+	<expr id='default_configuration'>Configuration par défaut</expr>
+	
+	<expr id='server_statistics'>Statistiques du serveur</expr>
+	<expr id='console_configuration'>Configuration de la console</expr>
+	<expr id='server_configuration'>Configuration du serveur</expr>
+	<expr id='help_and_support'>Aide et support technique</expr>
+	<expr id='getting_started'>Premiers Pas</expr>
+	<expr id='about_abyss_web_server'>A propos de Abyss Web Server</expr>
+
+	<expr id='add'>Ajouter</expr>
+	<expr id='edit'>Editer</expr>
+	<expr id='configure'>Configurer</expr>
+	<expr id='delete'>Effacer</expr>
+
+	<expr id='choose_language'>Choisissez la langue que vous voulez utiliser.</expr>
+
+	<expr id='reset'>Mettre à zéro</expr>
+	<expr id='refresh'>Rafraîchir</expr>
+	<expr id='reset_the_statistics'>Voulez-vous mettre à zéro les statistiques?</expr>
+
+	<expr id='server'>Serveur</expr>
+
+	<expr id='passwords_do_not_match'>Les mots de passes sont différents</expr>
+
+	<expr id='password'>Mot de passe</expr>
+
+	<expr id='password_again'>Mot de passe (Vérification)</expr>
+
+	<expr id='bad_url_or_virtual_path'>URL ou chemin virtuel invalide</expr>
+	<expr id='virtual_path_must_begin_with_slash'>Doit commencer avec un slash /</expr>
+	<expr id='must_be_a_file'>Doit être un fichier</expr>
+
+	<expr id='must_be_a_directory'>Doit être un répertoire</expr>
+
+	<expr id='file_not_found'>Fichier introuvable</expr>
+
+	<expr id='directory_not_found'>Répertoire introuvable</expr>
+
+	<expr id='file_directory_not_found'>Fichier/Répertoire introuvable</expr>
+
+	<expr id='cant_open_create_file'>Impossible d&apos;ouvrir/créer le fichier</expr>
+
+	<expr id='browse'>Choisir</expr>
+
+	<expr id='set'>Sélectionner</expr>
+
+	<expr id='host_root'>Racine du hôte</expr>
+
+	<expr id='select'>Sélectionner</expr>
+
+	<expr id='parent_path'>Répertoire parent</expr>
+	<expr id='other_paths'>Autres chemins</expr>
+	<expr id='current_path'>Chemin courant</expr>
+
+	<expr id='cant_autodetect_a_free_port'>Impossible de détecter un port libre</expr>
+
+	<expr id='autodetect'>Autodétection</expr>
+
+	<expr id='error'>Erreur</expr>
+
+	<expr id='listening_error'>Erreur d&apos;écoute</expr>
+
+	<expr id='running'>En marche</expr>
+
+	<expr id='stopped'>Arrêté</expr>
+
+	<expr id='new'>Nouveau</expr>
+
+	<expr id='stop'>Arrêter</expr>
+
+	<expr id='start'>Démarrer</expr>
+
+	<expr id='invalid_ip_address'>Adresse IP invalide</expr>
+
+	<expr id='invalid_ip_address_or_range'>Adresse ou intervalle d'adresses IP invalide</expr>
+
+
+	<expr id='invalid_number'>Nombre invalide</expr>
+
+	<expr id='number_out_of_range'>Nombre hors de l'intervalle valide</expr>
+
+
+	<expr id='empty_list'>Vide</expr>
+
+	<expr id='duplicated_item'>Elément dupliqué</expr>
+
+
+
+	<expr id='help'>Aide</expr>
+	<expr id='show_help'>Montrer l'aide</expr>
+
+	<expr id='hide_help'>Cacher l'aide</expr>
+
+	<expr id='help_about'>Cliquez ici pour obtenir l'aide contextuelle relative à cet élément.</expr>
+
+	<expr id='empty_parameter'>Paramètre vide</expr>
+	<expr id='error_in_1'>Erreur dans&#160;</expr>
+	<expr id='error_in_2'></expr>
+
+	<expr id='pattern_escape_error'>Le masque a un échappement invalide (un anti-slash \ à la fin)</expr>
+	<expr id='pattern_range_error'>Une forme [..] n'a pas de borne de fin dans une paire '-' (par exemple [a-])</expr>
+	<expr id='pattern_end_error'>Une forme [..] n'a pas de crochet de fin</expr>
+	<expr id='pattern_empty_error'>Une forme [..] est vide</expr>
+	<expr id='pattern_error'>Masque invalide</expr>
+
+	<expr id='default_host_on_port'>Hôte par défaut sur le port @0</expr>
+
+	<expr id='delete_item_question'>Voulez-vous effacer @0 ?</expr>
+	
+	
+	<expr id='order'>Ordre</expr>
+	<expr id='allow_deny'>Autoriser/Refuser</expr>
+	<expr id='deny_allow'>Refuser/Autoriser</expr>
+	
+	
+	
+	<expr id='upgrade'>Mettre à niveau</expr>
+	<expr id='upgrade_msg'>La fonction demandée n'est pas disponible dans cette version de Abyss Web Server.</expr>
+	
+	
+	
+	
+	<expr id='documents_path'>Chemin des documents</expr>
+	<expr id='host_name'>Nom du hôte</expr>
+	<expr id='host_names'>Noms des hôtes</expr>
+	<expr id='port'>Port</expr>
+	<expr id='log_file'>Fichier journal</expr>
+	<expr id='copy_configuration_from'>Copier la configuration à partir de</expr>
+	
+	
+	
+	
+	<expr id='errors'>Erreurs</expr>
+	
+	
+	
+	
+	<expr id='general'>Paramètres généraux</expr>
+	<expr id='index_files'>Fichiers index</expr>
+	<expr id='directory_listing'>Listing des répertoires</expr>
+	<expr id='aliases'>Alias</expr>
+	<expr id='users_and_groups'>Utilisateurs et groupes</expr>
+	<expr id='SSI_parameters'>Paramètres SSI</expr>
+	<expr id='custom_error_pages'>Pages d'erreur personnalisées</expr>
+	<expr id='scripting_parameters'>Paramètres des scripts</expr>
+	<expr id='access_control'>Contrôle d'accès</expr>
+	<expr id='ip_control'>Contrôle des adresses IP</expr>
+	<expr id='host_bandwidth_limits'>Limites de la bande passante</expr>
+	<expr id='server_bandwidth_limits'>Limites de la bande passante globale</expr>
+	<expr id='logging'>Journalisation</expr>
+	<expr id='anti_leeching'>Protection contre les liens externes</expr>
+	<expr id='statistics'>Statistiques</expr>
+	
+	
+	
+	
+	<expr id='total_uptime'>Temps total de fonctionnement</expr>
+	<expr id='total_hits'>Nombre total de requêtes</expr>
+	<expr id='error_hits'>Requêtes erronés</expr>
+	<expr id='HTML_hits'>Requêtes HTML</expr>
+	<expr id='image_hits'>Requêtes images</expr>
+	<expr id='not_modified_hits'>Requêtes du type "Non modifié"</expr>
+	<expr id='transferred_data'>Données transférées</expr>
+	
+	
+	
+	
+	<expr id='KB'>Ko</expr>
+	<expr id='days'>Jour(s)</expr>
+	<expr id='hours'>Heure(s)</expr>
+	<expr id='minutes'>Minute(s)</expr>
+	<expr id='seconds'>Seconde(s)</expr>
+	
+	
+	
+	
+	<expr id='enable_scripts_execution'>Activer l'exécution des scripts</expr>
+	
+	<expr id='CGI_parameters'>Paramètres CGI</expr>
+	<expr id='error_file'>Fichier des erreurs</expr>
+	<expr id='CGI_execution_timeout'>Délai maximal d'exécution CGI</expr>
+	<expr id='resolve_interpreter_from_the_windows_registry'>Trouver l'interpréteur en utilsant la base des registres Windows</expr>
+	<expr id='resolve_interpreter_using_the_shebang_line'>Trouver l'interpréteur en utilisant la ligne #!</expr>
+	
+	<expr id='ISAPI_parameters'>Paramètres ISAPI</expr>
+	<expr id='debugging_level'>Niveau du déboguage</expr>
+	<expr id='none'>Aucun</expr>
+	<expr id='unhandled_callbacks'>Appels non pris en compte</expr>
+	<expr id='all_callbacks'>Tous les appels</expr>
+	<expr id='all_callbacks_with_all_io'>Tous les appels et toutes les entrées/sorties</expr>
+	<expr id='ISAPI_filename_extensions'>Extensions des noms de fichier ISAPI</expr>
+	<expr id='extension'>Extension</expr>
+	
+	<expr id='interpreters'>Interpréteurs</expr>
+	<expr id='interpreter'>Interpréteur</expr>
+	<expr id='arguments'>Arguments</expr>
+	<expr id='type'>Type</expr>
+	<expr id='standard'>Standard</expr>
+	<expr id='PHP_style'>Style PHP</expr>
+	<expr id='ActivePerl_ISAPI'>ActivePerl ISAPI</expr>
+	<expr id='use_the_associated_extensions_to_automatically_update_the_script_paths'>Utiliser les extensions associées pour mettre à jour automatiquement les Chemins des scripts</expr>
+	<expr id='associated_extensions'>Extensions associées</expr>
+	<expr id='script_paths'>Chemins des scripts</expr>
+	<expr id='virtual_path'>Chemin virtuel</expr>
+	<expr id='custom_environment_variables'>Variables d'environnement personnalisées</expr>
+	<expr id='name'>Nom</expr>
+	<expr id='value'>Valeur</expr>
+	
+	<expr id='disabled'>Désativé</expr>
+	<expr id='standard_listing'>Listing standard</expr>
+	<expr id='from_template'>A partir du modèle</expr>
+	<expr id='from_script'>A partir du script</expr>
+	<expr id='deny_listing_for'>Refuser les listings pour</expr>
+	<expr id='hidden_files'>Fichiers cachés</expr>
+	<expr id='file_name'>Nom du fichier</expr>
+	<expr id='template'>Modèle</expr>
+	<expr id='MIME_type'>Type MIME</expr>
+	<expr id='header'>Entête</expr>
+	<expr id='body_line'>Ligne du corps</expr>
+	<expr id='footer'>Bas de page</expr>
+	<expr id='script'>Script</expr>
+	
+	
+	
+	
+	<expr id='IP_control_rules'>Règles de contrôle des adresses IP</expr>
+	<expr id='allowed_IP'>Adresses IP autorisées</expr>
+	<expr id='IP_address_range'>Adresse/Intervalle d'adresses IP</expr>
+	<expr id='denied_IP'>Adresses IP refusées</expr>
+	
+	
+	
+	
+	<expr id='anti_leeching_scope'>Portée de la protection</expr>
+	<expr id='redirect_to_URL'>Rediriger vers l'URL</expr>
+	<expr id='refuse_requests_with_no_Referer_header'>Refuser les requêtes sans entête &quot;Referer&quot;</expr>
+	<expr id='allowed_referers'>Autoriser les liens provenant de</expr>
+	
+	
+	<expr id='status_code'>Code de statut</expr>
+	<expr id='associated_URL'>URL associé</expr>
+	<expr id='default_custom_error_page'>Page d'erreur personnalisée par défaut</expr>
+	
+	
+	
+	<expr id='enable_SSI_processing'>Activer le traitement SSI</expr>
+	<expr id='SSI_error_message'>Message d'erreur SSI</expr>
+	<expr id='time_format_string'>Format d'affichage des dates</expr>
+	<expr id='abbreviated_file_size'>Abréviation des tailles des fichiers</expr>
+	<expr id='process_Exec_Cmd_directives'>Traiter les directives #Exec cmd</expr>
+	
+	
+	
+	<expr id='extended_logging_format'>Format de journal étendu</expr>
+	<expr id='do_not_log_requests_for'>Ne pas inclure dans le journal les requêtes pour</expr>
+	<expr id='do_not_log_requests_from'>Ne pas inclure dans le journal les requêtes venant de</expr>
+	
+	
+	
+	<expr id='advanced_parameters'>Paramèteres avancés</expr>
+	<expr id='bind_to_IP'>Lier à l'adresse IP</expr>
+	<expr id='disable_download_resuming_for'>Désactiver la reprise des téléchargement pour</expr>
+	<expr id='disable_caching_negotiation_for'>Désactiver la négociation de la mise en cache pour</expr>
+	
+	
+	
+	<expr id='real_path'>Chemin réel</expr>
+	
+	
+	
+	<expr id='KB_per_second'>Ko/s</expr>
+	<expr id='scope'>Portée</expr>
+	<expr id='limits'>Limites</expr>
+	<expr id='enable_bandwidth_limits'>Activer la limitation de la bande passante</expr>
+	<expr id='maximum_speed'>Vitesse maximale</expr>
+	<expr id='maximum_speed_per_IP'>Vitesse maximale par adresse IP</expr>
+	
+	
+	
+	<expr id='password_protected_virtual_paths'>Chemins virtuels protégés par mot de passe</expr>
+	<expr id='realm'>Domaine</expr>
+	<expr id='allow_for'>Autoriser pour</expr>
+	<expr id='deny_for'>Refuser pour</expr>
+	
+	
+	
+	<expr id='users'>Utilisateurs</expr>
+	<expr id='groups'>Groupes</expr>
+	<expr id='members'>Membres</expr>
+	<expr id='no_users_or_groups'>Pas d'utilisateurs ou de groupes définis</expr>
+	
+	
+
+	<expr id='parameters'>Paramètres</expr>
+	<expr id='access_credentials'>Identificateurs pour l'accès</expr>
+	<expr id='language'>Langue</expr>
+	
+	
+	<expr id='login'>Nom de l'utilisateur</expr>
+	<expr id='access_credentials_message_1'>Entrez un nom d'utilisateur et un mot de passe que vous utiliserez pour vous identifier lors de vos futurs accès à à la console.</expr>
+	<expr id='access_credentials_message_2'>Lorsque vous appuyerez sur le bouton OK, votre navigateur vous demandera de vous identifier. Entrez alors le nom de l'utilisateur et le mot de passe que vous venez de choisir.</expr>	
+	
+	<expr id='MIME_types'>Types MIME</expr>
+	
+	<expr id='maximum_total_bandwidth'>Bande passante maximale</expr>
+	<expr id='maximum_bandwidth_per_IP'>Bande passante maximale par adresse IP</expr>
+	
+	<expr id='anti_hacking'>Protection contre le piratage</expr>
+	<expr id='enable_anti_hacking'>Activer la protection automatique contre le piratage</expr>
+	<expr id='bad_requests_count_before_banning'>Nombre de mauvaises requêtes avant exclusion</expr>
+	<expr id='monitoring_period'>Période de surveillance</expr>
+	<expr id='banning_duration'>Durée d'exclusion</expr>
+	<expr id='do_not_monitor_requests_from'>Ne pas surveiller les requêtes faites par</expr>
+
+	<expr id='timeout'>Délai maximal des connections</expr>
+	<expr id='keep_alive_requests'>Nombres maximal de requêtes par connection</expr>
+	<expr id='maximum_simultaneous_requests'>Nombre maximal de requêtes simultanées</expr>
+	<expr id='operating_system_parameters'>Paramètres du système d'exploitation</expr>
+	<expr id='operating_system_user'>Compte d'utilisateur du système d'exploitation</expr>
+	<expr id='PID_file'>Fichier PID</expr>
+
+	
+
+
+
+	<expr id='license_manager'>Gestion de la license</expr>
+	<expr id='registration_information'>Informations d'enregistrement</expr>
+	<expr id='registration_name'>Nom (Registration Name)</expr>
+	<expr id='registration_key'>Clé d'enregistrement (Registration Key)</expr>
+	<expr id='product_key'>Clé produit (Product Key)</expr>
+	<expr id='bad_product_key'>Mauvaise clé produit</expr>
+	<expr id='bad_registration_information'>Mauvaises informations d'enregistrement</expr>
+	<expr id='ready_for_use'>Prêt pour l'utilisation</expr>
+	<expr id='ready_for_use_msg'>Votre copie du logiciel est prête maintenant. Appuyez sur OK pour continuer.</expr>
+
+	<!-- v 2.0.1 -->
+
+	<expr id='exec_cgi_search_paths'>Chemins de recherche pour &quot;#Exec cgi&quot;</expr>
+	<expr id='current_uptime'>Temps de fonctionnement depuis le dernier redémarrage</expr>
+
+	<expr id='registration_name_msg'>Entrez le prénom suivi du nom utilisés pour enregistrer votre copie du logiciel.</expr>
+	<expr id='registration_key_msg'>Entrez la clé d'enregistrement (désignée comme Registration key, keycode, ou license number) contenue dans l'email de confirmation de votre commande (order confirmation email). Cette clé commence avec L0.</expr>
+	<expr id='product_key_msg'>Entrez la clé produit (Product key) qui vous a été fournie sur la page de téléchargement/mise à jour du logiciel. Cette clé commence avec P0.</expr>
+
+    <!-- v 2.0.7 -->
+	<expr id='parameters_for'>&#x2192; Paramètere(s) pour "@0"</expr>
+
+	<expr id='FastCGI_parameters'>Paramètres FastCGI</expr>
+	<expr id='FastCGI_execution_timeout'>Délai maximal d'attente des processus FastCGI</expr>
+
+	<expr id='interface'>Interface</expr>
+	<expr id='CGI_ISAPI'>CGI/ISAPI</expr>
+	<expr id='FastCGI'>FastCGI</expr>
+
+	<expr id='executables_interface'>Type de l'interface des exécutables dans ce chemin</expr>
+
+	<expr id='errors_only'>Erreurs seulement</expr>
+	<expr id='processing_details'>Détails de l'exécution</expr>
+
+	<expr id='ASPNET_parameters'>Paramètres ASP.NET</expr>
+	<expr id='ASPNET_applications'>Applications ASP.NET</expr>
+	<expr id='DOTNET_version'>Version .NET</expr>
+
+	<expr id='DOTNET_not_installed'>Aucune version supportée de .NET Framework n'est disponible sur cet ordinateur.</expr>
+	<expr id='DOTNET_not_installed_info'>Cliquez ici pour savoir comment installer une version supportée de .NET Framework et bénéficier de la technologie ASP.NET dans Abyss Web Server.</expr>
+
+	<expr id='check_file_existence'>Vérifier l'existence des fichiers avant l'exécution</expr>
+    
+    <!-- v 2.3.1 -->
+	<expr id='custom_headers'>Entêtes HTTP Personnalisées</expr>
+
+	<expr id='header_name'>Nom de l'entête HTTP</expr>
+	<expr id='header_value'>Valeur de l'entête HTTP</expr>
+
+	<expr id='local'>Local</expr>
+	<expr id='pipes'>Tuyaux</expr>
+	<expr id='TCP_IP'>Sockets TCP/IP</expr>	
+	
+	<!-- v 2.3.3 -->
+	<expr id='regex_error'>Expression régulière erronée: @0</expr>
+	<expr id='apply_to_subrequests_too'>Appliquer aux sous-requêtes également</expr>
+	<expr id='external_redirection'>Effectuer une redirection externe</expr>
+	<expr id='report_error'>Rapporter une erreur au client</expr>
+	<expr id='restart_matching'>Redémarrer à partir de la première règle</expr>
+	<expr id='stop_matching'>Arrêter la correspondance</expr>
+	<expr id='continue_matching'>Continuer avec la règle suivante</expr>
+	<expr id='internal_redirection'>Effectuer une redirection interne</expr>
+	<expr id='if_rule_macthes'>Si cette règle est vérifiée</expr>
+	<expr id='escape_redirection_location'>Normaliser l'emplacement de redirection avec des caractères d'échappement</expr>
+	<expr id='append_query_string'>Ajouter la chaîne de requête</expr>
+	<expr id='replacement'>Remplacement</expr>
+	<expr id='case_sensitive'>Sensible à la casse</expr>
+	<expr id='virtual_path_pattern'>Expression régulière du chemin virtuel</expr>
+	<expr id='URL_rewriting'>Réécriture des URLs</expr>
+	<expr id='URL_rewriting_rules'>Règles de réécriture des URLs</expr>
+	<expr id='next_action'>Action suivante</expr>	
+	<expr id='redirect_to'>Rediriger vers</expr>	
+
+	<expr id='invalid_host_name'>Nom de hôte invalide</expr>
+	
+	<expr id='regular_expression'>Expression régulière</expr>
+	<expr id='matches_with'>Correspond avec</expr>
+	<expr id='not_matches_with'>Ne correspond pas avec</expr>
+	<expr id='equal'>=</expr>
+	<expr id='not_equal'>Différent de</expr>
+	<expr id='greater_or_equal'>&gt;=</expr>
+	<expr id='greater_than'>&gt;</expr>
+	<expr id='lesser_or_equal'>&lt;=</expr>
+	<expr id='lesser_than'>&lt;</expr>
+	<expr id='numerical'>Numérique</expr>
+	<expr id='conditions'>Conditions</expr>
+	<expr id='variable'>Variable</expr>
+	<expr id='operator'>Opérateur</expr>
+	<expr id='is_file'>Est un fichier</expr>
+	<expr id='is_not_file'>N'est pas un fichier</expr>
+	<expr id='is_directory'>Est un répertoire</expr>
+	<expr id='is_not_directory'>N'est pas un répertoire</expr>
+	<expr id='is_empty'>N'existe pas ou est un fichier vide</expr>
+	<expr id='is_not_empty'>Existe et n'est pas un fichier vide</expr>
+
+	<expr id='other_variable'>Autre variable</expr>
+	<expr id='other_status_code'>Autre code de statut</expr>
+	<expr id='http_header:'>Entête HTTP:</expr>
+
+	<expr id='log_variables'>Journaliser les variables</expr>
+	
+	<expr id='move_down'>Déplacer vers le haut</expr>
+	<expr id='move_up'>Déplacer vers le bas</expr>
+	<expr id='make_first'>Déplacer vers le début</expr>
+	<expr id='make_last'>Déplacer vers la fin</expr>
+	
+	<expr id='remote'>Distant</expr>
+	<expr id='pipepath'>Chemin du tuyau</expr>
+	<expr id='remote_address'>Adresse IP du serveur distant</expr>
+
+	<!-- v 2.5 -->
+	<expr id='default_secure_host_on_port'>Hôte sécurisé par défaut sur le port @0</expr>
+	<expr id='unshared_ssl_context'>Contexte SSL/TLS non partagé</expr>
+	<expr id='certificate_creation_failed'>Echec de la création du certificat</expr>
+	<expr id='key_creation_failed'>Echec de la création de la clé privée</expr>
+	<expr id='ssl_ertificates'>Certificats SSL/TLS</expr>
+	<expr id='private_keys'>Clés privées</expr>
+	<expr id='private_key'>Clé privée</expr>
+	<expr id='action'>Action</expr>
+	<expr id='generate'>Générer</expr>
+	<expr id='not_recommended'>Faible - Déconseillé</expr>
+	<expr id='import'>Importer</expr>
+	<expr id='key_contents'>Contenu de la clé</expr>
+	<expr id='certificates'>Certificats</expr>
+	<expr id='certificate'>Certificat</expr>
+	<expr id='ca_signed'>Signé par une autorité de certification (CA)</expr>
+	<expr id='self_signed'>Auto-signé</expr>
+	<expr id='main_certificate'>Certificat principal</expr>
+	<expr id='intermediate_certificate'>Certificat intermédiaire</expr>
+	<expr id='ca_certificate'>Certificat racine</expr>
+	<expr id='valid_until'>Date d'expiration</expr>
+	<expr id='cert_dump'>Contenu</expr>
+	<expr id='organization_name'>Nom de l'organisme</expr>
+	<expr id='organization_unit_name'>Nom de la division</expr>
+	<expr id='locality'>Localité</expr>
+	<expr id='state_province'>Province/Département</expr>
+	<expr id='country_code'>Code du pays</expr>
+	<expr id='contact_email'>Adresse Email</expr>
+	<expr id='csr'>Demande de signature d'un certificat (CSR)</expr>
+	<expr id='no_private_keys'>Aucune clé privée déclarée.</expr>
+	<expr id='no_private_keys_msg'>Vous devez d'abord créer une clé privée avant de pouvoir déclarer un certificat ou générer une demande de signature d'un certificat.</expr>
+	<expr id='no_certificates'>Aucun certificat déclaré.</expr>
+	<expr id='create_certificate'>Cliquez ici pour créer un certificat.</expr>
+	<expr id='protocol'>Protocole</expr>
+
+	<expr id='http_port'>Port HTTP</expr>
+	<expr id='https_port'>Port HTTPS</expr>
+	<expr id='default_http_port'>Port HTTP par défaut</expr>
+	<expr id='default_https_port'>Port HTTPS par défaut</expr>
+	<expr id='other_port'>Autre port</expr>
+	
+	<expr id='exclusively_serve_on_HTTPS'>Servir sur HTTPS exclusivement</expr>
+
+	<expr id='updated'>Mis à jour</expr>
+</dico>

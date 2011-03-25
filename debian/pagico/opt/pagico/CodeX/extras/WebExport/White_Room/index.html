@@ -1,0 +1,275 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title><!--%TITLE%--></title>
+
+<style>
+
+html, body{
+	margin:0;
+	padding:0;
+	text-align:center;
+	background-attachment: fixed;
+	background-image: url(.system/images/bg.jpg);
+	background-color: #CCCCCC;
+	background-repeat: no-repeat;
+	background-position: left top;
+} 
+#top {
+	font-family: Helvetica, sans-serif;
+	font-size: 11px;
+	text-align: right;
+	width: 100%;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #666666;
+	padding-top: 2px;
+	position: fixed;
+	z-index: 5;
+	background-color: #FFFFFF;
+}
+#top a, #top a:link, #top a:visited {
+	color: #999999;
+	text-decoration: none;
+}
+
+#top a:hover, #top a:active {
+	color: #333333;
+	text-decoration: none;
+}
+ 
+
+.DueDate
+{
+	margin-left:15px;
+	font-weight:bold;
+}
+
+#pagewidth{
+	width:700px;
+	text-align:left;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top: 50px;
+} 
+ 
+#leftcol{
+	width:120px;
+	float:left;
+	position:fixed;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-position: top;
+	padding: 5px;
+	border: 1px solid #CCCCCC;
+	top: 50px;
+ }
+ 
+#maincol{
+	background-color: #FFFFFF;
+	float: right;
+	display:inline;
+	position: relative;
+	width:100%;
+	border: 1px solid #CCCCCC;
+	padding: 10px;
+	font-family: Helvetica, sans-serif;
+	font-size: 11px;
+	color: #999999;
+ }
+#pagewidth #wrapper #maincol h2 {
+	font-size: 14px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+	margin-right: 100px;
+	margin-bottom: -6px;
+	margin-top: 15px;
+}
+#pagewidth #wrapper #maincol p {
+	padding-right: 100px;
+	padding-left: 15px;
+	font-family: Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 20px;
+	text-align: justify;
+}
+
+div.halfcolumn
+{
+	float:left;
+	width:45%;
+
+	margin:0 5px 5px 0;
+
+}
+
+div.halfcolumn p
+{
+	line-height:12px !important;
+	margin:0 0 0 0 !important;
+}
+
+div.halfcolumn h2
+{
+	margin:0 0 0 0 !important;
+}
+
+.left
+{
+	float:left;
+}
+.right
+{
+	float:right;
+}
+
+#pagewidth #wrapper #maincol a, #pagewidth #wrapper #maincol a:visited {
+	font-size:11px;
+	color: #666666;
+	text-decoration: none;
+}
+#pagewidth #wrapper #maincol h1 {
+	font-family: Helvetica, sans-serif;
+	font-size: 40px;
+	margin-top: -6px;
+	margin-bottom: -17px;
+}
+#indent {
+	text-indent: -5pt;
+	margin-top: 8px;
+}
+ 
+
+ 
+ /* *** Float containers fix:
+ http://www.csscreator.com/attributes/containedfloat.php *** */ 
+.clearfix:after {
+ content: "."; 
+ display: block; 
+height: 0; 
+ clear: both; 
+ visibility: hidden;
+ }
+ 
+.clearfix{display: inline-table;}
+
+/* Hides from IE-mac \*/
+* html .clearfix{height: 1%;}
+.clearfix{display: block;}
+/* End hide from IE-mac */  
+
+
+ 
+ /*printer styles*/ 
+ @media print{ 
+#twocols, #maincol{width:100%; float:none;}
+}
+#pagewidth #wrapper #leftcol ul {
+	margin: 0px;
+	padding: 0px;
+}
+#pagewidth #wrapper #leftcol li {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+#pagewidth #wrapper #leftcol a {
+	display: block;
+	width: 120px;
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	color: #999999;
+	text-decoration: none;
+}
+#pagewidth #wrapper #leftcol a:link, #pagewidth #wrapper #leftcol a:visited {
+}
+#footer {
+	font-family: Helvetica, sans-serif;
+	font-size: 10px;
+	text-align: center;
+	width: 100%;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #666666;
+	padding-top: 2px;
+	position: fixed;
+	bottom: 0px;
+	background-color: #FFFFFF;
+}
+#footer a, #footer a:link, #footer a:visited {
+	color: #999999;
+	text-decoration: none;
+}
+#pagewidth #wrapper #leftcol a:hover, #pagewidth #wrapper #leftcol a:active {
+	color: #333333;
+}
+#footer a, #footer a:hover, #footer a:active {
+	color: #333333;
+	text-decoration: none;
+}
+#pagewidth #wrapper #maincol a:hover, #pagewidth #wrapper #maincol a:active {
+	color: #666666;
+	text-decoration: underline;
+}
+
+.listTable {
+	float:left;
+	width:100%;
+	margin:5px 0 10px 0;
+}
+
+.listItem {
+	line-height:20px;
+	color:#444;
+}
+
+.listItem_DueDate {
+	line-height:20px;
+	color:#777;
+	text-align:center;
+}
+
+.listItem_StartDate {
+	line-height:20px;
+	color:#777;
+	background:url(.system/img/shades/grey.png);
+	text-align:center;
+}
+
+.listItem_Desc {
+	line-height:20px;
+	color:#666;
+	border-bottom:1px solid #ccc;
+}
+
+.listItem_Status {
+	line-height:20px;
+	text-align:center;
+}
+</style>
+
+</head>
+<body>
+
+
+
+<div id="pagewidth">
+	<div id="wrapper" class="clearfix" > 
+		<div id="maincol" > 
+			<h1><!--%TITLE%--></h1>
+			<p id="indent"><!--%PAGEDATE%--></p>
+		
+			<!--%MAINCONTENT%-->
+		</div>
+	</div>
+</div>
+
+<p></p>
+
+<div id="footer">&copy; <!--%AUTHOR%--> | Page Design by <a href="mailto:ktbryant@gmail.com">Kevin Bryant</a></div>
+</body>
+</html>

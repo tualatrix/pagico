@@ -1,0 +1,489 @@
+body
+{
+	background:#000;
+}
+
+#AbsContainer_w
+{
+	float:left;
+
+	width:100%;
+	position:relative;
+	background: url(/img/App_GUI/Misc/indicator_lg_2.gif) center center no-repeat;
+	
+}
+
+
+#AbsContainer
+{
+	float:left;
+	
+	width:100%;
+	position:relative;
+}
+
+#Controllers
+{
+	position:absolute;
+	float:left;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:25px !important;
+	height:27px;
+	border-bottom:2px solid #999;
+	color:#ccc;
+	font-weight:bold;
+	font-size:12px;
+	line-height:25px;
+	background:#333;
+	z-index:2;;
+}
+
+	a.MediaTitle:link, a.MediaTitle:visited
+	{
+		position:absolute;
+		left:10px;
+		top:0px;
+
+		height:25px;
+		line-height:25px;
+		margin:0 0 0 5px;
+		text-align:left;
+		text-decoration:none;
+	}
+	
+	a.MediaTitle:hover
+	{
+		text-decoration:underline;
+	}
+	
+	#PictureWell
+	{
+		position:absolute;
+		float:left;
+		left:5px;
+		top:0px;
+
+		height:25px;
+		line-height:25px;
+		margin:0 0 0 5px;
+		text-align:left;
+		text-decoration:none;
+	}
+	
+		a.PictureID:link, a.PictureID:visited
+		{
+			float:left;
+			display:block;
+			margin:2px 2px 0 2px;
+			font-size:10px;
+			line-height:21px;
+			
+			width:25px;
+			height:21px;
+			text-decoration:none;
+			color:#aaa;
+			text-align:center;
+			font-weight:bold;
+		}
+		a.PictureID:hover
+		{
+			background:#444;
+			color:#fff;
+		}
+		
+		.CurrentImage
+		{
+			float:left;
+			display:block;
+			margin:2px 2px 0 2px;
+			font-size:12px;
+			line-height:21px;
+			
+			width:25px;
+			height:21px;
+			text-decoration:none;
+			color:#fff !important;
+			text-align:center;
+			font-weight:bold;
+			background:#666;
+			text-decoration:none;
+		}
+	
+	a.ControlLink:link, a.ControlLink:visited
+	{
+		float:right;
+		display:block;
+		padding:0 10px 0 10px;
+		height:21px;
+		text-decoration:none;
+		font-weight:bold;
+		color:#ccc;
+		margin:2px 2px 0 0;
+		background:#555;
+		line-height:21px;
+	}
+	a.ControlLink:hover
+	{
+		color:#fff;
+		background:#777;
+	}
+	a.ControlLink:active
+	{
+		color:#fff;
+	}
+
+
+#PlayerWindow
+{
+	position:absolute;
+	left:0px;
+	top:28px;
+	background:#000;
+	width:100%;
+	border-bottom:1px solid #ccc;
+	z-index:0;
+}
+
+#SlideShowWindow
+{
+	float:left;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+
+#Player
+{
+	float:left;
+	width:100%;
+	height:100px;
+}
+
+.TextContainer
+{
+	overflow:auto;
+	line-height:25px;
+	font-size:14px;
+	color:#222;
+	text-align:left;
+	margin:10px;
+	background:#fff;
+	border:0px;
+	width:85%;
+}
+
+a.SlideShow_Play:link, a.SlideShow_Play:visited
+{
+	float:left;
+	display:block;
+	margin:0 5px 0 0;
+	
+	width:25px;
+	height:25px;
+
+	background:url(/img/iSpace/slideshow_play.jpg) left top no-repeat;
+}
+
+a.SlideShow_Play:hover
+{
+	background:url(/img/iSpace/slideshow_play_hover.jpg) left top no-repeat;	
+}
+
+a.SlideShow_Pause:link, a.SlideShow_Pause:visited
+{
+	float:left;
+	display:block;
+	margin:0 5px 0 0;
+	
+	width:25px;
+	height:25px;
+
+	background:url(/img/iSpace/slideshow_pause.jpg) left top no-repeat;
+}
+
+a.SlideShow_Pause:hover
+{
+	background:url(/img/iSpace/slideshow_pause_hover.jpg) left top no-repeat;	
+}
+
+#Curtain
+{
+	position:absolute;
+	z-index:3;
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	float:left;
+	background:#1f1f1f url(/img/App_GUI/Misc/indicator_lg_2.gif) center center no-repeat;
+}
+
+#watermark
+{
+	position:absolute;
+	right:20px;
+	top:20px;
+	width:150px;
+	height:45px;
+}
+
+#SlideShow_SWF
+{
+	position:absolute;
+	float:left;
+	left:0px;
+	top:0px;
+	z-index:0;
+}
+
+#SlideShowContainer {
+	position:absolute;
+	float:left;
+	display:block;
+	width:100%;
+	
+	top:20px;
+	
+	overflow-x:hidden;
+	overflow-y:auto;
+	
+	z-index:1000;
+}
+
+#SlideShow
+{
+	position:absolute;
+	float:left;
+	display:block;
+	
+	left:0px;
+	
+	cursor:default;
+	
+	z-index:2000;
+	
+	text-align:left;
+	overflow:visible;
+}
+
+	#SlideShow img
+	{
+		float:left;
+		width:50%;
+		border:3px solid #fff;
+	}
+	
+	#SlideShow h3
+	{
+		float:left;
+		width:40%;
+
+		font-size:40px;
+
+		font-weight:bold;
+	
+		text-align:left;
+		margin:0 0 10px 10px;
+		border-bottom:5px solid #ddd;
+		padding-bottom:10px;
+		color:#fff;
+	}
+	/*
+	#SlideShow span
+	{
+		float:left;
+		
+		color:#f0f0f0;
+		font-size:30px;
+		margin:10px 0 0 10px;
+		
+		width:40%;
+		text-align:left;		
+	}
+	*/
+	#SlideShow h2
+	{
+		float:left;
+		color:#fff;
+		font-size:40px;
+
+		font-weight:bold;
+		
+		text-align:left;
+		margin:0 0 10px 0;
+	}
+
+	#SlideShow p
+	{
+		float:left;
+		clear:left;
+		color:#f0f0f0;
+		font-size:30px;
+		margin-top:10px;
+		/* border-left:5px solid #fff; */
+		padding-left:10px;
+		
+		width:95%;
+		text-align:left;
+	}
+	
+	#SlideShow ul
+	{
+		float:left;
+		clear:left;
+		color:#f0f0f0;
+		font-size:30px;
+		margin-top:10px;
+		
+		width:95%;
+		text-align:left;
+	}
+	
+	#SlideShow li
+	{
+		font-size:30px;
+		line-height:30px;
+		font-weight:bold;
+		margin:0px 0 20px 0;
+		list-style:disc inside !important;
+	}
+	
+	#SlideShow cite
+	{
+		font-size:26px;
+		font-weight:normal;
+		font-style:normal;
+		color:#ddd;
+	}
+	
+	#SlideShow del
+	{
+		color:#ccc;
+	}
+	
+	
+	.SlideShow_Finished
+	{
+		font-size:15px;
+		color:#fff;
+		font-weight:bold;
+		text-align:center;
+		opacity:0.7;
+	}
+	
+	#SlideShow_Indicator
+	{
+		color:#fff;
+		font-size:12px;
+		font-weight:bold;
+		position:absolute;
+		right:5px;
+		top:5px;
+		z-index:4;
+	}
+	
+	#Frontier
+	{
+		float:left;
+		position:absolute;
+		left:0px;
+		top:0px;
+		z-index:10;
+		background:url(/img/App_GUI/Misc/transparent.gif);
+	}
+	
+	#SlideShow h1
+	{
+		float:left;
+		color:#fff;
+		width:100%;
+		font-size:55px;
+
+		font-weight:bold;
+	
+		text-align:center;
+		margin:150px 0 10px 0;
+	}
+
+	.MV_Shadow
+	{
+		position:absolute;
+		bottom:0px;
+		left:0px;
+		
+		width:100%;
+		padding:20px 0 20px 0;
+		background:#000;
+		color:#000;
+		
+		opacity: 0.4;
+		filter: alpha(opacity=40);
+		
+		z-index:10;
+	}
+	.MV
+	{
+		position:absolute;
+		bottom:0px;
+		left:0px;
+		
+		float:left;
+		width:100%;
+
+		padding:20px 0 20px 0;
+		z-index:15;
+		
+		color:#fff;
+	}
+	.ImageTitle
+	{
+		float:left;
+		margin-left:50px;
+		font-size:40px;
+		font-weight:bold;
+		color:#fff;
+		
+	}
+	
+	.ImageDesc
+	{
+		float:left;
+		clear:left;
+		margin:10px 0 10px 50px;
+		color:#fff;
+		font-size:30px;
+		
+	}
+	
+	#HandsOn_bg
+	{
+		position:absolute;
+		left:0px;
+		top:0px;
+		width:100%;
+		background:#333 url(/img/iSpace/slideshow_handson.jpg) center center no-repeat;
+		
+		z-index:10;
+		
+		cursor:hand !important;
+		cursor:pointer !important;
+	}
+	
+	#HandsOn_Continue
+	{
+		color:#fff;
+		font-weight:bold;
+		font-size:12px;
+		position:absolute;
+		
+		left:45%;
+		bottom:100px;
+	}
+	
+	.SelectedItem
+	{
+		list-style-type:circle !important;
+		color:#ffcc88;
+	}

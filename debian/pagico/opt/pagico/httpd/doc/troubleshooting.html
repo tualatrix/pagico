@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META name="generator" content="HTML Tidy for Linux/x86 (vers 12 April 2005), see www.w3.org">
+<TITLE>Troubleshooting Guide</TITLE>
+<META name="GENERATOR" content="Modular DocBook HTML Stylesheet Version 1.79">
+<LINK rel="HOME" title="Abyss Web Server For Linux User's Guide" href="index.html">
+<LINK rel="PREVIOUS" title="Solving Ports Listening Problems" href="portsproblems.html">
+<LINK rel="STYLESHEET" type="text/css" href="stylesheet.css">
+<META name="AppleIcon" content="icon.png">
+<META name="AppleTitle" content="Abyss Web Server Help">
+</HEAD>
+<BODY class="APPENDIX" bgcolor="#FFFFFF" text="#000000">
+<DIV class="NAVHEADER">
+<TABLE summary="Header navigation table" width="100%" border="0" cellpadding="0" cellspacing="0">
+<TR>
+<TH colspan="3" align="center">Abyss Web Server For Linux User's Guide</TH>
+</TR>
+<TR>
+<TD width="10%" align="left" valign="bottom"><A href="portsproblems.html" accesskey="P">Prev</A></TD>
+<TD width="80%" align="center" valign="bottom"></TD>
+<TD width="10%" align="right" valign="bottom">&nbsp;</TD>
+</TR>
+</TABLE>
+<HR align="left" width="100%"></DIV>
+<DIV class="APPENDIX">
+<H1><A name="TROUBLESHOOTING" id="TROUBLESHOOTING"></A>Appendix H. Troubleshooting Guide</H1>
+<DIV class="QANDASET">
+<DL>
+<DT>1. <A href="troubleshooting.html#AEN2888">The console or the web site cannot be accessed from the computer on which Abyss Web Server is running.</A></DT>
+<DT>2. <A href="troubleshooting.html#AEN2897">Abyss Web Server reports the following error at startup: "Cannot start the host XXX (listening problem)"</A></DT>
+<DT>3. <A href="troubleshooting.html#AEN2903">Abyss Web Server reports the following error at startup: "Cannot start the console (listening problem)"</A></DT>
+</DL>
+<DIV class="QANDAENTRY">
+<DIV class="QUESTION">
+<P><A name="AEN2888" id="AEN2888"></A><B>1. The console or the web site cannot be accessed from the computer on which Abyss Web Server is running.</B></P>
+</DIV>
+<DIV class="ANSWER">
+<P>If you cannot browse <KBD class="USERINPUT">127.0.0.1</KBD> or <KBD class="USERINPUT">localhost</KBD>, check if you have configured a HTTP proxy in the browser. If so, disable proxy usage for <KBD class="USERINPUT">127.0.0.1</KBD> and <KBD class="USERINPUT">localhost</KBD>.</P>
+</DIV>
+</DIV>
+<DIV class="QANDAENTRY">
+<DIV class="QUESTION">
+<P><A name="AEN2897" id="AEN2897"></A><B>2. Abyss Web Server reports the following error at startup: "Cannot start the host XXX (listening problem)"</B></P>
+</DIV>
+<DIV class="ANSWER">
+<P>This error arises when the XXX's host port is already used by another application or if you do not have the privilege to use it. You have to choose another port for the host using the console. Refer to "<A href="portsproblems.html">Solving Ports Listening Problems</A>" for more information.</P>
+</DIV>
+</DIV>
+<DIV class="QANDAENTRY">
+<DIV class="QUESTION">
+<P><A name="AEN2903" id="AEN2903"></A><B>3. Abyss Web Server reports the following error at startup: "Cannot start the console (listening problem)"</B></P>
+</DIV>
+<DIV class="ANSWER">
+<P>This error occurs when the console port is already used by another application or if you do not have the privilege to use it. Refer also to "<A href="portsproblems.html">Solving Ports Listening Problems</A>" for more information.</P>
+</DIV>
+</DIV>
+</DIV>
+</DIV>
+<DIV class="NAVFOOTER">
+<HR align="left" width="100%">
+<TABLE summary="Footer navigation table" width="100%" border="0" cellpadding="0" cellspacing="0">
+<TR>
+<TD width="33%" align="left" valign="top"><A href="portsproblems.html" accesskey="P">Prev</A></TD>
+<TD width="34%" align="center" valign="top"><A href="index.html" accesskey="H">Home</A></TD>
+<TD width="33%" align="right" valign="top">&nbsp;</TD>
+</TR>
+<TR>
+<TD width="33%" align="left" valign="top">Solving Ports Listening Problems</TD>
+<TD width="34%" align="center" valign="top">&nbsp;</TD>
+<TD width="33%" align="right" valign="top">&nbsp;</TD>
+</TR>
+</TABLE>
+</DIV>
+<DIV class="COPYRIGHT">Copyright &copy; 2001-2007 Aprelium Technologies</DIV>
+</BODY>
+</HTML>

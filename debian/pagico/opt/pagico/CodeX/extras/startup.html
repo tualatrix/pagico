@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="refresh" content="1; URL=http://127.0.0.1:1200/?nopopup">
+<title> </title>
+
+<style>
+
+body {
+	
+	margin:0;
+	padding:0;
+}
+
+#pagicoLogo {
+	float:left;
+	background:#eaeceb url(../img/App_GUI/Main/pagicoTextLogo.png) center center no-repeat;
+	width:100%;
+	height:550px;
+}
+
+</style>
+
+
+</head>
+
+<body>
+	
+	<div id='pagicoLogo'></div>
+
+</body>
+
+
+<script>
+window.onload = resize;
+window.onresize = resize;
+
+function resize() {
+	document.getElementById('pagicoLogo').style.height = window.innerHeight + 'px';
+}
+</script>
+
+</html>

@@ -1,3 +1,4 @@
 include *.in README
 include data/*
+include httpd/*
 recursive-include data *.png *.in *.conf *.desktop *.service libgd.so.2

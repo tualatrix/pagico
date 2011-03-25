@@ -1,0 +1,117 @@
+#x_Inbox
+{
+	float:left;
+	width:100%;
+	padding:0;
+	margin:0;
+}
+
+.Inbox_ColorPanel
+{
+	float:left;
+	display:block;
+	
+	color:#444;
+	padding:0 5px 0 5px;
+	margin:0 1px 0 1px;
+	cursor:hand;
+	cursor:pointer;
+	
+	z-index:5;
+
+}
+
+
+
+a.Inbox_InsertTo:link, a.Inbox_InsertTo:visited
+{
+	float:left;
+	display:block;
+	padding: 0 5px 0 25px;
+	height:18px;
+	line-height:18px;
+	text-decoration:none;
+	background:url(/img/App_GUI/Misc/insert.png) 10px -1px no-repeat;
+	opacity:0.8;
+}
+
+a.Inbox_InsertTo:hover
+{
+	opacity:1;
+}
+
+#Inbox_CreateNew
+{
+	float:left;
+	width:100%;
+	margin:20px 0 0 0;
+	
+	background:#EAEEF2;
+}
+
+#Inbox_CreateNew_TextArea
+{
+	float:left;
+	margin:5px 0 0 5px !important;
+	margin:5px 0 0 4px;
+	width:98%;
+	height:200px;
+	font-size:14px;
+	color:#555;
+}
+
+#Inbox_CreateNew_Button
+{
+	float:left;
+	clear:both;
+	margin:5px 0 0 5px;
+}
+
+#Inbox_CreateNew_Hint
+{
+	float:left;
+	margin:0 0 0 10px;
+	width:749px;
+	height:30px;
+	
+	line-height:30px;
+	color:#555;
+	font-size:11px;
+}
+
+.Inbox_Text_Edit
+{
+	float:left;
+	width:100%;
+	margin:5px 0 5px 0px;
+
+	background: #fff;
+	border:1px solid #ccc;
+
+	font-size:14px;
+	
+	resize:none;
+	resize: vertical; 
+	
+	height:120px;
+
+	max-width:100%;
+}
+
+.InboxTask_DateCol, .InboxTask_DateCol2
+{
+	width:20%;
+	height:25px;
+	
+	text-align:center;
+	font-size:11px;
+}
+
+.InboxTask_DateCol2 {background: rgba(0,0,0,0.05);}
+
+.InboxTask_NameCol
+{
+	position:relative;
+	width:60%;
+	height:25px;
+}

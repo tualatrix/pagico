@@ -1,0 +1,286 @@
+body
+{
+	/* background:#1f1f1f url(/img/App_GUI/Misc/indicator_lg_2.gif) center no-repeat; */
+	/* background:#fff url(/img/App_GUI/Misc/indicator_lg.gif) center no-repeat; */
+	background:#d4dde4 url(/img/App_GUI/BundleCover/System_Header_BG.jpg) left top repeat-x;
+	padding:0px;
+	margin:0px;
+	
+}
+#AbsContainer
+{
+	position:relative;
+	float:left;
+
+	width:1024px;
+
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+}
+
+.OperaContainer
+{
+	top:-12px !important;
+	left:-5px !important;
+}
+
+#MainWindow
+{
+	float:left;
+	width:100%;
+	margin:0 0 0 0;
+}
+
+#About
+{
+	position:absolute;
+	left:0px;top:0px;
+	width:1024px;
+}
+
+.About_Normal
+{
+	background:#6e6e6e url(/img/App_GUI/BundleCover/About.jpg) center center no-repeat;
+}
+
+#CacheWindow
+{
+	float:left;
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:100;
+}
+
+#CopyRight, #CopyRight_BT
+{
+	float:left;
+	position:relative;
+	width:1024px;
+
+	height:30px;
+
+	line-height:30px;
+
+	font-weight:bold;
+	font-family:Tahoma, SimSun, sans-serif;
+	color:#ccc;
+	font-size:12px;
+	text-align:right;
+	color:#ddd;
+	background:url(/img/App_GUI/BundleCover/System_Footer.jpg) top repeat-x;
+	
+	overflow:hidden;
+}
+
+a.CopyrightLink:link, a.CopyrightLink:visited
+{
+	margin-right:10px;
+	border-bottom:1px solid #555;
+	font-size:12px;
+	line-height:30px;
+	color:#ddd;
+	
+	text-decoration:none;
+}
+
+a.CopyrightLink:hover{color:#fff;border-bottom:1px dashed #fff;}
+
+#SyncIndicator
+{
+	position:absolute;
+	right:100px;
+	bottom:6px;
+	height:16px;
+	padding-left:20px;
+	color:#aaa;
+	font-size:9px;
+	line-height:16px;
+	
+	cursor:default;
+	
+	background:url(/img/App_GUI/Misc/sync_indicator.gif) left center no-repeat;
+}
+
+
+a.SwitchButton:link, a.SwitchButton:visited
+{
+	position:absolute;
+	left:5px;
+	bottom:-7px;
+	width:100px;
+	height:30px;
+	overflow:hidden;
+	background:url(/img/vClipper/SwitchButton.jpg) left top no-repeat;
+	color:#555;
+	text-align:center;
+	line-height:30px;
+	text-decoration:none;
+}
+
+a.SwitchButton:hover
+{
+	background:url(/img/vClipper/SwitchButton_hover.jpg) left top no-repeat;
+	color:#000;
+}
+
+.SecondLink
+{
+	left:110px !important;
+}
+
+.ThirdLink
+{
+	left:215px !important;
+}
+
+a.VersionLink:link, a.VersionLink:visited
+{
+	color:#999;
+	position:absolute;
+	left:110px;
+	top:5px;
+	font-weight:bold;
+	font-size:11px;
+	text-decoration:none;
+	
+	cursor:default;
+}
+
+a.VersionLink:hover
+{
+	color:#fff;
+}
+
+a.NewVersionLink:link, a.NewVersionLink:visited
+{
+	color:#fff;
+	position:absolute;
+	left:210px;
+	top:5px;
+	font-weight:bold;
+	font-size:10px;
+	text-decoration:none;
+	
+}
+
+a.NewVersionLink:hover
+{
+	text-decoration:underline;
+}
+
+#FeedBack
+{
+	position:absolute;
+	right:0px;
+	bottom:20px !important;
+	bottom:5px;	/* for ie */
+	background:#4381d4 url(/img/ProjectCenter/HelpMessage_bg.jpg) top repeat-x;
+	border-top:3px solid #000;
+	border-bottom:1px solid #666;
+	font-family:"Lucida Grande", Tahoma, SimSun, sans-serif;
+	height:100px;
+	padding-bottom:5px !important;
+	padding-bottom:12px;
+
+	font-size:12px;
+}
+
+	#FeedBack_Text
+	{
+		float:left;
+		width:70%;
+		height:85px;
+		margin:5px 0 0 5px;
+		font-size:14px;
+		color:#666;
+		line-height:20px;
+	}
+	
+	#FeedBack_ControlSets
+	{
+		float:right;
+		width:25%;
+		height:65px;
+		margin:10px 5px 0 0;
+		border-left:2px solid #888;
+	}
+	
+	#FeedBack_Submit
+	{
+		float:left;
+		width:120px;
+		height:25px;
+		line-height:20px;
+		font-size:12px;
+		font-weight:bold;
+		margin:0 5px 0 5px;
+		font-family:"Lucida Grande", Tahoma, SimSun, sans-serif;
+	}
+	
+	#FeedBack_Tip
+	{
+		float:left;
+		clear:left;
+		color:#fff;
+		width:100%;
+		font-size:12px;
+		line-height:16px;
+		margin:10px 0 0 5px;
+		font-weight:bold;
+	}
+	
+	a.HelpLink:link, a.HelpLink:visited
+	{
+		padding:0 10px 0 10px;
+		color:#eee;
+		font-weight:bold;
+		background:#6af;
+		text-decoration:none;
+	}
+	a.HelpLink:hover
+	{
+		background-color:#38d;
+		color:#fff;
+	}
+	a.HelpLink:active
+	{
+		background-color:#16b;
+	}
+	
+	#FeedBack_Done
+	{
+		position:absolute;
+		float:left;
+		left:0px;
+		top:0px;
+		width:100%;
+		height:100px;
+		background:#4381d4 url(/img/ProjectCenter/HelpMessage_bg.jpg) top repeat-x;
+		cursor:pointer !important;
+		cursor:hand !important;
+		padding-bottom:5px !important;
+		padding-bottom:12px;
+	}
+	
+	#FeedBack_Done h1
+	{
+		line-height:30px;
+		font-size:14px;
+		margin:5px 0 0 10px;
+		padding:0;
+		color:#000;
+		cursor:pointer;
+		cursor:hand;
+	}
+	
+	#FeedBack_Done p
+	{
+		line-height:18px;
+		font-size:12px;
+		margin:0 10px 5px 10px;
+		color:#fff;
+		font-weight:bold;
+		cursor:pointer;
+		cursor:hand;
+	}

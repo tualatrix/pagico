@@ -1,0 +1,10 @@
+#!/bin/sh
+
+##
+# Restart the Pagico service on Mac
+##
+
+killall -KILL pagicod
+killall -KILL php
+sleep 1
+"/Applications/Pagico/Pagico.app/Contents/Resources/pagicod" -d -c pagico.conf
