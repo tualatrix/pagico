@@ -197,7 +197,7 @@ class Pagico(gtk.Window):
             'ContactsItem': 'Goto(3);',
             'WorkspaceItem': 'Goto(7);',
             'SnapbackItem': 'GoBack();',
-
+            'AboutItem': 'ShowAbout();'
         }
 
         action_navigations = {
