@@ -185,8 +185,44 @@ class Pagico(gtk.Window):
         for arg in args:
             print "        " + str(arg)
 
-    def activate_action(self):
-        pass
+    def activate_action(self, action):
+        name = action.get_name()
+        action_scripts = {
+            'NewTaskItem': 'NewInboxTask();',
+            'NewProjectItem': 'NewTopic();',
+            'NewContactProfileItem': 'NewProfile();',
+            'DashboardItem': 'Goto(0);',
+            'InboxItem': 'Goto(1);',
+            'ProjectsItem': 'Goto(2);',
+            'ContactsItem': 'Goto(3);',
+            'WorkspaceItem': 'Goto(7);',
+            'SnapbackItem': 'GoBack();',
+
+        }
+
+        action_navigations = {
+            'LockDatabaseItem': 'http://127.0.0.1:1200/html/SignIn.php',
+            'CloseDatabaseItem': 'http://127.0.0.1:1200/start/',
+            'OnlineHelpItem': 'http://help.pagico.com/',
+            'WebsiteItem': 'http://www.pagico.com/',
+        }
+
+        action_methods = {
+            'CreateNewDatabaseItem': self.create_new_database,
+            'UserManualItem': self.open_user_manual,
+        }
+
+        if name in action_scripts:
+            self.webview.execute_script(action_scripts[name])
+        elif name in action_navigations:
+            self.webview.load_uri(action_navigations[name])
+        elif name in action_methods:
+            action_methods[name]()
+        else:
+            print action, action.get_name()
+
+    def open_user_manual(self):
+        os.system('xdg-open /opt/pagico/CodeX/UserManual.pdf')
 
     def on_load_status_changed(self, widget, status):
         print widget, widget.get_load_status().value_nick
@@ -285,11 +321,16 @@ class Pagico(gtk.Window):
             ('ProgramPreferencesItem', None, _('Program Preferences')),
             ('DatabasePreferencesItem', None, _('Database Preferences')),
             ('HelpMenu', None, _('_Help')),
-            ('UserManualItem', None, _('_User Manual')),
-            ('OnlineHelpItem', None, _('_Online Interactive Help')),
-            ('WebsiteItem', None, _('Pagico _Website')),
-            ('CheckupdateItem', None, _('Check for U_pdate')),
-            ('AboutItem', None, _('_About ...')),
+            ('UserManualItem', None, _('_User Manual'),
+             None, None, self.activate_action),
+            ('OnlineHelpItem', None, _('_Online Interactive Help'),
+             None, None, self.activate_action),
+            ('WebsiteItem', None, _('Pagico _Website'),
+             None, None, self.activate_action),
+            ('CheckupdateItem', None, _('Check for U_pdate'),
+             None, None, self.activate_action),
+            ('AboutItem', None, _('_About ...'),
+             None, None, self.activate_action),
           )
 
         # Create the menubar and toolbar
