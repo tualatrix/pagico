@@ -12,11 +12,10 @@ Standards-Version: 3.9.1
 Homepage: http://www.pagico.com
 
 Package: pagico
-Architecture: any
+Architecture: i386
 Depends: python-gtk2,
  python-dbus,
  python-webkit,
- ia32-libs [amd64],
  ${python:Depends}
 Description: Your personal knowledge base for data and relationship.
  Website:http://www.pagico.com
