@@ -202,6 +202,7 @@ class Pagico(gtk.Window):
                                        action=gtk.FILE_CHOOSER_ACTION_CREATE_FOLDER,
                                        buttons=(gtk.STOCK_CANCEL, gtk.RESPONSE_REJECT,
                                                 gtk.STOCK_SAVE, gtk.RESPONSE_ACCEPT))
+        dialog.set_current_folder(os.getenv('HOME'))
         response = dialog.run()
         filename = dialog.get_filename()
         dialog.destroy()
