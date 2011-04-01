@@ -93,6 +93,7 @@ class Pagico(gtk.Window):
         self.init_daemon()
         self.load_config()
         self.start_abyssws()
+        self.menu_sensitive = False
 
         self.set_title('Pagico')
         self.set_size_request(1024, 600)
@@ -197,7 +198,6 @@ class Pagico(gtk.Window):
             'ContactsItem': 'Goto(3);',
             'WorkspaceItem': 'Goto(7);',
             'SnapbackItem': 'GoBack();',
-            'AboutItem': 'ShowAbout();'
         }
 
         action_navigations = {
@@ -211,6 +211,7 @@ class Pagico(gtk.Window):
             'CreateNewDatabaseItem': self.create_new_database,
             'UserManualItem': self.open_user_manual,
             'QuitPagicoItem': self.on_quit_pagico,
+            'AboutItem': self.show_about,
         }
 
         if name in action_scripts:
@@ -222,6 +223,28 @@ class Pagico(gtk.Window):
         else:
             print action, action.get_name()
 
+    def show_about(self):
+        def on_about_image_clicked(self, widget, window):
+            window.destroy()
+
+        if self.menu_sensitive:
+            self.webview.execute_script('ShowAbout();')
+        else:
+            window = gtk.Dialog(parent=self.get_toplevel())
+            window.set_resizable(False)
+
+            eventbox = gtk.EventBox()
+            eventbox.set_events(gtk.gdk.BUTTON_PRESS_MASK)
+            eventbox.connect('button_press_event', on_about_image_clicked, window)
+            window.get_content_area().pack_start(eventbox, False, False, 0)
+
+            image = gtk.image_new_from_file('/opt/pagico/CodeX/img/App_GUI/BundleCover/About.png')
+            eventbox.add(image)
+
+            window.show_all()
+            window.run()
+            window.destroy()
+
     def open_user_manual(self):
         os.system('xdg-open /opt/pagico/CodeX/UserManual.pdf')
 
@@ -232,6 +255,21 @@ class Pagico(gtk.Window):
         title = widget.get_property('title')
         if title:
             self.set_title(title)
+
+            if title.endswith('pgco') and 'Loading' not in title:
+                self.set_menu_sensitive(True)
+        else:
+            self.set_menu_sensitive(False)
+
+    def set_menu_sensitive(self, sensitive):
+        items = ['NewMenu', 'DashboardItem', 'InboxItem', 'ProjectsItem',
+                 'ContactsItem', 'WorkspaceItem', 'LockDatabaseItem',
+                 'CloseDatabaseItem']
+
+        for action_name in items:
+            self.action_group.get_action(action_name).set_sensitive(sensitive)
+
+        self.menu_sensitive = sensitive
 
     def create_new_database(self):
         dialog = gtk.FileChooserDialog(title=_('Create new database'),
@@ -337,10 +375,10 @@ class Pagico(gtk.Window):
           )
 
         # Create the menubar and toolbar
-        action_group = gtk.ActionGroup("AppWindowActions")
-        action_group.add_actions(entries)
+        self.action_group = gtk.ActionGroup("AppWindowActions")
+        self.action_group.add_actions(entries)
 
-        return action_group
+        return self.action_group
 
 
 class PagicoClient(dbus.service.Object):
