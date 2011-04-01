@@ -44,8 +44,8 @@ ui_info = '''
           <menuitem action='LockDatabaseItem'/>
           <menuitem action='CreateNewDatabaseItem'/>
           <separator/>
-          <menuitem action='QuitPagicoItem'/>
           <menuitem action='CloseDatabaseItem'/>
+          <menuitem action='QuitPagicoItem'/>
       </menu>
       <menu action='EditMenu'>
           <menuitem action='CutItem'/>
@@ -129,13 +129,13 @@ class Pagico(gtk.Window):
 
         self.webview.connect('notify::load-status', self.on_load_status_changed)
         self.webview.connect('notify::title', self.on_title_changed)
-        self.connect('destroy', self.on_destroy)
+        self.connect('destroy', self.on_quit_pagico)
 
         self.webview.load_uri('http://127.0.0.1:1200/?nopopup')
 
         self.show_all()
 
-    def on_destroy(self, widget):
+    def on_quit_pagico(self, widget=None):
         self.end_abyssws()
         self.unload_config()
         self.quit_daemon()
@@ -210,6 +210,7 @@ class Pagico(gtk.Window):
         action_methods = {
             'CreateNewDatabaseItem': self.create_new_database,
             'UserManualItem': self.open_user_manual,
+            'QuitPagicoItem': self.on_quit_pagico,
         }
 
         if name in action_scripts:
@@ -304,6 +305,8 @@ class Pagico(gtk.Window):
              '<control>L', None, self.activate_action),
             ('CloseDatabaseItem', None, _('Close Database'),
              '<shift><control>W', None, self.activate_action),
+            ('QuitPagicoItem', None, _('Quit Pagico'),
+             '<control>Q', None, self.activate_action),
             ('CreateNewDatabaseItem', None, _('Create New Database'),
              '<shift><control>N', None, self.activate_action),
             ('EditMenu', None, _('_Edit')),
