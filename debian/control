@@ -12,7 +12,7 @@ Standards-Version: 3.9.1
 Homepage: http://www.pagico.com
 
 Package: pagico
-Architecture: i386
+Architecture: all
 Depends: python-gtk2,
  python-dbus,
  python-webkit,
