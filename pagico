@@ -6,6 +6,7 @@ import time
 import shutil
 import gettext
 import subprocess
+import webbrowser
 
 import gtk
 import glib
@@ -64,7 +65,6 @@ ui_info = '''
           <menuitem action='OnlineHelpItem'/>
           <separator/>
           <menuitem action='WebsiteItem'/>
-          <menuitem action='CheckupdateItem'/>
           <menuitem action='AboutItem'/>
       </menu>
   </menubar>
@@ -130,11 +130,35 @@ class Pagico(gtk.Window):
 
         self.webview.connect('notify::load-status', self.on_load_status_changed)
         self.webview.connect('notify::title', self.on_title_changed)
+        self.webview.connect('create-web-view', self.on_create_web_view)
+        self.webview.connect('print-requested', self.on_print_requested)
         self.connect('destroy', self.on_quit_pagico)
 
         self.webview.load_uri('http://127.0.0.1:1200/?nopopup')
 
         self.show_all()
+
+    def on_print_requested(self, webview, webframe):
+        getattr(webframe, 'print')()
+
+    def on_create_web_view(self, webview, webframe):
+        win = gtk.Window()
+        new_webview = webkit.WebView()
+        new_webview.connect('notify::title', self.on_title_changed)
+        new_webview.connect('web-view-ready', self.on_web_view_ready)
+        new_webview.connect('close-web-view', self.on_close_web_view)
+        win.add(new_webview)
+        return new_webview
+
+    def on_close_web_view(self, webview):
+        win = webview.get_toplevel()
+        win.destroy()
+        return True
+
+    def on_web_view_ready(self, webview):
+        win = webview.get_toplevel()
+        win.show_all()
+        return True
 
     def on_quit_pagico(self, widget=None):
         self.end_abyssws()
@@ -196,8 +220,11 @@ class Pagico(gtk.Window):
             'InboxItem': 'Goto(1);',
             'ProjectsItem': 'Goto(2);',
             'ContactsItem': 'Goto(3);',
+            'ProgramPreferencesItem': 'Goto(4);',
+            'DatabasePreferencesItem': 'Goto(4,1);',
             'WorkspaceItem': 'Goto(7);',
             'SnapbackItem': 'GoBack();',
+            'PrintItem': 'printScreen();',
         }
 
         action_navigations = {
@@ -217,7 +244,11 @@ class Pagico(gtk.Window):
         if name in action_scripts:
             self.webview.execute_script(action_scripts[name])
         elif name in action_navigations:
-            self.webview.load_uri(action_navigations[name])
+            url = action_navigations[name]
+            if url.startswith('http://127.0.0.1:1200'):
+                self.webview.load_uri(action_navigations[name])
+            else:
+                webbrowser.open(url)
         elif name in action_methods:
             action_methods[name]()
         else:
@@ -253,13 +284,15 @@ class Pagico(gtk.Window):
 
     def on_title_changed(self, widget, param):
         title = widget.get_property('title')
+        win = widget.get_toplevel()
         if title:
-            self.set_title(title)
+            win.set_title(title)
 
-            if title.endswith('pgco') and 'Loading' not in title:
-                self.set_menu_sensitive(True)
-        else:
-            self.set_menu_sensitive(False)
+            if title.endswith('pgco') and 'Loading' not in title and \
+                    hasattr(win, 'set_menu_sensitive'):
+                win.set_menu_sensitive(True)
+        elif hasattr(win, 'set_menu_sensitive'):
+            win.set_menu_sensitive(False)
 
     def set_menu_sensitive(self, sensitive):
         items = ['NewMenu', 'DashboardItem', 'InboxItem', 'ProjectsItem',
@@ -357,18 +390,18 @@ class Pagico(gtk.Window):
             ('SnapbackItem', None, _('_Snapback'),
              '<control>left', None, self.activate_action),
             ('PrintItem', None, _('Print'),
-             None, None, self.activate_action),
+             '<control>P', None, self.activate_action),
             ('ToolsMenu', None, _('_Tools')),
-            ('ProgramPreferencesItem', None, _('Program Preferences')),
-            ('DatabasePreferencesItem', None, _('Database Preferences')),
+            ('ProgramPreferencesItem', None, _('Program Preferences'),
+             None, None, self.activate_action),
+            ('DatabasePreferencesItem', None, _('Database Preferences'),
+             None, None, self.activate_action),
             ('HelpMenu', None, _('_Help')),
             ('UserManualItem', None, _('_User Manual'),
              None, None, self.activate_action),
             ('OnlineHelpItem', None, _('_Online Interactive Help'),
              None, None, self.activate_action),
             ('WebsiteItem', None, _('Pagico _Website'),
-             None, None, self.activate_action),
-            ('CheckupdateItem', None, _('Check for U_pdate'),
              None, None, self.activate_action),
             ('AboutItem', None, _('_About ...'),
              None, None, self.activate_action),
