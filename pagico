@@ -49,6 +49,9 @@ ui_info = '''
           <menuitem action='QuitPagicoItem'/>
       </menu>
       <menu action='EditMenu'>
+          <menuitem action='UndoItem'/>
+          <menuitem action='RedoItem'/>
+          <separator/>
           <menuitem action='CutItem'/>
           <menuitem action='CopyItem'/>
           <menuitem action='PasteItem'/>
@@ -132,11 +135,25 @@ class Pagico(gtk.Window):
         self.webview.connect('notify::title', self.on_title_changed)
         self.webview.connect('create-web-view', self.on_create_web_view)
         self.webview.connect('print-requested', self.on_print_requested)
+        self.webview.connect('selection-changed', self.on_selection_changed)
+        self.webview.connect('editing-began', self.on_editing_ended)
+        self.webview.connect('editing-ended', self.on_editing_ended)
         self.connect('destroy', self.on_quit_pagico)
 
         self.webview.load_uri('http://127.0.0.1:1200/?nopopup')
+        self.on_editing_ended(self.webview)
+        self.on_selection_changed(self.webview)
 
         self.show_all()
+
+    def on_editing_ended(self, widget):
+        self.action_group.get_action('UndoItem').set_sensitive(self.webview.can_copy_clipboard())
+        self.action_group.get_action('RedoItem').set_sensitive(self.webview.can_copy_clipboard())
+
+    def on_selection_changed(self, widget):
+        self.action_group.get_action('CopyItem').set_sensitive(self.webview.can_copy_clipboard())
+        self.action_group.get_action('CutItem').set_sensitive(self.webview.can_cut_clipboard())
+        self.action_group.get_action('PasteItem').set_sensitive(self.webview.can_paste_clipboard())
 
     def on_print_requested(self, webview, webframe):
         getattr(webframe, 'print')()
@@ -239,6 +256,11 @@ class Pagico(gtk.Window):
             'UserManualItem': self.open_user_manual,
             'QuitPagicoItem': self.on_quit_pagico,
             'AboutItem': self.show_about,
+            'CopyItem': self.webview.copy_clipboard,
+            'CutItem': self.webview.cut_clipboard,
+            'PasteItem': self.webview.paste_clipboard,
+            'RedoItem': self.webview.redo,
+            'UndoItem': self.webview.undo,
         }
 
         if name in action_scripts:
@@ -381,6 +403,10 @@ class Pagico(gtk.Window):
             ('CreateNewDatabaseItem', None, _('Create New Database'),
              '<shift><control>N', None, self.activate_action),
             ('EditMenu', None, _('_Edit')),
+            ('UndoItem', None, _('Undo'),
+             '<control>Z', None, self.activate_action),
+            ('RedoItem', None, _('Redo'),
+             '<shift><control>Z', None, self.activate_action),
             ('CutItem', None, _('Cu_t'),
              '<control>X', None, self.activate_action),
             ('CopyItem', None, _('_Copy'),
