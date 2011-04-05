@@ -131,11 +131,15 @@ class Pagico(gtk.Window):
         self.webview.connect('notify::load-status', self.on_load_status_changed)
         self.webview.connect('notify::title', self.on_title_changed)
         self.webview.connect('create-web-view', self.on_create_web_view)
+        self.webview.connect('print-requested', self.on_print_requested)
         self.connect('destroy', self.on_quit_pagico)
 
         self.webview.load_uri('http://127.0.0.1:1200/?nopopup')
 
         self.show_all()
+
+    def on_print_requested(self, webview, webframe):
+        getattr(webframe, 'print')()
 
     def on_create_web_view(self, webview, webframe):
         win = gtk.Window()
