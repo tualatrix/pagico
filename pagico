@@ -130,11 +130,31 @@ class Pagico(gtk.Window):
 
         self.webview.connect('notify::load-status', self.on_load_status_changed)
         self.webview.connect('notify::title', self.on_title_changed)
+        self.webview.connect('create-web-view', self.on_create_web_view)
         self.connect('destroy', self.on_quit_pagico)
 
         self.webview.load_uri('http://127.0.0.1:1200/?nopopup')
 
         self.show_all()
+
+    def on_create_web_view(self, webview, webframe):
+        win = gtk.Window()
+        new_webview = webkit.WebView()
+        new_webview.connect('notify::title', self.on_title_changed)
+        new_webview.connect('web-view-ready', self.on_web_view_ready)
+        new_webview.connect('close-web-view', self.on_close_web_view)
+        win.add(new_webview)
+        return new_webview
+
+    def on_close_web_view(self, webview):
+        win = webview.get_toplevel()
+        win.destroy()
+        return True
+
+    def on_web_view_ready(self, webview):
+        win = webview.get_toplevel()
+        win.show_all()
+        return True
 
     def on_quit_pagico(self, widget=None):
         self.end_abyssws()
@@ -260,13 +280,15 @@ class Pagico(gtk.Window):
 
     def on_title_changed(self, widget, param):
         title = widget.get_property('title')
+        win = widget.get_toplevel()
         if title:
-            self.set_title(title)
+            win.set_title(title)
 
-            if title.endswith('pgco') and 'Loading' not in title:
-                self.set_menu_sensitive(True)
-        else:
-            self.set_menu_sensitive(False)
+            if title.endswith('pgco') and 'Loading' not in title and \
+                    hasattr(win, 'set_menu_sensitive'):
+                win.set_menu_sensitive(True)
+        elif hasattr(win, 'set_menu_sensitive'):
+            win.set_menu_sensitive(False)
 
     def set_menu_sensitive(self, sensitive):
         items = ['NewMenu', 'DashboardItem', 'InboxItem', 'ProjectsItem',
