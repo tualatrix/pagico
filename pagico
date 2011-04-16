@@ -136,8 +136,11 @@ class Pagico(gtk.Window):
         self.webview.connect('create-web-view', self.on_create_web_view)
         self.webview.connect('print-requested', self.on_print_requested)
         self.webview.connect('selection-changed', self.on_selection_changed)
-        self.webview.connect('editing-began', self.on_editing_ended)
-        self.webview.connect('editing-ended', self.on_editing_ended)
+        try:
+            self.webview.connect('editing-began', self.on_editing_ended)
+            self.webview.connect('editing-ended', self.on_editing_ended)
+        except Exception, e:
+            print e
         self.connect('destroy', self.on_quit_pagico)
 
         self.webview.load_uri('http://127.0.0.1:1200/?nopopup')
