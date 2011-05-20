@@ -5,6 +5,7 @@ import sys
 import time
 import shutil
 import gettext
+import platform
 import subprocess
 import webbrowser
 
@@ -126,9 +127,10 @@ class Pagico(gtk.Window):
         vbox.pack_start(bar, False, False, 0)
 
         self.webview = WebView()
-        self.webview.drag_dest_set(gtk.DEST_DEFAULT_ALL, self.TARGET[:-1],
-                                   gtk.gdk.ACTION_COPY | gtk.gdk.ACTION_MOVE | gtk.gdk.ACTION_LINK)
-        self.webview.connect('drag-data-received', self.on_drag_data_received)
+        if platform.linux_distribution()[2] != 'natty':
+            self.webview.drag_dest_set(gtk.DEST_DEFAULT_ALL, self.TARGET[:-1],
+                                       gtk.gdk.ACTION_COPY | gtk.gdk.ACTION_MOVE | gtk.gdk.ACTION_LINK)
+            self.webview.connect('drag-data-received', self.on_drag_data_received)
 
         vbox.pack_start(self.webview, True, True, 0)
 
