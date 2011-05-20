@@ -472,7 +472,7 @@ class PagicoClient(dbus.service.Object):
 
     @dbus.service.method(dbus_interface='com.pagico.clienty')
     def launch(self, path):
-        print 'try to launch path', path
+        os.system('xdg-open %s' % path)
 
 
 def show_splash():
