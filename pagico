@@ -3,15 +3,20 @@
 import os
 import sys
 import time
+import thread
 import shutil
 import gettext
+import platform
+import threading
 import subprocess
 import webbrowser
 
+import gio
 import gtk
 import glib
 import dbus
 import webkit
+import pango
 import gobject
 
 import dbus
@@ -74,6 +79,102 @@ ui_info = '''
 </ui>
 '''
 
+class BusyDialog(gtk.Dialog):
+    def __init__(self, parent=None):
+        gtk.Dialog.__init__(self, parent=parent)
+
+        if parent:
+            self.parent_window = parent
+        else:
+            self.parent_window = None
+
+    def set_busy(self):
+        if self.parent_window:
+            self.parent_window.window.set_cursor(gtk.gdk.Cursor(gtk.gdk.WATCH))
+            self.parent_window.set_sensitive(False)
+
+    def unset_busy(self):
+        if self.parent_window:
+            self.parent_window.window.set_cursor(None)
+            self.parent_window.set_sensitive(True)
+
+    def run(self):
+        self.set_busy()
+        return super(BusyDialog, self).run()
+
+    def destroy(self):
+        self.unset_busy()
+        super(BusyDialog, self).destroy()
+
+
+class ProcessDialog(BusyDialog):
+
+    def __init__(self, parent, src, dest):
+        super(ProcessDialog, self).__init__(parent=parent)
+
+        self._src = src
+        self._dest = dest
+        self._copied = False
+
+        vbox = gtk.VBox(False, 5)
+        self.vbox.add(vbox)
+        self.set_border_width(8)
+        self.set_title('')
+        self.set_has_separator(False)
+        self.set_resizable(False)
+
+        self._label = gtk.Label()
+        self._label.set_alignment(0, 0.5)
+        vbox.pack_start(self._label, False, False, 0)
+
+        self._progressbar = gtk.ProgressBar()
+        self._progressbar.set_ellipsize(pango.ELLIPSIZE_END)
+        self._progressbar.set_size_request(320, -1)
+        vbox.pack_start(self._progressbar, False, False, 0)
+
+        self.set_position(gtk.WIN_POS_CENTER_ON_PARENT)
+        self.show_all()
+
+    def run(self):
+        thread.start_new_thread(self.process_data, ())
+        gobject.timeout_add(100, self.on_timeout)
+        super(ProcessDialog, self).run()
+
+    def pulse(self):
+        self._progressbar.pulse()
+
+    def set_dialog_lable(self, text):
+        self._label.set_markup('<b>%s</b>' % text)
+
+    def set_progress_text(self, text):
+        self._progressbar.set_text(text)
+
+    def process_data(self):
+        self.set_dialog_lable("Importing files...")
+        if type(self._src) == list:
+            for path in self._src:
+                if os.path.isdir(path):
+                    new_dest = os.path.join(self._dest, os.path.basename(path))
+                    shutil.copytree(path, new_dest)
+                else:
+                    shutil.copy(path, self._dest)
+        else:
+                if os.path.isdir(self._src):
+                    shutil.copytree(self._src, self._dest)
+                else:
+                    shutil.copy(self._src, self._dest)
+
+        self._copied = True
+
+    def on_timeout(self):
+        if not self._copied:
+            self.pulse()
+            return True
+        else:
+            self.destroy()
+            return False
+
+
 class WebView(webkit.WebView):
     def __init__(self):
         webkit.WebView.__init__(self)
@@ -89,7 +190,6 @@ class Pagico(gtk.Window):
     if not os.path.exists(CONFIG_PATH):
         os.makedirs(CONFIG_PATH)
 
-
     def __init__(self):
         gtk.Window.__init__(self)
 
@@ -97,9 +197,12 @@ class Pagico(gtk.Window):
         self.load_config()
         self.start_abyssws()
         self.menu_sensitive = False
+        self._pending_import_list = []
+        self._import_dialog = None
 
         self.set_title('Pagico')
         self.set_size_request(1024, 600)
+        self.set_icon_name('pagico')
         vbox = gtk.VBox(False, 0)
         self.add(vbox)
 
@@ -125,9 +228,10 @@ class Pagico(gtk.Window):
         vbox.pack_start(bar, False, False, 0)
 
         self.webview = WebView()
-        self.webview.drag_dest_set(gtk.DEST_DEFAULT_ALL, self.TARGET[:-1],
-                                   gtk.gdk.ACTION_COPY | gtk.gdk.ACTION_MOVE | gtk.gdk.ACTION_LINK)
-        self.webview.connect('drag-data-received', self.on_drag_data_received)
+        if platform.linux_distribution()[2] != 'natty':
+            self.webview.drag_dest_set(gtk.DEST_DEFAULT_ALL, self.TARGET[:-1],
+                                       gtk.gdk.ACTION_COPY | gtk.gdk.ACTION_MOVE | gtk.gdk.ACTION_LINK)
+            self.webview.connect('drag-data-received', self.on_drag_data_received)
 
         vbox.pack_start(self.webview, True, True, 0)
 
@@ -148,6 +252,28 @@ class Pagico(gtk.Window):
         self.on_selection_changed(self.webview)
 
         self.show_all()
+
+        #TODO this is a duty hack for Ubuntu 11.04
+        # to check the _import_list then know whether there's file to import
+        # deloy one second after the last append
+        self._import_list = []
+        gobject.timeout_add(1000, self.check_import_status)
+
+    def check_import_status(self):
+        if self._import_list:
+            print 'try to import list'
+            self.import_files(self._import_list)
+            self._import_list = []
+
+        return True
+
+    @property
+    def current_db(self):
+        current_db_file = os.path.join(self.CONFIG_PATH, 'CurrentDB')
+        if os.path.exists(current_db_file):
+            return open(current_db_file).read().strip()
+        else:
+            return None
 
     def on_editing_ended(self, widget):
         self.action_group.get_action('UndoItem').set_sensitive(self.webview.can_copy_clipboard())
@@ -222,7 +348,8 @@ class Pagico(gtk.Window):
         method()
 
     def on_drag_data_received(self, widget, drag_context, x, y, selection_data, info, timestamp):
-        print drag_context, selection_data, info, timestamp
+        paths = [gio.file_parse_name(uri.strip()).get_path() for uri in selection_data.data.split()]
+        self.import_files(paths)
 
     def catchall_signal_handler(self, *args, **kwargs):
         print ("Caught signal (in catchall handler) "
@@ -305,7 +432,7 @@ class Pagico(gtk.Window):
         os.system('xdg-open /opt/pagico/CodeX/UserManual.pdf')
 
     def on_load_status_changed(self, widget, status):
-        print widget, widget.get_load_status().value_nick
+        print 'on_load_status_changed', widget, widget.get_load_status().value_nick
 
     def on_title_changed(self, widget, param):
         title = widget.get_property('title')
@@ -376,6 +503,36 @@ class Pagico(gtk.Window):
             f.close()
 
             self.webview.load_uri('http://127.0.0.1:1200/start/loader.php')
+
+    def import_files(self, path):
+        '''Open/show the progress dialog (start thread if first time)
+        import the file one by one (path maybe a list)
+        invoke the GetImported'''
+        if self.current_db:
+            print 'try to import file', path
+            dragged_path = os.path.join(self.current_db, 'temp/dragged')
+
+            dialog = ProcessDialog(parent=self.get_toplevel(),
+                                                src=path,
+                                                dest=dragged_path)
+
+            dialog.run()
+            gobject.idle_add(self.do_import_files)
+
+    def fake_import_file(self, path):
+        '''For Ubuntu 11.04 icon drag and drop only'''
+        if self.current_db:
+            if path not in self._import_list:
+                print 'append %s to pending import list' % path
+                self._last_append_timestamp = time.time()
+                self._import_list.append(path)
+
+    def do_import_files(self):
+        while gtk.events_pending():
+            gtk.main_iteration()
+
+        print 'call webkit to do real import'
+        self.webview.execute_script('GetImported();')
 
     def _create_action_group(self):
         entries = (
@@ -468,8 +625,15 @@ class PagicoClient(dbus.service.Object):
         self.window.create_new_database()
 
     @dbus.service.method(dbus_interface='com.pagico.clienty')
+    def import_files(self, path):
+        if platform.linux_distribution()[2] == 'natty':
+            self.window.fake_import_file(path)
+        else:
+            self.window.import_files(path)
+
+    @dbus.service.method(dbus_interface='com.pagico.clienty')
     def launch(self, path):
-        print 'try to launch path', path
+        os.system('xdg-open %s' % path)
 
 
 def show_splash():
@@ -492,8 +656,6 @@ def show_splash():
 
 
 if __name__ == '__main__':
-    show_splash()
-
     session_bus = dbus.SessionBus()
 
     if session_bus.request_name('com.pagico.clienty') != \
@@ -502,8 +664,20 @@ if __name__ == '__main__':
                                         '/com/pagico/clienty')\
                                                 .get_dbus_method("show_window")
         method()
+
+        if len(sys.argv) == 2:
+            #It seems the Unity launch will pass uri for each
+            uri = sys.argv[1]
+
+            method = session_bus.get_object('com.pagico.clienty',
+                                            '/com/pagico/clienty')\
+                                                    .get_dbus_method("import_files")
+            method(uri)
+
         sys.exit(1)
     else:
+        show_splash()
+
         window = Pagico()
         client = PagicoClient(session_bus, window)
         client.run()

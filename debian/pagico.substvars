@@ -1,4 +1,4 @@
 python:Versions=all
 python:Depends=python
-shlibs:Depends=ia32-libs (>= 20080808), lib32z1 (>= 1:1.1.4), libc6-i386 (>= 2.11), pagico
+shlibs:Depends=libc6 (>= 2.3.6-6~), libc6 (>= 2.11), libcurl3 (>= 7.16.2-1), libfontconfig1 (>= 2.8.0), libfreetype6 (>= 2.2.1), libjpeg62, libpng12-0 (>= 1.2.13-4), libssl0.9.8 (>= 0.9.8m-1), libx11-6, libxpm4, pagico, zlib1g (>= 1:1.1.4)
 misc:Depends=
