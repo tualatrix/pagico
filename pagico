@@ -253,6 +253,20 @@ class Pagico(gtk.Window):
 
         self.show_all()
 
+        #TODO this is a duty hack for Ubuntu 11.04
+        # to check the _import_list then know whether there's file to import
+        # deloy one second after the last append
+        self._import_list = []
+        gobject.timeout_add(1000, self.check_import_status)
+
+    def check_import_status(self):
+        if self._import_list:
+            print 'try to import list'
+            self.import_files(self._import_list)
+            self._import_list = []
+
+        return True
+
     @property
     def current_db(self):
         current_db_file = os.path.join(self.CONFIG_PATH, 'CurrentDB')
@@ -335,7 +349,7 @@ class Pagico(gtk.Window):
 
     def on_drag_data_received(self, widget, drag_context, x, y, selection_data, info, timestamp):
         paths = [gio.file_parse_name(uri.strip()).get_path() for uri in selection_data.data.split()]
-        self.import_file(paths)
+        self.import_files(paths)
 
     def catchall_signal_handler(self, *args, **kwargs):
         print ("Caught signal (in catchall handler) "
@@ -490,7 +504,7 @@ class Pagico(gtk.Window):
 
             self.webview.load_uri('http://127.0.0.1:1200/start/loader.php')
 
-    def import_file(self, path, do_real_import=True):
+    def import_files(self, path):
         '''Open/show the progress dialog (start thread if first time)
         import the file one by one (path maybe a list)
         invoke the GetImported'''
@@ -503,8 +517,15 @@ class Pagico(gtk.Window):
                                                 dest=dragged_path)
 
             dialog.run()
-            if do_real_import:
-                gobject.idle_add(self.do_import_files)
+            gobject.idle_add(self.do_import_files)
+
+    def fake_import_file(self, path):
+        '''For Ubuntu 11.04 icon drag and drop only'''
+        if self.current_db:
+            if path not in self._import_list:
+                print 'append %s to pending import list' % path
+                self._last_append_timestamp = time.time()
+                self._import_list.append(path)
 
     def do_import_files(self):
         while gtk.events_pending():
@@ -604,8 +625,11 @@ class PagicoClient(dbus.service.Object):
         self.window.create_new_database()
 
     @dbus.service.method(dbus_interface='com.pagico.clienty')
-    def import_file(self, path):
-        self.window.import_file(path)
+    def import_files(self, path):
+        if platform.linux_distribution()[2] == 'natty':
+            self.window.fake_import_file(path)
+        else:
+            self.window.import_files(path)
 
     @dbus.service.method(dbus_interface='com.pagico.clienty')
     def launch(self, path):
@@ -647,7 +671,7 @@ if __name__ == '__main__':
 
             method = session_bus.get_object('com.pagico.clienty',
                                             '/com/pagico/clienty')\
-                                                    .get_dbus_method("import_file")
+                                                    .get_dbus_method("import_files")
             method(uri)
 
         sys.exit(1)
