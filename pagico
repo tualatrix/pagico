@@ -11,6 +11,7 @@ import threading
 import subprocess
 import webbrowser
 
+import gio
 import gtk
 import glib
 import dbus
@@ -143,16 +144,25 @@ class ProcessDialog(BusyDialog):
         self._progressbar.pulse()
 
     def set_dialog_lable(self, text):
-        self._label.set_markup('<b><big>%s</big></b>' % text)
+        self._label.set_markup('<b>%s</b>' % text)
 
     def set_progress_text(self, text):
         self._progressbar.set_text(text)
 
     def process_data(self):
-        if os.path.isdir(self._src):
-            shutil.copytree(self._src, self._dest)
+        self.set_dialog_lable("Importing files...")
+        if type(self._src) == list:
+            for path in self._src:
+                if os.path.isdir(path):
+                    new_dest = os.path.join(self._dest, os.path.basename(path))
+                    shutil.copytree(path, new_dest)
+                else:
+                    shutil.copy(path, self._dest)
         else:
-            shutil.copy(self._src, self._dest)
+                if os.path.isdir(self._src):
+                    shutil.copytree(self._src, self._dest)
+                else:
+                    shutil.copy(self._src, self._dest)
 
         self._copied = True
 
@@ -324,7 +334,8 @@ class Pagico(gtk.Window):
         method()
 
     def on_drag_data_received(self, widget, drag_context, x, y, selection_data, info, timestamp):
-        print drag_context, selection_data, info, timestamp
+        paths = [gio.file_parse_name(uri.strip()).get_path() for uri in selection_data.data.split()]
+        self.import_file(paths)
 
     def catchall_signal_handler(self, *args, **kwargs):
         print ("Caught signal (in catchall handler) "
@@ -479,11 +490,12 @@ class Pagico(gtk.Window):
 
             self.webview.load_uri('http://127.0.0.1:1200/start/loader.php')
 
-    def import_file(self, path):
+    def import_file(self, path, do_real_import=True):
         '''Open/show the progress dialog (start thread if first time)
-        import the file one by one
+        import the file one by one (path maybe a list)
         invoke the GetImported'''
         if self.current_db:
+            print 'try to import file', path
             dragged_path = os.path.join(self.current_db, 'temp/dragged')
 
             dialog = ProcessDialog(parent=self.get_toplevel(),
@@ -491,12 +503,14 @@ class Pagico(gtk.Window):
                                                 dest=dragged_path)
 
             dialog.run()
-            gobject.idle_add(self.do_import_files)
+            if do_real_import:
+                gobject.idle_add(self.do_import_files)
 
     def do_import_files(self):
         while gtk.events_pending():
             gtk.main_iteration()
 
+        print 'call webkit to do real import'
         self.webview.execute_script('GetImported();')
 
     def _create_action_group(self):
@@ -591,7 +605,6 @@ class PagicoClient(dbus.service.Object):
 
     @dbus.service.method(dbus_interface='com.pagico.clienty')
     def import_file(self, path):
-        print 'try to import file', path
         self.window.import_file(path)
 
     @dbus.service.method(dbus_interface='com.pagico.clienty')
