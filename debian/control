@@ -16,31 +16,18 @@ Architecture: all
 Depends: python-gtk2,
  python-dbus,
  python-webkit,
+ libcurl3,
  ${python:Depends}
-Description: Your personal knowledge base for data and relationship.
- Website:http://www.pagico.com
+Description: Pagico
+ Your personal knowledge base for data and relationship.
  .
- Pagico v4.3 r1096
- .
- - Minor improvements in the iCal feed
- - Improved the search ability in the Create-New-Task panel
- - Fully localized to Japanese, Dutch and Russian!
- - Greatly improved UI for the start-up screen
- - Better proxy support
- - Overall program performance is improved with the optimized cache mechanism
- - Fixed issues with the proxy support
- - Fixed an issue in the collection edit panel, where project and profiles were not listed for selection
- - Fixed an important issue in the database upgrade process which could lead to data loss
- - Fixed a bug that lists with one item could not be deleted in some cases
- - Fixed a bug where imported file attachments could not be opened in some rare conditions
- - Fixed a bug that imported file attachments could not be revealed in some rare conditions
- - Fixed a bug on Mac that files could not be imported due to occasional permission issues
- - An important bug-fix for the Workspace algorithm so that empty projects and profiles can be shared as well
- - Fixed a bug where occasionally items could not be added to newly created projects / contact profiles
- - Emptying trash now displays the loading panel
- - Fixed a bug on Windows where clicking on phone numbers does not bring up Skype
- - Fixed an issue in the free trial activation process
- - Fixed an issue that some times items in search results could not be dragged (to create links)
- - Fixed an issue that tasks could not be created when clicking on the “+” sign in the dashboard flowchart
- - Fixed minor glitches in the activation process
- - Fixed an issue in the database upgrade process so that shared items in Workspace do not get duplicated
+ - Brand New Flowchart feature
+ - Fold-able task groups and objects
+ - Simple Task Rescheduling through the flowchart
+ - Automatic sequential tasks
+ - Repeating tasks
+ - Color-coded tasks
+ - Greatly improved user interface
+ - New UI Theme: Professional
+ - Enhanced Printing Capability
+ - And many more minor improvements and bug-fixes
