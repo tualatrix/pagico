@@ -433,6 +433,17 @@ class Pagico(gtk.Window):
 
     def on_load_status_changed(self, widget, status):
         print 'on_load_status_changed', widget, widget.get_load_status().value_nick
+        uri = widget.get_main_frame().get_uri()
+
+        if uri:
+            if uri.startswith('file:///'):
+                if getattr(self, '_timeout_id', None):
+                    self._timeout_id = None
+                else:
+                    self._timeout_id = gobject.timeout_add(300, self.back_to_uri)
+
+    def back_to_uri(self):
+        self.webview.load_uri('http://127.0.0.1:1200/?nopopup')
 
     def on_title_changed(self, widget, param):
         title = widget.get_property('title')
