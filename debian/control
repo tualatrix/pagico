@@ -18,8 +18,8 @@ Depends: python-gtk2,
  python-webkit,
  libcurl3,
  ${python:Depends}
-Description: Pagico
- Your personal knowledge base for data and relationship.
+Description: Pagico 5
+ Task Planner, Personal Repository and Team Collaboration
  .
  - Brand New Flowchart feature
  - Fold-able task groups and objects
