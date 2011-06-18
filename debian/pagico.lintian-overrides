@@ -1,0 +1,1456 @@
+pagico: no-copyright-file
+pagico: description-starts-with-package-name
+pagico: possible-unindented-list-in-extended-description
+pagico: binary-without-manpage usr/bin/pagico
+pagico: binary-without-manpage usr/bin/pagico-helper
+pagico: script-not-executable opt/pagico/CodeX/extras/restartservice
+pagico: script-not-executable opt/pagico/CodeX/extras/restartservice_linux
+pagico: script-not-executable opt/pagico/CodeX/extras/shutdown.sh
+pagico: script-not-executable opt/pagico/CodeX/extras/startup.sh
+pagico: wrong-path-for-interpreter opt/pagico/httpd/PHP/bin/phar.phar (#!/home/tualatrix/Sources/apt/php5-5.3.2/sapi/cli/php != /usr/bin/php)
+pagico: php-script-but-no-phpX-cli-dep opt/pagico/httpd/PHP/bin/phar.phar
+pagico: script-not-executable opt/pagico/httpd/PHP/lib/php/build/run-tests.php
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/JavaScripts/dragdrop.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Apple Numbers/Document.numbers/index.xml.gz
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/paste/pastetext.htm
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Curio Professional/Document.curio/Project Settings.plist
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Apple Keynote/Document.key/QuickLook/Thumbnail.jpg
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/ins.htm
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/fullpage/fullpage.htm
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/fullscreen/editor_plugin.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Apple Pages/Document.pages/thumbs/PageCapThumbV2-2.tiff
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/js/acronym.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/alert.gif
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/tiny_mce.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/js/lang/id.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/inlinepopups/editor_plugin.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/table/css/row.css
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/js/lang/tr.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/js/element_common.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Curio Professional/Document.curio/Resources.plist
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/langs/en.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Curio Professional/Document.curio/__Curio Asset Library.cclib/__Curio SearchKit Index.data
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Apple Keynote WideScreen/Document.key/QuickLook/Thumbnail.jpg
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/style/editor_plugin_src.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Propellerhead Reason 4/icon.jpg
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/media/bullet3.gif
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/source_editor.htm
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/editor_template_src.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Adobe Flash CS3/icon.jpg
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/js/anchor.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Curio Professional/Document.curio/__Curio Asset Library.cclib/Sketchpad 1.ccsketchpad
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Microsoft Word/Document.doc
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/editor_plugin_src.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/date-picker/media/gradient-e5e5e5-ffffff.gif
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Microsoft PowerPoint 2007/icon.jpg
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/simple/skins/o2k7/img/button_bg.png
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/color_picker.htm
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/JavaScripts/shortcuts.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Apple Numbers/Document.numbers/Contents/PkgInfo
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/table/css/cell.css
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/js/lang/es.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Rapidweaver 4/Document.rwsw/Contents.plist
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/js/lang/nl.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/JavaScripts/sound.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/style/langs/en_dlg.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Apple Numbers/Document.numbers/document-thumbnail.tiff
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/table/css/table.css
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/date-picker/css/datepicker.css
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Microsoft Word/icon.jpg
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/simple/img/icons.gif
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/o2k7/content.css
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/editor_template.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/o2k7/dialog.css
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/css/attributes.css
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/simple/skins/o2k7/ui.css
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/date-picker/js/datepicker.packed.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/JavaScripts/resizable.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/date-picker/media/cal.gif
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/iespell/editor_plugin_src.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Microsoft Word 2007/Document.docx
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Apple Numbers/icon.jpg
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Microsoft Excel/icon.jpg
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/style/css/props.css
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/save/editor_plugin_src.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/style/props.htm
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/preview/preview.html
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/js/lang/fr.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/js/about.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Adobe Flash CS3/Document.fla
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Microsoft PowerPoint/icon.jpg
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Apple Keynote/Document.key/thumbs/st0.tiff
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/utils/form_utils.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/o2k7/img/button_bg_silver.png
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/simple/editor_template.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/js/del.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Adobe Illustrator CS3/Document.ai
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Curio Professional/Document.curio/Session Settings/mSharp.plist
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Apple Keynote WideScreen/Document.key/index.apxl.gz
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/button.gif
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/js/ins.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/js/link.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Apple Pages/Document.pages/index.xml.gz
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/js/source_editor.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/attributes.htm
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/js/lang/lv.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/tiny_mce_popup.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/fullscreen/editor_plugin_src.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/template/js/template.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/js/lang/no.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Curio Professional/icon.jpg
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/acronym.htm
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/default/dialog.css
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/css/datepicker.css
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/link.htm
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/js/lang/cs.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/paste/js/pastetext.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/JavaScripts/prototype.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/o2k7/img/button_bg_black.png
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/JavaScripts/scriptaculous.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Microsoft Excel 2007/Document.xlsx
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Adobe Photoshop CS3/icon.jpg
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/cite.htm
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/xajax_js/xajax_lang_tr.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/simple/skins/default/content.css
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/del.htm
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Microsoft PowerPoint/Document.ppt
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/langs/en_dlg.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/js/attributes.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/wordcount/editor_plugin_src.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/language/index.html
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/layer/editor_plugin.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Apple Keynote WideScreen/Document.key/thumbs/st0.tiff
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/autoresize/editor_plugin_src.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/tabfocus/editor_plugin_src.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/iespell/editor_plugin.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Apple Numbers/Document.numbers/QuickLook/Thumbnail.jpg
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/horizontal.gif
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Rapidweaver 4/icon.jpg
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/default/img/menu_check.gif
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/o2k7/ui_silver.css
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Adobe Photoshop CS3/Document.psd
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/vertical.gif
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/js/charmap.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/paste/js/pasteword.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/default/img/menu_arrow.gif
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/default/img/items.gif
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/fullpage/js/fullpage.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Adobe InDesign CS3/icon.jpg
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/xajax_js/xajax_lang_bg.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/js/color_picker.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/visualchars/editor_plugin_src.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/js/lang/se.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/inlinepopups/template.htm
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Propellerhead Reason 4/Document.rns
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/table/langs/en_dlg.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Microsoft PowerPoint 2007/Document.pptx
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/default/img/buttons.png
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/simple/skins/default/ui.css
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/inlinepopups/skins/clearlooks2/window.css
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/js/datepicker.packed.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/template/editor_plugin_src.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/media/cal.gif
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/fullpage/editor_plugin.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Apple Pages/Document.pages/thumbs/PageCapThumbV2-1.tiff
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/utils/editable_selects.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/table/js/cell.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/table/table.htm
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/default/img/progress.gif
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Apple Pages/icon.jpg
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/img/icons.gif
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Apple Keynote WideScreen/icon.jpg
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/JavaScripts/effects.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/date-picker/media/bg_header.jpg
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/date-picker/media/bullet2.gif
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/xajax_js/xajax_lang_nl.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/xajax_js/xajax_verbose.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/nonbreaking/editor_plugin_src.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Apple Keynote WideScreen/Document.key/Contents/PkgInfo
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/paste/langs/en_dlg.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Microsoft Excel 2007/icon.jpg
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/fullpage/editor_plugin_src.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/table/js/row.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/xajax_js/xajax_lang_fr.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/autoresize/editor_plugin.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/js/image.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/date-picker/media/cal-grey.gif
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/template/langs/en_dlg.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Apple Keynote/Document.key/index.apxl.gz
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/langs/en_dlg.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/license.txt
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/JavaScripts/builder.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/calendarHTML.txt
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/safari/blank.htm
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/simple/skins/o2k7/content.css
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/utils/validate.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/preview/example.html
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/style/editor_plugin.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/visualchars/editor_plugin.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/table/editor_plugin_src.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/xajax_js/xajax_lang_es.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/js/lang/pl.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/simple/editor_template_src.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/js/abbr.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/fullscreen/fullscreen.htm
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/template/editor_plugin.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/editor_plugin.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/layer/editor_plugin_src.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/o2k7/img/button_bg.png
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/paste/editor_plugin.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/paste/editor_plugin_src.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/template/css/template.css
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/simple/langs/en.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/JavaScripts/slider.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/insertdatetime/editor_plugin.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/preview/editor_plugin_src.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/default/ui.css
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/wordcount/editor_plugin.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/image.htm
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/template/template.htm
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/charmap.htm
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/date-picker/media/bullet1.gif
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/save/editor_plugin.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Apple Pages/Document.pages/Contents/PkgInfo
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/js/lang/en.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Rapidweaver 4/Document.rwsw/README.txt
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/fullpage/langs/en_dlg.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/paste/pasteword.htm
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/confirm.gif
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Rapidweaver 4/Document.rwsw/Pages/Contents.plist
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/langs/en.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/table/js/table.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/noneditable/editor_plugin_src.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/xajax_js/xajax_core.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/style/js/props.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/template/blank.htm
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/anchor.htm
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/nonbreaking/editor_plugin.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/JavaScripts/controls.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/img/colorpicker.jpg
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/corners.gif
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Microsoft Word 2007/icon.jpg
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/buttons.gif
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Curio Professional/Document.curio/__Curio Asset Library.cclib/__Curio Library Data.plist
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/css/popup.css
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/table/editor_plugin.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/table/js/merge_cells.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/date-picker/index.html
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/media/cal-grey.gif
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/table/cell.htm
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/table/merge_cells.htm
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/table/row.htm
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/default/content.css
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/date-picker/js/lang/en.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/abbr.htm
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/xajax_js/xajax_legacy.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/inlinepopups/editor_plugin_src.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/xajax_js/xajax_lang_de.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Adobe InDesign CS3/Document.indd
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/js/lang/da.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/insertdatetime/editor_plugin_src.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Apple Pages/Document.pages/QuickLook/Thumbnail.jpg
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/js/cite.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/utils/mctabs.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/fullpage/css/fullpage.css
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Apple Keynote/Document.key/Contents/PkgInfo
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/about.htm
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/xajax_core/xajax.inc.php
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/date-picker/media/backstripes.gif
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/noneditable/editor_plugin.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/tabfocus/editor_plugin.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/o2k7/ui_black.css
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Adobe Illustrator CS3/icon.jpg
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/default/img/tabs.gif
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Apple Keynote/icon.jpg
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Microsoft Excel/Document.xls
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/preview/jscripts/embed.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/safari/editor_plugin.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/js/lang/de.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/safari/editor_plugin_src.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/preview/editor_plugin.js
+pagico: executable-not-elf-or-script opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/o2k7/ui.css
+pagico: executable-not-elf-or-script opt/pagico/CodeX/extras/FileTemplates/Rapidweaver 4/Document.rwsw/DefaultPageAttributes/Contents.plist
+pagico: dir-or-file-in-opt opt/pagico/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/UserManual.pdf
+pagico: dir-or-file-in-opt opt/pagico/CodeX/error/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/error/000.html
+pagico: dir-or-file-in-opt opt/pagico/CodeX/error/404.html
+pagico: dir-or-file-in-opt opt/pagico/CodeX/error/500.html
+pagico: dir-or-file-in-opt opt/pagico/CodeX/error/503.html
+pagico: dir-or-file-in-opt opt/pagico/CodeX/error/stop.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/external/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/external/generateThumbnail.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/external/inbox.linux.sh
+pagico: dir-or-file-in-opt opt/pagico/CodeX/external/inbox.mac.sh
+pagico: dir-or-file-in-opt opt/pagico/CodeX/external/inbox.plugin
+pagico: dir-or-file-in-opt opt/pagico/CodeX/external/tasks.linux.sh
+pagico: dir-or-file-in-opt opt/pagico/CodeX/external/tasks.mac.sh
+pagico: dir-or-file-in-opt opt/pagico/CodeX/external/tasks.plugin
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/Desktop.ini
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Adobe Flash CS3/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Adobe Flash CS3/Document.fla
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Adobe Flash CS3/icon.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Adobe Illustrator CS3/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Adobe Illustrator CS3/Document.ai
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Adobe Illustrator CS3/icon.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Adobe InDesign CS3/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Adobe InDesign CS3/Document.indd
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Adobe InDesign CS3/icon.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Adobe Photoshop CS3/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Adobe Photoshop CS3/Document.psd
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Adobe Photoshop CS3/icon.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Keynote WideScreen/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Keynote WideScreen/Document.key/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Keynote WideScreen/Document.key/Contents/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Keynote WideScreen/Document.key/Contents/PkgInfo
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Keynote WideScreen/Document.key/QuickLook/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Keynote WideScreen/Document.key/QuickLook/Thumbnail.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Keynote WideScreen/Document.key/index.apxl.gz
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Keynote WideScreen/Document.key/thumbs/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Keynote WideScreen/Document.key/thumbs/st0.tiff
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Keynote WideScreen/icon.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Keynote/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Keynote/Document.key/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Keynote/Document.key/Contents/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Keynote/Document.key/Contents/PkgInfo
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Keynote/Document.key/QuickLook/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Keynote/Document.key/QuickLook/Thumbnail.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Keynote/Document.key/index.apxl.gz
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Keynote/Document.key/thumbs/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Keynote/Document.key/thumbs/st0.tiff
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Keynote/icon.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Numbers/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Numbers/Document.numbers/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Numbers/Document.numbers/Contents/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Numbers/Document.numbers/Contents/PkgInfo
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Numbers/Document.numbers/QuickLook/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Numbers/Document.numbers/QuickLook/Thumbnail.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Numbers/Document.numbers/document-thumbnail.tiff
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Numbers/Document.numbers/index.xml.gz
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Numbers/icon.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Pages/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Pages/Document.pages/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Pages/Document.pages/Contents/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Pages/Document.pages/Contents/PkgInfo
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Pages/Document.pages/QuickLook/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Pages/Document.pages/QuickLook/Thumbnail.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Pages/Document.pages/index.xml.gz
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Pages/Document.pages/thumbs/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Pages/Document.pages/thumbs/PageCapThumbV2-1.tiff
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Pages/Document.pages/thumbs/PageCapThumbV2-2.tiff
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Apple Pages/icon.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Curio Professional/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Curio Professional/Document.curio/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Curio Professional/Document.curio/Project Settings.plist
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Curio Professional/Document.curio/Resources.plist
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Curio Professional/Document.curio/Session Settings/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Curio Professional/Document.curio/Session Settings/mSharp.plist
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Curio Professional/Document.curio/__Curio Asset Library.cclib/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Curio Professional/Document.curio/__Curio Asset Library.cclib/Sketchpad 1.ccsketchpad
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Curio Professional/Document.curio/__Curio Asset Library.cclib/__Curio Library Data.plist
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Curio Professional/Document.curio/__Curio Asset Library.cclib/__Curio SearchKit Index.data
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Curio Professional/icon.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Folder/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Folder/Document/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Folder/icon.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Microsoft Excel 2007/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Microsoft Excel 2007/Document.xlsx
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Microsoft Excel 2007/icon.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Microsoft Excel/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Microsoft Excel/Document.xls
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Microsoft Excel/icon.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Microsoft PowerPoint 2007/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Microsoft PowerPoint 2007/Document.pptx
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Microsoft PowerPoint 2007/icon.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Microsoft PowerPoint/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Microsoft PowerPoint/Document.ppt
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Microsoft PowerPoint/icon.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Microsoft Word 2007/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Microsoft Word 2007/Document.docx
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Microsoft Word 2007/icon.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Microsoft Word/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Microsoft Word/Document.doc
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Microsoft Word/icon.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Novamind/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Novamind/Document.nmind
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Novamind/icon.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/OmniGraffle/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/OmniGraffle/Document.graffle
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/OmniGraffle/icon.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/OmniOutliner/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/OmniOutliner/Document.oo3/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/OmniOutliner/Document.oo3/contents.xml
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/OmniOutliner/icon.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Propellerhead Reason 4/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Propellerhead Reason 4/Document.rns
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Propellerhead Reason 4/icon.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Rapidweaver 4/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Rapidweaver 4/Document.rwsw/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Rapidweaver 4/Document.rwsw/Contents.plist
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Rapidweaver 4/Document.rwsw/DefaultPageAttributes/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Rapidweaver 4/Document.rwsw/DefaultPageAttributes/Contents.plist
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Rapidweaver 4/Document.rwsw/Pages/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Rapidweaver 4/Document.rwsw/Pages/Contents.plist
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Rapidweaver 4/Document.rwsw/README.txt
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Rapidweaver 4/icon.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Scrivener/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Scrivener/Document.scriv/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Scrivener/Document.scriv/BinderStrings.xml
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Scrivener/Document.scriv/QuickLook/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Scrivener/Document.scriv/QuickLook/Preview.html
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Scrivener/Document.scriv/QuickLook/Thumbnail.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Scrivener/Document.scriv/binder.scrivproj
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Scrivener/Document.scriv/info.plist
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Scrivener/Document.scriv/ui.xml
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Scrivener/icon.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Sibelius/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Sibelius/Document.sib
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Sibelius/icon.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Text/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Text/Document.txt
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/FileTemplates/Text/icon.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Bridge/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Bridge/.system/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Bridge/.system/images/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Bridge/.system/images/Thumbs.db
+pagico: windows-thumbnail-database-in-package opt/pagico/CodeX/extras/WebExport/Bridge/.system/images/Thumbs.db
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Bridge/.system/images/content_tile.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Bridge/.system/images/footer.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Bridge/.system/images/header.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Bridge/.system/images/linkbar_bg.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Bridge/.system/images/right_menu.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Bridge/LICENSE.txt
+pagico: extra-license-file opt/pagico/CodeX/extras/WebExport/Bridge/LICENSE.txt
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Bridge/index.html
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Bridge/screenshot.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Lazydays/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Lazydays/.system/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Lazydays/.system/images/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Lazydays/.system/images/bg/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Lazydays/.system/images/bg/balloons.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Lazydays/.system/images/bg/bullet.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Lazydays/.system/images/bg/footer.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Lazydays/.system/images/bg/gradient.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Lazydays/.system/images/bg/header.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Lazydays/.system/images/bg/header_left.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Lazydays/.system/images/bg/header_right.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Lazydays/.system/images/firefox.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Lazydays/.system/images/icons/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Lazydays/.system/images/icons/exclamation.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Lazydays/.system/images/icons/go.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Lazydays/.system/images/icons/quote.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Lazydays/.system/images/icons/stop.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Lazydays/LICENSE.txt
+pagico: extra-license-file opt/pagico/CodeX/extras/WebExport/Lazydays/LICENSE.txt
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Lazydays/index.html
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Lazydays/screenshot.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Nature/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Nature/.system/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Nature/.system/banner-1.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Nature/.system/bg.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Nature/LICENSE.txt
+pagico: extra-license-file opt/pagico/CodeX/extras/WebExport/Nature/LICENSE.txt
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Nature/index.html
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Nature/screenshot.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Nautica_02/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Nautica_02/.system/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Nautica_02/.system/images/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Nautica_02/.system/images/Thumbs.db
+pagico: windows-thumbnail-database-in-package opt/pagico/CodeX/extras/WebExport/Nautica_02/.system/images/Thumbs.db
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Nautica_02/.system/images/backround2.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Nautica_02/.system/images/bg.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Nautica_02/.system/images/header.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Nautica_02/.system/images/menu.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Nautica_02/.system/images/menuleft.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Nautica_02/.system/images/menuright.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Nautica_02/.system/images/n3.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Nautica_02/index.html
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Nautica_02/screenshot.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Nautica_04/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Nautica_04/.system/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Nautica_04/.system/img/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Nautica_04/.system/img/bg_grad.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Nautica_04/.system/img/footer.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Nautica_04/.system/img/main_grad.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Nautica_04/.system/img/menuleft.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Nautica_04/.system/img/menuright.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Nautica_04/.system/img/right_bg.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Nautica_04/index.html
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Nautica_04/screenshot.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Pagico/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Pagico/.system/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Pagico/.system/img/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Pagico/.system/img/System_Header.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Pagico/.system/img/System_Header_BG.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Pagico/.system/img/bullet.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Pagico/.system/img/logo.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Pagico/.system/img/top_bg.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Pagico/LICENSE.txt
+pagico: extra-license-file opt/pagico/CodeX/extras/WebExport/Pagico/LICENSE.txt
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Pagico/index.html
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Pagico/screenshot.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Print/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Print/index.html
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/PrintEx/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/PrintEx/index.html
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/SimpleLife/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/SimpleLife/.system/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/SimpleLife/.system/css/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/SimpleLife/.system/css/html.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/SimpleLife/.system/css/ie.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/SimpleLife/.system/css/layout.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/SimpleLife/.system/css/print.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/SimpleLife/.system/img/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/SimpleLife/.system/img/bg/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/SimpleLife/.system/img/bg/body.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/SimpleLife/.system/img/bg/bullet.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/SimpleLife/.system/img/bg/bullethover.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/SimpleLife/.system/img/bg/content.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/SimpleLife/.system/img/bg/header.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/SimpleLife/.system/img/bg/menu.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/SimpleLife/.system/img/photos/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/SimpleLife/.system/img/photos/tn_inside.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/SimpleLife/.system/img/photos/tn_stream.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/SimpleLife/index.html
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/SimpleLife/screenshot.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Simple_01/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Simple_01/index.html
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Simple_01/screenshot.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Simple_02/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Simple_02/index.html
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Simple_02/screenshot.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Summer_Breeze/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Summer_Breeze/.system/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Summer_Breeze/.system/img/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Summer_Breeze/.system/img/bg.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Summer_Breeze/.system/img/bgcode.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Summer_Breeze/.system/img/divider.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Summer_Breeze/.system/img/header.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Summer_Breeze/.system/img/li.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Summer_Breeze/.system/img/navigation.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Summer_Breeze/.system/img/quote.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Summer_Breeze/LICENSE.txt
+pagico: extra-license-file opt/pagico/CodeX/extras/WebExport/Summer_Breeze/LICENSE.txt
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Summer_Breeze/index.html
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/Summer_Breeze/screenshot.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/White_Room/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/White_Room/.system/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/White_Room/.system/images/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/White_Room/.system/images/bg.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/White_Room/.system/png/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/White_Room/.system/png/bg.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/White_Room/LICENSE.txt
+pagico: extra-license-file opt/pagico/CodeX/extras/WebExport/White_Room/LICENSE.txt
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/White_Room/index.html
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/White_Room/screenshot.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/default/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/default/.system/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/default/.system/images/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/default/.system/images/bullet.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/default/.system/images/fluidcss.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/default/.system/images/fluidxhtml1.1.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/default/.system/images/hdr.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/default/.system/images/sample.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/default/.system/images/tab.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/default/LICENSE.txt
+pagico: extra-license-file opt/pagico/CodeX/extras/WebExport/default/LICENSE.txt
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/default/index.html
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/WebExport/default/screenshot.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/beep.mp3
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/encodings.ini
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/growlnotify
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/gzip.exe
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/httpd.conf
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/httpd_linux.txt
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/httpd_win.conf
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/ical-feed/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/ical-feed/index.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/restartservice
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/restartservice_linux
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/restartservice_windows.cmd
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/shutdown.sh
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/startup.html
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/startup.sh
+pagico: dir-or-file-in-opt opt/pagico/CodeX/extras/zip.exe
+pagico: dir-or-file-in-opt opt/pagico/CodeX/favicon.ico
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/General.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/Licence/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/Licence/index.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/SignIn.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/SlideShow.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/Templates/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/Templates/Miscellaneous.tps
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/Templates/process_screen.tpl
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/Templates/tpl_lib.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/index.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/FileSystem.lib.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/General.lib.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Image.lib.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/JavaScripts/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/JavaScripts/builder.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/JavaScripts/controls.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/JavaScripts/dragdrop.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/JavaScripts/effects.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/JavaScripts/prototype.js
+pagico: embedded-javascript-library opt/pagico/CodeX/html/lib/Web 2.0/JavaScripts/prototype.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/JavaScripts/resizable.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/JavaScripts/scriptaculous.js
+pagico: embedded-javascript-library opt/pagico/CodeX/html/lib/Web 2.0/JavaScripts/scriptaculous.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/JavaScripts/shortcuts.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/JavaScripts/slider.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/JavaScripts/sound.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/calendarHTML.txt
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/css/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/css/datepicker.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/js/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/js/datepicker.packed.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/js/lang/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/js/lang/cs.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/js/lang/da.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/js/lang/de.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/js/lang/en.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/js/lang/es.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/js/lang/fr.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/js/lang/id.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/js/lang/lv.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/js/lang/nl.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/js/lang/no.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/js/lang/pl.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/js/lang/se.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/js/lang/tr.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/language/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/language/index.html
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/media/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/media/bullet3.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/media/cal-grey.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker-4/media/cal.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker/css/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker/css/datepicker.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker/index.html
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker/js/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker/js/datepicker.packed.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker/js/lang/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker/js/lang/en.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker/media/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker/media/backstripes.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker/media/bg_header.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker/media/bullet1.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker/media/bullet2.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker/media/cal-grey.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker/media/cal.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/date-picker/media/gradient-e5e5e5-ffffff.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/langs/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/langs/en.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/license.txt
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/autoresize/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/autoresize/editor_plugin.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/autoresize/editor_plugin_src.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/fullpage/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/fullpage/css/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/fullpage/css/fullpage.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/fullpage/editor_plugin.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/fullpage/editor_plugin_src.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/fullpage/fullpage.htm
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/fullpage/js/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/fullpage/js/fullpage.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/fullpage/langs/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/fullpage/langs/en_dlg.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/fullscreen/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/fullscreen/editor_plugin.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/fullscreen/editor_plugin_src.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/fullscreen/fullscreen.htm
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/iespell/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/iespell/editor_plugin.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/iespell/editor_plugin_src.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/inlinepopups/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/inlinepopups/editor_plugin.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/inlinepopups/editor_plugin_src.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/inlinepopups/skins/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/inlinepopups/skins/clearlooks2/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/alert.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/button.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/buttons.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/confirm.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/corners.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/horizontal.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/inlinepopups/skins/clearlooks2/img/vertical.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/inlinepopups/skins/clearlooks2/window.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/inlinepopups/template.htm
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/insertdatetime/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/insertdatetime/editor_plugin.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/insertdatetime/editor_plugin_src.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/layer/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/layer/editor_plugin.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/layer/editor_plugin_src.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/nonbreaking/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/nonbreaking/editor_plugin.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/nonbreaking/editor_plugin_src.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/noneditable/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/noneditable/editor_plugin.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/noneditable/editor_plugin_src.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/paste/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/paste/editor_plugin.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/paste/editor_plugin_src.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/paste/js/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/paste/js/pastetext.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/paste/js/pasteword.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/paste/langs/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/paste/langs/en_dlg.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/paste/pastetext.htm
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/paste/pasteword.htm
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/preview/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/preview/editor_plugin.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/preview/editor_plugin_src.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/preview/example.html
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/preview/jscripts/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/preview/jscripts/embed.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/preview/preview.html
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/safari/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/safari/blank.htm
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/safari/editor_plugin.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/safari/editor_plugin_src.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/save/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/save/editor_plugin.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/save/editor_plugin_src.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/style/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/style/css/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/style/css/props.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/style/editor_plugin.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/style/editor_plugin_src.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/style/js/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/style/js/props.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/style/langs/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/style/langs/en_dlg.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/style/props.htm
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/tabfocus/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/tabfocus/editor_plugin.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/tabfocus/editor_plugin_src.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/table/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/table/cell.htm
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/table/css/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/table/css/cell.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/table/css/row.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/table/css/table.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/table/editor_plugin.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/table/editor_plugin_src.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/table/js/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/table/js/cell.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/table/js/merge_cells.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/table/js/row.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/table/js/table.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/table/langs/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/table/langs/en_dlg.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/table/merge_cells.htm
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/table/row.htm
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/table/table.htm
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/template/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/template/blank.htm
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/template/css/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/template/css/template.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/template/editor_plugin.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/template/editor_plugin_src.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/template/js/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/template/js/template.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/template/langs/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/template/langs/en_dlg.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/template/template.htm
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/visualchars/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/visualchars/editor_plugin.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/visualchars/editor_plugin_src.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/wordcount/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/wordcount/editor_plugin.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/wordcount/editor_plugin_src.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/abbr.htm
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/acronym.htm
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/attributes.htm
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/cite.htm
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/css/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/css/attributes.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/css/popup.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/del.htm
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/editor_plugin.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/editor_plugin_src.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/ins.htm
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/js/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/js/abbr.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/js/acronym.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/js/attributes.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/js/cite.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/js/del.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/js/element_common.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/js/ins.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/langs/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/plugins/xhtmlxtras/langs/en_dlg.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/about.htm
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/anchor.htm
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/charmap.htm
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/color_picker.htm
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/editor_template.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/editor_template_src.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/image.htm
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/img/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/img/colorpicker.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/img/icons.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/js/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/js/about.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/js/anchor.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/js/charmap.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/js/color_picker.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/js/image.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/js/link.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/js/source_editor.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/langs/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/langs/en.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/langs/en_dlg.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/link.htm
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/default/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/default/content.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/default/dialog.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/default/img/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/default/img/buttons.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/default/img/items.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/default/img/menu_arrow.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/default/img/menu_check.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/default/img/progress.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/default/img/tabs.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/default/ui.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/o2k7/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/o2k7/content.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/o2k7/dialog.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/o2k7/img/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/o2k7/img/button_bg.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/o2k7/img/button_bg_black.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/o2k7/img/button_bg_silver.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/o2k7/ui.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/o2k7/ui_black.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/skins/o2k7/ui_silver.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/advanced/source_editor.htm
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/simple/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/simple/editor_template.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/simple/editor_template_src.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/simple/img/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/simple/img/icons.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/simple/langs/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/simple/langs/en.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/simple/skins/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/simple/skins/default/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/simple/skins/default/content.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/simple/skins/default/ui.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/simple/skins/o2k7/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/simple/skins/o2k7/content.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/simple/skins/o2k7/img/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/simple/skins/o2k7/img/button_bg.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/themes/simple/skins/o2k7/ui.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/tiny_mce.js
+pagico: embedded-javascript-library opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/tiny_mce.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/tiny_mce_popup.js
+pagico: embedded-javascript-library opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/tiny_mce_popup.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/utils/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/utils/editable_selects.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/utils/form_utils.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/utils/mctabs.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/tiny_mce/utils/validate.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/xajax_core/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/xajax_core/xajax.inc.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/xajax_js/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/xajax_js/xajax_core.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/xajax_js/xajax_lang_bg.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/xajax_js/xajax_lang_de.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/xajax_js/xajax_lang_es.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/xajax_js/xajax_lang_fr.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/xajax_js/xajax_lang_nl.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/xajax_js/xajax_lang_tr.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/xajax_js/xajax_legacy.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/Web 2.0/xajax_js/xajax_verbose.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/iCal.lib.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/mach/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/mach/cache.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/mach/chartView.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/mach/chartView.lib.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/mach/cli.addon.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/mach/clipping.addon.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/mach/collection.addon.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/mach/collection.addon.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/mach/common.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/mach/contact.addon.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/mach/contact.addon.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/mach/core.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/mach/dataView.addon.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/mach/dataView.addon.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/mach/headers.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/mach/inbox.addon.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/mach/keystone.cli.addon.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/mach/keystone.client.addon.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/mach/listView.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/mach/network.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/mach/popupMenu.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/mach/sidebar.addon.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/lib/mach/topic.addon.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/modules/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/modules/Channels.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/modules/Channels.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/modules/Contacts.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/modules/Contacts.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/modules/Contacts_Profile.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/modules/Dashboard.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/modules/Dashboard.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/modules/Dashboard_Today.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/modules/Data.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/modules/Data_Group.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/modules/Data_Group.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/modules/Data_List.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/modules/Data_Topic.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/modules/Data_Topic.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/modules/Inbox.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/modules/Inbox.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/modules/Preferences.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/modules/Preferences.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/modules/Trash.js
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/modules/Trash.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/modules/headers.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/modules/zhuyin.inc
+pagico: dir-or-file-in-opt opt/pagico/CodeX/html/printScreen.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2008/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2008/controls/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2008/controls/arrow_icons.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2008/controls/backgrounds.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2008/controls/backgrounds_win.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2008/controls/misc_icons.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2008/controls/navigation_icons.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2008/controls/toolbar_icons.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2008/mainarea_bg.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2008/searchresult_bg.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2008/searchresult_end.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2008/searchresult_start.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2008/topicbg.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2008/topics/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2008/topics/dropzone.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2008/topics/topic_buttons.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2008/topics/topicrelated_icons.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2008/topics/topictool_icons.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2009/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2009/Inbox_ColorIcons.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2009/PagicoIcon_128x128.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2009/arrows.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2009/channelItem_Icon.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2009/channelsbg_icon.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2009/checkbox.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2009/checkbox_w.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2009/collectionsbg_icon.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2009/contact_header_bg.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2009/flowchartGrid.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2009/lockIcon.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2009/popup_icon.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2009/quickstart_arrow.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2009/shades/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2009/shades/black.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2009/shades/blackEx.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2009/shades/grey.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2009/shades/transparent.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2009/shades/white.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2009/shades/white95.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2009/shareditem_bgIcon.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2009/signin_blue.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2009/signin_textbox.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2009/toggleLockBtn.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2011/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2011/About.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2011/arrow_icons.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2011/toolbar_icons.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2011/topic_buttons.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/BundleCover/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/BundleCover/About.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/BundleCover/password_hint_long.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/BundleCover/password_hint_longer.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/BundleCover/password_hint_short.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/Main/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/Main/pagicoTextLogo.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/Misc/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/Misc/calendar.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/Misc/database_needed.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/Misc/delete_icon.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/Misc/indicator.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/Misc/indicator_2.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/Misc/indicator_3.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/Misc/indicator_4.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/Misc/indicator_5.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/Misc/indicator_6.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/Misc/indicator_7.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/Misc/indicator_8.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/Misc/indicator_lg.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/Misc/indicator_lg_2.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/Misc/insert.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/Misc/invalid_database.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/Misc/launcher_needed.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/Misc/move.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/Misc/permission_denied.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/Misc/printer_icon.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/Misc/requirements_needed.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/Misc/resolution_needed.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/Misc/shortcuts_bg.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/Misc/sync_indicator.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/Misc/synchronize.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/Misc/transparent.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/Misc/trash.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/Start/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/Start/dbUpgrade_progress.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/Start/pagicoIcon.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/App_GUI/Start/subpanel_arrows.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/3GPP-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/3GPP2-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/AI-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/AIFF-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/APP-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/AS-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/ASM-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/AVI-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/BMP-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/BZ-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/BZ2-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/C++-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/C-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/CHM-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/CSS-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/DMG-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/DOC-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/DOCX-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/EML-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/EPS-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/FLV-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/FOLDER-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/GIF-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/GRAFFLE-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/GZ-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/HTM-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/HTML-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/ICNS-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/ICO-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/ICS-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/INF-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/INI-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/JAR-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/JAVA-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/JPEG-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/JPG-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/JS-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/KEY-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/LNK-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/LOGIC-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/M-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/MIDI-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/MOV-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/MP3-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/MP4-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/MPEG-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/MPEG4-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/MPG-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/MSG-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/NUMBERS-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/OMNIPLAN-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/OO3-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/PAGES-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/PDF-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/PERL-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/PGCO-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/PHP-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/PNG-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/PPS-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/PPSX-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/PPT-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/PPTX-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/PSB-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/PSD-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/RAW-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/RM-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/RMVB-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/RTF-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/RTFD-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/RW3-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/RWSW-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/TAR-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/TIF-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/TIFF-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/TMPROJ-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/TXT-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/Unknown-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/VCF-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/VISIO-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/WAV-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/WAVE-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/WEBARCHIVE-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/WEBLOC-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/WORKFLOW-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/XCODEPROJ-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/XHTML-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/XLS-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/XLSX-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/Z-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/filetypes/ZIP-ICON-LG.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/iSpace/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/iSpace/Contacts/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/iSpace/Contacts/FavIcon.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/iSpace/Contacts/LoadDefault.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/iSpace/Contacts/SaveAsDefault.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/iSpace/Contacts/contact_company_grey.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/iSpace/Contacts/contact_company_white.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/iSpace/Contacts/contact_female_grey.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/iSpace/Contacts/contact_female_white.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/iSpace/Contacts/contact_male_grey.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/iSpace/Contacts/contact_male_white.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/iSpace/Notes/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/iSpace/Notes/blue.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/iSpace/Notes/graphite.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/iSpace/Notes/green.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/iSpace/Notes/grey.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/iSpace/Notes/orange.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/iSpace/Notes/purple.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/iSpace/Notes/red.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/iSpace/slideshow_handson.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/iSpace/slideshow_textbg.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/iSpace/trash.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/vClipper/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/vClipper/PageReference.gif
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/vClipper/dynamic_background.swf
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/vClipper/lock.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/vClipper/margin.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/vClipper/nopreview.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/vClipper/pagelock_bg.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/vClipper/slideshow_bg.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/vClipper/tag_explorer.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/vClipper/topic_header_bg.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/welcome/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/welcome/background.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/welcome/icon_channels.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/welcome/icon_gcalendar.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/welcome/icon_helper.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/welcome/icon_inbox.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/welcome/icon_newdb.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/welcome/icon_placeholder.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/welcome/icon_somedaytasks.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/index.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/languages/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/languages/0000.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/languages/0000.language
+pagico: dir-or-file-in-opt opt/pagico/CodeX/languages/0001.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/languages/0001.language
+pagico: dir-or-file-in-opt opt/pagico/CodeX/languages/0002.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/languages/0002.language
+pagico: dir-or-file-in-opt opt/pagico/CodeX/languages/0003.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/languages/0003.language
+pagico: dir-or-file-in-opt opt/pagico/CodeX/languages/0004.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/languages/0005.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/languages/0005.language
+pagico: dir-or-file-in-opt opt/pagico/CodeX/languages/0006.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/languages/0006.language
+pagico: dir-or-file-in-opt opt/pagico/CodeX/languages/0007.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/languages/0008.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/languages/0008.language
+pagico: dir-or-file-in-opt opt/pagico/CodeX/languages/0009.jpg
+pagico: dir-or-file-in-opt opt/pagico/CodeX/languages/0009.language
+pagico: dir-or-file-in-opt opt/pagico/CodeX/main/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/main/index.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/plugins/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/plugins/inbox
+pagico: dir-or-file-in-opt opt/pagico/CodeX/plugins/inbox.windows.cmd
+pagico: dir-or-file-in-opt opt/pagico/CodeX/plugins/tasks
+pagico: dir-or-file-in-opt opt/pagico/CodeX/plugins/tasks.windows.cmd
+pagico: dir-or-file-in-opt opt/pagico/CodeX/start/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/start/index.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/start/loader.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/start/welcome.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/sysconfig.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/Frame.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/General_0000.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/General_0002.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/General_All.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/General_Preview.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/Header.html
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/Header_w.html
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/Override_Linux.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/Override_Windows.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/SplashScreen.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/Start/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/Start/General.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/System/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/System/ControlPanel.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/System/ErrorHandler.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/System/General.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/System/Licence.css
+pagico: extra-license-file opt/pagico/CodeX/themes/2009/System/Licence.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/System/Profile.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/System/Register.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/System/SettingsPanel.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/System/SignIn.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/System/SignUp.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/System/UserManager.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/System/Wizard.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/System/WizardEx.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/System/index.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/System/userinfo.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/iSpace/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/iSpace/Calendar.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/iSpace/Channels.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/iSpace/Contacts.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/iSpace/Dashboard.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/iSpace/FlowChart.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/iSpace/General.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/iSpace/Group.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/iSpace/Inbox.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/iSpace/List.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/iSpace/Lock.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/iSpace/MCE_content.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/iSpace/Pages.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/iSpace/Preference.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/iSpace/Preview.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/iSpace/TagExplorer.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/iSpace/Tasks.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/iSpace/Upgrade.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/iSpace/chartView.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/iSpace/dataView.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/iSpace/listView.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/iSpace/mce.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/iSpace/print.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2009/stop.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/Frame.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/General_0000.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/General_0002.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/General_All.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/General_Preview.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/Header.html
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/Header_w.html
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/Override_Linux.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/Override_Windows.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/SplashScreen.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/Start/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/Start/General.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/System/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/System/ControlPanel.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/System/ErrorHandler.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/System/General.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/System/Licence.css
+pagico: extra-license-file opt/pagico/CodeX/themes/2011/System/Licence.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/System/Profile.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/System/Register.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/System/SettingsPanel.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/System/SignIn.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/System/SignUp.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/System/UserManager.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/System/Wizard.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/System/WizardEx.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/System/index.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/System/userinfo.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/iSpace/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/iSpace/Calendar.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/iSpace/Channels.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/iSpace/Contacts.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/iSpace/Dashboard.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/iSpace/FlowChart.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/iSpace/General.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/iSpace/Group.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/iSpace/Inbox.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/iSpace/List.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/iSpace/Lock.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/iSpace/MCE_content.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/iSpace/Pages.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/iSpace/Preference.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/iSpace/Preview.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/iSpace/TagExplorer.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/iSpace/Tasks.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/iSpace/Upgrade.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/iSpace/chartView.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/iSpace/dataView.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/iSpace/listView.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/iSpace/mce.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/iSpace/print.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/themes/2011/stop.css
+pagico: dir-or-file-in-opt opt/pagico/CodeX/upgrade/
+pagico: dir-or-file-in-opt opt/pagico/CodeX/upgrade/doUpgrade.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/upgrade/doUpgrade42.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/upgrade/iPowerBase3.General.lib.php
+pagico: dir-or-file-in-opt opt/pagico/CodeX/upgrade/index.php
+pagico: dir-or-file-in-opt opt/pagico/httpd/
+pagico: dir-or-file-in-opt opt/pagico/httpd/Installation Instructions.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/PHP/
+pagico: dir-or-file-in-opt opt/pagico/httpd/PHP/bin/
+pagico: dir-or-file-in-opt opt/pagico/httpd/PHP/bin/phar
+pagico: dir-or-file-in-opt opt/pagico/httpd/PHP/bin/phar.phar
+pagico: dir-or-file-in-opt opt/pagico/httpd/PHP/bin/php
+pagico: dir-or-file-in-opt opt/pagico/httpd/PHP/bin/php-cgi
+pagico: dir-or-file-in-opt opt/pagico/httpd/PHP/bin/php-config
+pagico: dir-or-file-in-opt opt/pagico/httpd/PHP/bin/phpize
+pagico: dir-or-file-in-opt opt/pagico/httpd/PHP/lib/
+pagico: dir-or-file-in-opt opt/pagico/httpd/PHP/lib/php.ini
+pagico: dir-or-file-in-opt opt/pagico/httpd/PHP/lib/php/
+pagico: dir-or-file-in-opt opt/pagico/httpd/PHP/lib/php/build/
+pagico: dir-or-file-in-opt opt/pagico/httpd/PHP/lib/php/build/Makefile.global
+pagico: dir-or-file-in-opt opt/pagico/httpd/PHP/lib/php/build/acinclude.m4
+pagico: dir-or-file-in-opt opt/pagico/httpd/PHP/lib/php/build/config.guess
+pagico: dir-or-file-in-opt opt/pagico/httpd/PHP/lib/php/build/config.sub
+pagico: dir-or-file-in-opt opt/pagico/httpd/PHP/lib/php/build/libtool.m4
+pagico: dir-or-file-in-opt opt/pagico/httpd/PHP/lib/php/build/ltmain.sh
+pagico: dir-or-file-in-opt opt/pagico/httpd/PHP/lib/php/build/mkdep.awk
+pagico: dir-or-file-in-opt opt/pagico/httpd/PHP/lib/php/build/phpize.m4
+pagico: dir-or-file-in-opt opt/pagico/httpd/PHP/lib/php/build/run-tests.php
+pagico: dir-or-file-in-opt opt/pagico/httpd/PHP/lib/php/build/scan_makefile_in.awk
+pagico: dir-or-file-in-opt opt/pagico/httpd/PHP/lib/php/build/shtool
+pagico: dir-or-file-in-opt opt/pagico/httpd/PHP/lib/php/extensions/
+pagico: dir-or-file-in-opt opt/pagico/httpd/PHP/lib/php/extensions/no-debug-non-zts-20090626/
+pagico: dir-or-file-in-opt opt/pagico/httpd/PHP/lib/php/extensions/no-debug-non-zts-20090626/openssl.a
+pagico: dir-or-file-in-opt opt/pagico/httpd/PHP/lib/php/extensions/no-debug-non-zts-20090626/openssl.so
+pagico: dir-or-file-in-opt opt/pagico/httpd/PHP/man/
+pagico: dir-or-file-in-opt opt/pagico/httpd/PHP/man/man1/
+pagico: dir-or-file-in-opt opt/pagico/httpd/PHP/man/man1/php-config.1
+pagico: dir-or-file-in-opt opt/pagico/httpd/PHP/man/man1/php.1
+pagico: dir-or-file-in-opt opt/pagico/httpd/PHP/man/man1/phpize.1
+pagico: dir-or-file-in-opt opt/pagico/httpd/abyssws
+pagico: dir-or-file-in-opt opt/pagico/httpd/autostart-setup
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/about.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/alias.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/antileech.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/aspnet.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/bandwidth.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/cert.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/console.css
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/console.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/delete.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/down.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/drive.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/edit.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/err.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/error.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/favicon.ico
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/file.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/first.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/folder.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/halflogo.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/help.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/index.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/info.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/ipcard.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/language.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/last.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/listing.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/log.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/mime.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/parameters.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/pfolder.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/qm-ltr.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/qm-rtl.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/rewriting.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/scripting.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/server.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/sgroup.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/shield.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/ssi.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/stats.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/suser.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/up.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/user.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/console/usercard.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/accessconsole.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/altformats.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/asksupport.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/cgiinternals.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/cgivars.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/chapters.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/commandline.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/console.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/consoleconfig.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/consoleinterface.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/contact1.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/conventions.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/delete.png
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/directives.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/dirlist.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/dirscript.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/edit.png
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/fastcgi.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/glossary.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/hosts-add.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/hosts-configuration.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/hosts.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/howdowswork.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/index.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/install.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/intro.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/ipformat.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/isapi.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/knowledge.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/ln72.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/patternsformat.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/portsproblems.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/preface.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/qm-ltr.png
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/regex.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/scripting.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/server.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/servergeneral.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/serverstats.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/setupsimple.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/shutdown.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/ssi.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/ssiencoding.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/ssisyntax.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/ssl.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/start.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/startup.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/stylesheet.css
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/troubleshooting.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/doc/useroption.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/htdocs/
+pagico: dir-or-file-in-opt opt/pagico/httpd/htdocs/index.html
+pagico: dir-or-file-in-opt opt/pagico/httpd/htdocs/pwrabyss.gif
+pagico: dir-or-file-in-opt opt/pagico/httpd/ioncube_loader_lin_5.3.so
+pagico: dir-or-file-in-opt opt/pagico/httpd/lang/
+pagico: dir-or-file-in-opt opt/pagico/httpd/lang/ar.lng
+pagico: dir-or-file-in-opt opt/pagico/httpd/lang/fr.lng
+pagico: dir-or-file-in-opt opt/pagico/httpd/license.txt
+pagico: extra-license-file opt/pagico/httpd/license.txt
+pagico: dir-or-file-in-opt opt/pagico/httpd/persist.data
+pagico: dir-or-file-in-opt opt/pagico/pagico-daemon
+pagico: dir-or-file-in-opt opt/pagico/splash.png
+pagico: shlib-with-non-pic-code opt/pagico/httpd/PHP/lib/php/extensions/no-debug-non-zts-20090626/openssl.so
+pagico: arch-independent-package-contains-binary-or-object opt/pagico/httpd/PHP/bin/php
+pagico: binary-or-shlib-defines-rpath opt/pagico/httpd/PHP/bin/php /usr/lib
+pagico: embedded-library opt/pagico/httpd/PHP/bin/php: sqlite
+pagico: embedded-library opt/pagico/httpd/PHP/bin/php: file
+pagico: embedded-library opt/pagico/httpd/PHP/bin/php: pcre3
+pagico: arch-independent-package-contains-binary-or-object opt/pagico/httpd/PHP/bin/php-cgi
+pagico: binary-or-shlib-defines-rpath opt/pagico/httpd/PHP/bin/php-cgi /usr/lib
+pagico: embedded-library opt/pagico/httpd/PHP/bin/php-cgi: sqlite
+pagico: embedded-library opt/pagico/httpd/PHP/bin/php-cgi: file
+pagico: embedded-library opt/pagico/httpd/PHP/bin/php-cgi: pcre3
+pagico: arch-independent-package-contains-binary-or-object opt/pagico/httpd/PHP/lib/php/extensions/no-debug-non-zts-20090626/openssl.a
+pagico: arch-independent-package-contains-binary-or-object opt/pagico/httpd/PHP/lib/php/extensions/no-debug-non-zts-20090626/openssl.so
+pagico: arch-independent-package-contains-binary-or-object opt/pagico/httpd/abyssws
+pagico: embedded-library opt/pagico/httpd/abyssws: openssl
+pagico: embedded-library opt/pagico/httpd/abyssws: expat
+pagico: embedded-library opt/pagico/httpd/abyssws: pcre3
+pagico: arch-independent-package-contains-binary-or-object opt/pagico/httpd/ioncube_loader_lin_5.3.so
+pagico: missing-dependency-on-libc needed by opt/pagico/httpd/PHP/bin/php and 4 others
+pagico: embedded-library lib32/libgd.so.2: libgd2
+pagico: missing-dependency-on-libc needed by lib32/libgd.so.2 and 5 others
