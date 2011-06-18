@@ -20,8 +20,6 @@ Depends: python-gtk2,
  ia32-libs [amd64],
  ${python:Depends}
 Description: Pagico 5
- Task Planner, Personal Repository and Team Collaboration
- .
  - Brand New Flowchart feature
  - Fold-able task groups and objects
  - Simple Task Rescheduling through the flowchart
