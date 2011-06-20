@@ -18,6 +18,7 @@ Depends: python-gtk2,
  python-webkit,
  libcurl3,
  ia32-libs [amd64],
+ ${misc:Depends},
  ${python:Depends}
 Description: Pagico 5
  - Brand New Flowchart feature
