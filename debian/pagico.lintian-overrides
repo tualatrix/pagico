@@ -1961,6 +1961,10 @@ pagico: extra-license-file opt/pagico/httpd/license.txt
 pagico: dir-or-file-in-opt opt/pagico/httpd/persist.data
 pagico: dir-or-file-in-opt opt/pagico/pagico-daemon
 pagico: dir-or-file-in-opt opt/pagico/splash.png
+pagico: executable-not-elf-or-script opt/pagico/CodeX/img/2011/time.png
+pagico: executable-not-elf-or-script opt/pagico/CodeX/img/2011/time_repeat.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2011/time.png
+pagico: dir-or-file-in-opt opt/pagico/CodeX/img/2011/time_repeat.png
 pagico: shlib-with-non-pic-code opt/pagico/httpd/PHP/lib/php/extensions/no-debug-non-zts-20090626/openssl.so
 pagico: arch-independent-package-contains-binary-or-object opt/pagico/httpd/PHP/bin/php
 pagico: binary-or-shlib-defines-rpath opt/pagico/httpd/PHP/bin/php /usr/lib
