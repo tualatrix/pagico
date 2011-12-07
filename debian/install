@@ -1,2 +1,3 @@
 httpd /opt/pagico
 CodeX /opt/pagico
+data/libgd.so.2 /lib32/
