@@ -21,13 +21,14 @@ Depends: python-gtk2,
  ${misc:Depends},
  ${python:Depends}
 Description: Pagico 5
- - Brand New Flowchart feature
- - Fold-able task groups and objects
- - Simple Task Rescheduling through the flowchart
- - Automatic sequential tasks
- - Repeating tasks
- - Color-coded tasks
- - Greatly improved user interface
- - New UI Theme: Professional
- - Enhanced Printing Capability
- - And many more minor improvements and bug-fixes
+ - Better support for input methods (confirming character selection won’t trigger the saving process when editing list items or text notes)
+ - The search result can now be scrolled and shows you all the matching results
+ - Improved the repeating task feature and its icon placement
+ - A much better notification feature for workspace updates (it now shows you a detailed list of updated data)
+ - Greatly improved Workspace synchronize algorithm with better progress display
+ - Items sync’ed through workspaces are now shown with their actual modify time
+ - Dashboard flowchart automatically folds foreign task groups
+ - InboxSync ready
+ - Pagico ID ready
+ - Compatible with P+ for iPad
+ - A number of bug fixes

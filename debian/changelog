@@ -1,8 +1,8 @@
-pagico (5.1-1~natty1) natty; urgency=low
+pagico (5.1-1~r1212~oneiric1) oneiric; urgency=low
 
   * New upstream version
 
- -- Tualatrix Chou <tualatrix@gmail.com>  Sat, 25 Jun 2011 09:27:33 +0800
+ -- Tualatrix Chou <tualatrix@gmail.com>  Wed, 07 Dec 2011 21:18:32 +0800
 
 pagico (5.0.0-1~natty3) natty; urgency=low
 

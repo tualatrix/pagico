@@ -2,7 +2,7 @@ import glob
 from setuptools import setup, find_packages
 
 setup(name='pagico',
-      version='5.0.0',
+      version='5.1',
       description='Pagico for Linux',
       author='Tualatrix Chou',  
       author_email='tualatrix@gmail.com',
